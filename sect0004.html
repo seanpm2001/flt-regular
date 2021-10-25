@@ -9,7 +9,8 @@
 <meta name="generator" content="plasTeX" />
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Fermat’s Last Theorem for regular primes: Bibliography</title>
+<title>Fermat’s Last Theorem for regular primes: Fermats Last Theorem for regular primes</title>
+<link rel="next" href="sect0005.html" title="Bibliography" />
 <link rel="prev" href="sect0003.html" title="Cyclotomic fields" />
 <link rel="up" href="index.html" title="Fermat’s Last Theorem for regular primes" />
 <link rel="stylesheet" href="styles/theme-white.css" />
@@ -35,7 +36,10 @@
   <a href="sect0003.html"><span class="toc_ref">3</span> <span class="toc_entry">Cyclotomic fields</span></a>
  </li>
 <li class=" active current">
-  <a href="sect0004.html"><span class="toc_ref">4</span> <span class="toc_entry">Bibliography</span></a>
+  <a href="sect0004.html"><span class="toc_ref">4</span> <span class="toc_entry">Fermats Last Theorem for regular primes</span></a>
+ </li>
+<li class="">
+  <a href="sect0005.html"><span class="toc_ref">5</span> <span class="toc_entry">Bibliography</span></a>
  </li>
   <li></li>	
   <li>	
@@ -49,21 +53,229 @@
 
 
 <div class="main-text">
-<div class="bibliography">
-<h1>Bibliography</h1>
-<dl class="bibliography">
-  <dt><a name="marcus">Mar18</a></dt>
-  <dd><p>Daniel&#160;A. Marcus. <em>Number fields</em>. Universitext. Springer, Cham, 2018. Second edition of [ MR0457396], With a foreword by Barry Mazur. </p>
-</dd>
-  <dt><a name="Samuel">Sam70</a></dt>
-  <dd><p>Pierre Samuel. <em>Algebraic theory of numbers</em>. Translated from the French by Allan J. Silberger. Houghton Mifflin Co., Boston, Mass., 1970. </p>
-</dd>
-  <dt><a name="washington">Was82</a></dt>
-  <dd><p>Lawrence&#160;C. Washington. <em>Introduction to cyclotomic fields</em>, volume&#160;83 of <em>Graduate Texts in Mathematics</em>. Springer-Verlag, New York, 1982. </p>
-</dd>
-</dl>
+<h1 id="a0000000005">4 Fermats Last Theorem for regular primes</h1>
+<p><div class="theorem_thmwrapper" id="theorem:FLT facts">
+  <div class="theorem_thmheading">
+    <span class="theorem_thmcaption">
+    Theorem
+    </span>
+    <span class="theorem_thmlabel">4.1</span>
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0004.html#theorem:FLT facts">#</a>
+    <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
+</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Uses</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="sect0003.html#lemma: unit lemma">lemma 3.5</a></li>
+          <li><a href="sect0003.html#lemma: fac of p in p_th root">lemma 3.6</a></li>
+          <li><a href="sect0003.html#lemma: ideals mult to power">lemma 3.7</a></li>
+          <li><a href="sect0003.html#theorem: ring of ints of cyclo">Theorem 3.2</a></li>
+        </ul>
 
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="theorem_thmcontent">
+  
+<p>Let \(p \geq 5\) be an prime number, \(\zeta _p\) a \(p\)-th root of unity and \(K=\mathbb {Q}(\zeta _p)\). Assume that we have \(x,y,z \in \mathbb {Z}\) with \(\gcd (xyz,p)=1\) and such that </p>
+<div class="displaymath" id="a0000000048">
+  \[ x^p+y^p=z^p. \]
 </div>
+<ol class="enumerate">
+  <li><p>We cannot have </p>
+<div class="displaymath" id="a0000000049">
+  \[ x \equiv y \equiv -z \pmod p \]
+</div>
+<p> and, therefore, without loss of generality, we may assume </p>
+<div class="displaymath" id="a0000000050">
+  \[ x \not\equiv y \mod p. \]
+</div>
+</li>
+  <li><p>For \(i \neq j\) we can write </p>
+<div class="displaymath" id="a0000000051">
+  \[ (\zeta _p^i-\zeta _p^j)=u(1-\zeta _p) \]
+</div>
+<p> with \(u\) a unit in \(\mathbb {Z}[\zeta _p]\). From this it follows that the ideals </p>
+<div class="displaymath" id="a0000000052">
+  \[ (x+y),(x+\zeta _py),(x+\zeta _p^2y),\dots ,(x+\zeta _p^{p-1}y) \]
+</div>
+<p> are pairwise coprime. </p>
+</li>
+  <li><p>Let \(\alpha \in \mathbb {Z}[\zeta _p]\). Then \(\alpha ^p\) is congruent to an integer modulo \(p\). </p>
+</li>
+  <li><p>Let \(\alpha \in \mathbb {Z}[\zeta _p]\). Suppose that \(\alpha =a_0+a_1\zeta _p+\cdots +a_{p-1}\zeta _p^{p-1}\) with at least one \(a_i=0\). Then there is an integer \(n\) such that \(\alpha /n \in \mathbb {Z}[\zeta _p]\), then \(n\) divides each \(a_i\). </p>
+</li>
+  <li><p>Let \(i \in \{ 1,\dots ,p-1\} .\) Suppose that \(x+y\zeta _p^i=u \alpha ^p\) with \(u \in \mathbb {Z}[\zeta _p]^\times \) and \(\alpha \in \mathbb {Z}[\zeta _p]\). By considering \(x+y\zeta _p^i\) and its complex conjugate then there is an integer \(k\) such that </p>
+<div class="displaymath" id="a0000000053">
+  \[ x+y\zeta _p^i-\zeta _p^{2k}x-\zeta _p^{2k-i}y \equiv 0 \pmod p. \]
+</div>
+</li>
+</ol>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000054">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  <ol class="enumerate">
+  <li><p>Reducing modulo \(p\), using Fermat’s little theorem, you get that if \(x \equiv y \equiv -z \)</p>
+</li>
+</ol>
+
+  </div>
+</div>
+<p>\(\), then \(\)3z ≡0 p\(\). But since \(p {\gt}3\) this means \(p |z\) but this contradicts \(\gcd (xyz,p)=1\). Now, if \(x \equiv y \pmod p\) then \(x \not\equiv -z \pmod p\) we can relabel \(y,z\) so that wlog \(x \not\equiv y\) (this uses that \(p\) is odd). </p>
+<p>Lemma <a href="sect0003.html#lemma: fac of p in p_th root">3.6</a> gives that \(u\) is a unit. So all that needs to be proved is that the ideals are coprime. Assume not, then for some \(i \neq j\) we have some prime ideal \(\mathfrak {p}\) dividing by \((x+y\zeta _p^i)\) and \((x+y\zeta _p^j)\). It must then also divide their sum and their difference, so we must have \(\mathfrak {p}| (1-\zeta _p)\) or \(\mathfrak {p}| y\). Similarly, \(\mathfrak {p}\) divides \(\zeta _p^j(x+y\zeta _p^i)-\zeta _p^i(x+y\zeta _p^j)\) so \(\mathfrak {p}\) divides \(x\) or \((1-\zeta _p)\). We can’t have \(\mathfrak {p}\) dividing \(x,y\) since they are coprime, therefore \(\mathfrak {p}|(1-\zeta _p)\). But from lectures we know that since \((1-\zeta _p)\) has norm \(p\) it must be a prime ideal, so \(\mathfrak {p}=(1-\zeta _p)\). Now, note that \(x+y \equiv x+y\zeta _+p^i \equiv 0 \mod \mathfrak {p}\). But since \(x,y \in \mathbb {Z}\) this means we would have \(x+y \equiv 0 \pmod p\), which implies \(z^p \equiv 0 \pmod p\) which contradicts our assumptions. </p>
+<p>This is easy. Just use \((x+y)^p \equiv x^p + y^p \pmod p\) and that \(\zeta _p\) is a \(p\)-th root of unity. </p>
+<p>Looking at \(\alpha =a_0+a_1\zeta _p+\cdots +a_{p-1}\zeta _p^{p-1}\), if one of the \(a_i\)’s is zero and \(\alpha /n \in \mathbb {Z}[\zeta _p]\), then \(\alpha /n=\sum _i a_i/n \zeta _p^i\). Now, as \(\alpha /n \in \mathbb {Z}[\zeta _p]\), pick the basis of \(\mathbb {Z}[\zeta _p]\) which does not contain \(\zeta _p\) (which is possible as any subset of \(\{ 1,\zeta _p,\dots ,\zeta _p^{p-1}\} \) with \(p-1\) elements forms a basis of \(\mathbb {Z}[\zeta _p]\).]). Then \(\alpha =\sum _i b_i \zeta _p^i\) where \(b_i \in \mathbb {Z}\). Therefore comparing coefficients, we get the result. </p>
+<p>Using lemma <a href="sect0003.html#lemma: unit lemma">3.5</a> we have \((x+y\zeta _p^i) =\beta \zeta _p^k \alpha ^p\) which is equivalent to \(\beta \zeta _p^k a \pmod p\) with \(a\) and integer (using part \(3\)). Now, if we consider the complex conjugate we have \(\overline{(x+y\zeta _p^i) }\equiv \beta \zeta _p^{-k}a \pmod p\). Looking at \((x+y\zeta _p^i)-\zeta _p^{2k}\overline{(x+y\zeta _p^i) }\) then gives the result. </p>
+<ol class="enumerate">
+</ol>
+<div class="proof_wrapper" id="a0000000055">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  
+  </div>
+</div>
+<p> <div class="definition_thmwrapper" id="defn: is_regular_number">
+  <div class="definition_thmheading">
+    <span class="definition_thmcaption">
+    Definition
+    </span>
+    <span class="definition_thmlabel">4.2</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0004.html#defn: is_regular_number">#</a>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="definition_thmcontent">
+  <p>  A prime number \(p\) is called regular if it does not divide the class number of \(\mathbb {Q}(\zeta _p)\). </p>
+
+  </div>
+</div> </p>
+<p><div class="theorem_thmwrapper" id="theorem:FLT case one">
+  <div class="theorem_thmheading">
+    <span class="theorem_thmcaption">
+    Theorem
+    </span>
+    <span class="theorem_thmlabel">4.3</span>
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0004.html#theorem:FLT case one">#</a>
+    <a class="icon proof" href="sect0004.html#a0000000056"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
+</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Uses</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="sect0004.html#theorem:FLT facts">Theorem 4.1</a></li>
+          <li><a href="sect0004.html#defn: is_regular_number">Definition 4.2</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="theorem_thmcontent">
+  <p>  Let \(p\) be a regular prime. Then </p>
+<div class="displaymath" id="a0000000057">
+  \[ x^p+y^p=z^p \]
+</div>
+<p> has no solutions with \(x,y,z \in \mathbb {Z}\) and \(\gcd (xyz,p)=1\). </p>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000056">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  <p>First thing is to note that if \(x^p+y^p=z^p\) then </p>
+<div class="displaymath" id="a0000000058">
+  \[ z^p=(x+y)(x+\zeta _py)\cdots (x+y\zeta _p^{p-1}) \]
+</div>
+<p> as ideals. Then since we know the ideals are coprime, then by lemma <a href="sect0003.html#lemma: ideals mult to power">3.7</a> we have that each \((x+y\zeta _p^i)=\mathfrak {a}^p\), for \(\mathfrak {a}\) some ideal. Note that, \([\mathfrak {a}^p]=1\) in the class group. Now, since \(p\) does not divide the size of the class group we have that \([\mathfrak {a}]=1\) in the class group, so its principal. So we have \(x+y\zeta _p^i=u_i\alpha _i^p\) with \(u_i\) a unit. So by <a href="sect0004.html#theorem:FLT facts">4.1</a> part \(5\) we have some \(k\) such that \(x+y\zeta _p-\zeta _p^{2k}x-\zeta _p^{2k-1} \equiv 0 \pmod p\). If \(1,\zeta _p,\zeta _p^{2k},\zeta _p^{2k-1}\) are distinct, then <a href="sect0004.html#theorem:FLT facts">4.1</a> part \(4\) (which uses that \(p{\gt}3\)) says that \(p\) divides \(x,y\), contrary to our assumption. So they cannot be distinct, but checking each case leads to a contradiction, therefore there can not be any such solutions. </p>
+
+  </div>
+</div>
+<p><div class="theorem_thmwrapper" id="FLT regular case">
+  <div class="theorem_thmheading">
+    <span class="theorem_thmcaption">
+    Theorem
+    </span>
+    <span class="theorem_thmlabel">4.4</span>
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0004.html#FLT regular case">#</a>
+    <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
+</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Uses</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="sect0004.html#theorem:FLT case one">Theorem 4.3</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="theorem_thmcontent">
+  <p>  Let \(p \geq 5\) be an prime number, \(\zeta _p\) a \(p\)-th root of unity and \(K=\mathbb {Q}(\zeta _p)\). Assume that \(p\) does not divide the size of the class group \(\operatorname{Cl}_K\). Then </p>
+<div class="displaymath" id="a0000000059">
+  \[ x^p+y^p=z^p \]
+</div>
+<p> has no solutions with \(x,y,z \in \mathbb {Z}\) and \(xyz \ne 0\). </p>
+
+  </div>
+</div> </p>
+
+
 </div> <!--main-text -->
 </div> <!-- content-wrapper -->
 </div> <!-- content -->
@@ -73,6 +285,8 @@
   <a href="sect0003.html" title="Cyclotomic fields"><svg  class="icon icon-arrow-left "><use xlink:href="symbol-defs.svg#icon-arrow-left"></use></svg>
 </a>
   <a href="index.html" title="Fermat’s Last Theorem for regular primes"><svg  class="icon icon-arrow-up "><use xlink:href="symbol-defs.svg#icon-arrow-up"></use></svg>
+</a>
+  <a href="sect0005.html" title="Bibliography"><svg  class="icon icon-arrow-right "><use xlink:href="symbol-defs.svg#icon-arrow-right"></use></svg>
 </a>
 </nav>
 

@@ -1,0 +1,666 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dependency graph</title>
+  <meta name="generator" content="plasTeX" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles/theme-white.css" />
+  <link rel="stylesheet" href="styles/dep_graph.css" />
+  
+  <script type="text/x-mathjax-config">
+  
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  
+  </script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">  </script>
+
+
+</head>
+
+<body>
+<header>
+  <a class="toc" href="index.html">Home</a>
+  <h1 id="doc_title">Dependencies</h1>
+</header>
+<div class="wrapper">
+<div class="content">
+	<div id="Legend">
+		<span class="title">Legend:</span>
+		<dl>
+			<dt>Boxes</dt><dd>definitions</dd>
+			<dt>Ellipses</dt><dd>theorems </dd>
+			<dt>Blue border</dt><dd>ready</dd>
+			<dt>Blue bg</dt><dd>proof ready</dd>
+			<dt>Green border</dt><dd>statement done</dd>
+			<dt>Green bg</dt><dd>proof done</dd>
+		</dl>
+	</div>
+    <div id="graph"></div>
+<div id="statements">
+
+    
+    <div class="dep-modal-container" id="FLT regular case_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="FLT regular case" style="display: none">
+    <div class="thm_thmheading">
+      <span class="theorem_thmcaption">
+      Theorem
+      </span>
+      <span class="theorem_thmlabel">3.10</span></div>
+    <div class="thm_thmcontent"><p>  Let \(p \geq 5\) be an prime number, \(\zeta _p\) a \(p\)-th root of unity and \(K=\mathbb {Q}(\zeta _p)\). Assume that \(p\) does not divide the size of the class group \(\operatorname{Cl}_K\). Then </p>
+<div class="displaymath" id="a0000000058">
+  \[ x^p+y^p=z^p \]
+</div>
+<p> has no solutions with \(x,y,z \in \mathbb {Z}\) and \(xyz \ne 0\). </p>
+</div>
+
+    <a class="latex_link" href="sect0003.html#FLT regular case">LaTeX</a>
+	</div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="lemma: alg_int_abs_val_one_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="lemma: alg_int_abs_val_one" style="display: none">
+    <div class="thm_thmheading">
+      <span class="lemma_thmcaption">
+      lemma
+      </span>
+      <span class="lemma_thmlabel">3.4</span></div>
+    <div class="thm_thmcontent"><p> Let \(\alpha \) be an algebraic integer all of whose conjugates have absolute value one. Then \(\alpha \) is a root of unity. </p>
+</div>
+
+    <a class="latex_link" href="sect0003.html#lemma: alg_int_abs_val_one">LaTeX</a>
+	</div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="lemma: alt definition of norm and trace_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="lemma: alt definition of norm and trace" style="display: none">
+    <div class="thm_thmheading">
+      <span class="lemma_thmcaption">
+      lemma
+      </span>
+      <span class="lemma_thmlabel">2.1</span></div>
+    <div class="thm_thmcontent"><p> Let \(K\) be a number field, \(\alpha \in K\) and let \(\sigma _i\) be the embeddings of \(K\) into \(\mathbb {C}\). Then </p>
+<div class="displaymath" id="a0000000006">
+  \[ \operatorname {Tr}_{K/\mathbb {Q}}(\alpha ) =\sum _i \sigma _i(\alpha ) \qquad N_{K/\mathbb {Q}}(\alpha )=\prod _i \sigma _i(\alpha )  \]
+</div>
+</div>
+
+    <a class="latex_link" href="sect0002.html#lemma: alt definition of norm and trace">LaTeX</a>
+	</div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="lemma: cyclo poly_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="lemma: cyclo poly" style="display: none">
+    <div class="thm_thmheading">
+      <span class="lemma_thmcaption">
+      lemma
+      </span>
+      <span class="lemma_thmlabel">3.1</span></div>
+    <div class="thm_thmcontent"><p> For \(n\) any integer, \(\Phi _n\) (the \(n\)-th cyclotomic polynomial) is an irreducible polynomial of degree \(\varphi (n)\) (where \(\varphi \) is Euler’s Totient function). </p>
+</div>
+
+    <a class="latex_link" href="sect0003.html#lemma: cyclo poly">LaTeX</a>
+	</div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="lemma: diff of irr pol_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="lemma: diff of irr pol" style="display: none">
+    <div class="thm_thmheading">
+      <span class="lemma_thmcaption">
+      lemma
+      </span>
+      <span class="lemma_thmlabel">2.4</span></div>
+    <div class="thm_thmcontent"><p> Let \(f\) be a monic irreducible polynomial over a number field \(K\) and let \(\alpha \) be one of its roots in \(\mathbb {C}\). Then </p>
+<div class="displaymath" id="a0000000015">
+  \[ f'(\alpha )=\prod _{\beta \neq \alpha } (\alpha -\beta ),  \]
+</div>
+<p> where the product is over the roots of \(f\) different from \(\alpha \). </p>
+</div>
+
+    <a class="latex_link" href="sect0002.html#lemma: diff of irr pol">LaTeX</a>
+	</div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="lemma: disc change of basis_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="lemma: disc change of basis" style="display: none">
+    <div class="thm_thmheading">
+      <span class="lemma_thmcaption">
+      lemma
+      </span>
+      <span class="lemma_thmlabel">2.6</span></div>
+    <div class="thm_thmcontent"><p> Let \(K\) be a number field and \(B,B'\) bases for \(K/\mathbb {Q}\). If \(P\) denotes the change of basis matrix, then </p>
+<div class="displaymath" id="a0000000021">
+  \[ \Delta (B)=\det (P)^2 \Delta (B'). \]
+</div>
+</div>
+
+    <a class="latex_link" href="sect0002.html#lemma: disc change of basis">LaTeX</a>
+	</div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="lemma: disc int basis_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="lemma: disc int basis" style="display: none">
+    <div class="thm_thmheading">
+      <span class="lemma_thmcaption">
+      lemma
+      </span>
+      <span class="lemma_thmlabel">2.9</span></div>
+    <div class="thm_thmcontent"><p>  Let \(K\) be a number field and \(B=\{ b_1,\dots ,b_n\} \) be a basis for \(K/\mathbb {Q}\) consisting of algebraic integers. If \(B\) is not an integral basis then there exists an algebraic integer of the form </p>
+<div class="displaymath" id="a0000000023">
+  \[ \alpha =\frac{x_1b_1+\cdots +x_nb_n}{p} \]
+</div>
+<p> where \(p\) is a prime and \(x_i \in \{ 0,\dots ,p-1\} \) with not all \(x_i\) zero. Moreover, if \(x_i \neq 0\) and we let \(B'\) be the basis obtained by replacing \(b_i\) with \(\alpha \), then </p>
+<div class="displaymath" id="a0000000024">
+  \[ \Delta (B')= \frac{x_i^2}{p^2} \Delta (B). \]
+</div>
+<p> In particular \(p^2 \mid \Delta (B)\). </p>
+</div>
+
+    <a class="latex_link" href="sect0002.html#lemma: disc int basis">LaTeX</a>
+	</div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="lemma: disc of prim elt basis_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="lemma: disc of prim elt basis" style="display: none">
+    <div class="thm_thmheading">
+      <span class="lemma_thmcaption">
+      lemma
+      </span>
+      <span class="lemma_thmlabel">2.3</span></div>
+    <div class="thm_thmcontent"><p>  Let \(K\) be a number field and \(B=\{ 1,\alpha ,\alpha ^2,\dots ,\alpha ^{n-1}\} \) for some \(\alpha \in K\). Then </p>
+<div class="displaymath" id="a0000000012">
+  \[ \Delta (B)=\prod _{i {\lt} j} (\sigma _i(\alpha )-\sigma _j(\alpha ))^2 \]
+</div>
+<p> where \(\sigma _i\) are the embeddings of \(K \) into \(\mathbb {C}\). Here \(\Delta (B)\) denotes the discriminant. </p>
+</div>
+
+    <a class="latex_link" href="sect0002.html#lemma: disc of prim elt basis">LaTeX</a>
+	</div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="lemma: disc via embs_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="lemma: disc via embs" style="display: none">
+    <div class="thm_thmheading">
+      <span class="lemma_thmcaption">
+      lemma
+      </span>
+      <span class="lemma_thmlabel">2.2</span></div>
+    <div class="thm_thmcontent"><p> Let \(K\) be a number field with basis \(B=\{ b_1,\dots ,b_n\} \) and let \(\sigma _1,\dots ,\sigma _n\) be the embeddings of \(K\) into \(\mathbb {C}\). Now let \(M\) be the matrix </p>
+<div class="displaymath" id="a0000000008">
+  \[ \left(\begin{matrix}  \sigma _1(b_1) 
+
+& \cdots 
+
+&  \sigma _1(b_n)
+
+\\ \vdots 
+
+& &  \vdots 
+
+\\ \sigma _n(b_1) 
+
+& \cdots 
+
+&  \sigma _n(b_n) 
+
+\end{matrix} \right). \]
+</div>
+<p> Then </p>
+<div class="displaymath" id="a0000000009">
+  \[ \Delta (B)=\det (M)^2. \]
+</div>
+</div>
+
+    <a class="latex_link" href="sect0002.html#lemma: disc via embs">LaTeX</a>
+	</div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="lemma: eis crit and alg ints_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="lemma: eis crit and alg ints" style="display: none">
+    <div class="thm_thmheading">
+      <span class="lemma_thmcaption">
+      lemma
+      </span>
+      <span class="lemma_thmlabel">2.10</span></div>
+    <div class="thm_thmcontent"><p>  Let \(K=\mathbb {Q}(\alpha )\)and \(\alpha \) be an algebraic integer such that \(m_\alpha \) satisfies Eisensteins Criterion for a prime \(p\). Then none of the elements </p>
+<div class="displaymath" id="a0000000030">
+  \[ \phi =\frac{1}{p}(x_0+x_1\alpha +\cdots +x_{n-1}\alpha ^{n-1}) \]
+</div>
+<p> is an algebraic integer, where \(n=\deg (m_\alpha )\) and \(x_i \in \{ 0,\dots ,p-1\} .\) </p>
+</div>
+
+    <a class="latex_link" href="sect0002.html#lemma: eis crit and alg ints">LaTeX</a>
+	</div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="lemma: fac of p in p_th root_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="lemma: fac of p in p_th root" style="display: none">
+    <div class="thm_thmheading">
+      <span class="lemma_thmcaption">
+      lemma
+      </span>
+      <span class="lemma_thmlabel">3.6</span></div>
+    <div class="thm_thmcontent"><p> Let \(p\) be a prime and \(n=p^k\). Then </p>
+<div class="displaymath" id="a0000000044">
+  \[ p=u(1-\zeta _n)^{\varphi (n)} \]
+</div>
+<p> where \(u \in \mathbb {Z}[\zeta _n]^{\times }\). </p>
+</div>
+
+    <a class="latex_link" href="sect0003.html#lemma: fac of p in p_th root">LaTeX</a>
+	</div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="lemma: ideals mult to power_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="lemma: ideals mult to power" style="display: none">
+    <div class="thm_thmheading">
+      <span class="lemma_thmcaption">
+      lemma
+      </span>
+      <span class="lemma_thmlabel">3.7</span></div>
+    <div class="thm_thmcontent"><p> Let \(R\) be a Dedekind domain, \(p\) a prime and \(\mathfrak {a},\mathfrak {b},\mathfrak {c}\) ideals such that </p>
+<div class="displaymath" id="a0000000045">
+  \[ \mathfrak {a}\mathfrak {b}=\mathfrak {c}^p \]
+</div>
+<p> and suppose \(\mathfrak {a},\mathfrak {b}\) are coprime. Then there exist ideals \(\mathfrak {e},\mathfrak {d}\) such that </p>
+<div class="displaymath" id="a0000000046">
+  \[ \mathfrak {a}=\mathfrak {e}^p \qquad \mathfrak {b}=\mathfrak {d}^p \qquad \mathfrak {e}\mathfrak {d}=\mathfrak {c} \]
+</div>
+</div>
+
+    <a class="latex_link" href="sect0003.html#lemma: ideals mult to power">LaTeX</a>
+	</div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="lemma: int basis int disc_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="lemma: int basis int disc" style="display: none">
+    <div class="thm_thmheading">
+      <span class="lemma_thmcaption">
+      lemma
+      </span>
+      <span class="lemma_thmlabel">2.8</span></div>
+    <div class="thm_thmcontent"><p> Let \(K\) be a number field and \(B=\{ b_1,\dots ,b_n\} \) be elements in \(\mathcal{O}_K\), then \(\Delta (B) \in \mathbb {Z}\). </p>
+</div>
+
+    <a class="latex_link" href="sect0002.html#lemma: int basis int disc">LaTeX</a>
+	</div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="lemma: norm trace of alg int is int_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="lemma: norm trace of alg int is int" style="display: none">
+    <div class="thm_thmheading">
+      <span class="lemma_thmcaption">
+      lemma
+      </span>
+      <span class="lemma_thmlabel">2.7</span></div>
+    <div class="thm_thmcontent"><p> If \(K\) is a number field and \(\alpha \in \mathcal{O}_K\) then \(\operatorname {Tr}_{K/\mathbb {Q}}(\alpha )\) and \(N_{K/\mathbb {Q}}(\alpha )\) are both in \(\mathbb {Z}\). </p>
+</div>
+
+    <a class="latex_link" href="sect0002.html#lemma: norm trace of alg int is int">LaTeX</a>
+	</div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="lemma: num field disc in terms of norm_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="lemma: num field disc in terms of norm" style="display: none">
+    <div class="thm_thmheading">
+      <span class="lemma_thmcaption">
+      lemma
+      </span>
+      <span class="lemma_thmlabel">2.5</span></div>
+    <div class="thm_thmcontent"><p>  Let \(K=\mathbb {Q}(\alpha )\) be a number field with \(n=[K:\mathbb {Q}]\) and let \(B=\{ 1,\alpha ,\alpha ^2,\dots ,\alpha ^{n-1}\} \). Then </p>
+<div class="displaymath" id="a0000000018">
+  \[ \Delta (B)=(-1)^{\frac{n(n-1)}{2}}N_{K/\mathbb {Q}}(m_\alpha '(\alpha )) \]
+</div>
+<p> where \(m_\alpha '\) is the derivative of \(m_\alpha (x)\) (which we recall denotes the minimal polynomial of \(\alpha \)). </p>
+</div>
+
+    <a class="latex_link" href="sect0002.html#lemma: num field disc in terms of norm">LaTeX</a>
+	</div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="lemma: unit lemma_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="lemma: unit lemma" style="display: none">
+    <div class="thm_thmheading">
+      <span class="lemma_thmcaption">
+      lemma
+      </span>
+      <span class="lemma_thmlabel">3.5</span></div>
+    <div class="thm_thmcontent"><p>  Any unit \(u\) in \(\mathbb {Z}[\zeta _p]\) can be written in the form \(\beta \zeta _p^k \) with \(k\) an integer and \(\beta \in \mathbb {R}\). </p>
+</div>
+
+    <a class="latex_link" href="sect0003.html#lemma: unit lemma">LaTeX</a>
+	</div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="theorem: ring of ints of cyclo_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="theorem: ring of ints of cyclo" style="display: none">
+    <div class="thm_thmheading">
+      <span class="theorem_thmcaption">
+      Theorem
+      </span>
+      <span class="theorem_thmlabel">3.2</span></div>
+    <div class="thm_thmcontent"><p>  Let \(\zeta _p\) be a \(p\)-th root of unity for \(p\) an odd prime, let \(\lambda _p=1-\zeta _p\) and \(K=\mathbb {Q}(\zeta _p)\). Then \(\mathcal{O}_K=\mathbb {Z}[\zeta _p]=\mathbb {Z}[\lambda _p]\) moreover </p>
+<div class="displaymath" id="a0000000038">
+  \[ \Delta (\{ 1,\zeta _p,\dots ,\zeta _p^{p-2}\} )=\Delta (\{ 1,\lambda _p,\dots ,\lambda _p^{p-2}\} )=(-1)^{\frac{(p-1)}{2}}p^{p-2}. \]
+</div>
+</div>
+
+    <a class="latex_link" href="sect0003.html#theorem: ring of ints of cyclo">LaTeX</a>
+	</div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="theorem: ring of ints of cyclo field_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="theorem: ring of ints of cyclo field" style="display: none">
+    <div class="thm_thmheading">
+      <span class="theorem_thmcaption">
+      Theorem
+      </span>
+      <span class="theorem_thmlabel">3.3</span></div>
+    <div class="thm_thmcontent"><p> Let \(n\) be a positive integer and \(\zeta _n\) a root of unity. If \(K=\mathbb {Q}(\zeta _n)\) then </p>
+<div class="displaymath" id="a0000000043">
+  \[ \mathcal{O}_K=\mathbb {Z}[\zeta _n]. \]
+</div>
+</div>
+
+    <a class="latex_link" href="sect0003.html#theorem: ring of ints of cyclo field">LaTeX</a>
+	</div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="theorem:FLT case one_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="theorem:FLT case one" style="display: none">
+    <div class="thm_thmheading">
+      <span class="theorem_thmcaption">
+      Theorem
+      </span>
+      <span class="theorem_thmlabel">3.9</span></div>
+    <div class="thm_thmcontent"><p>  Let \(p \geq 5\) be an prime number, \(\zeta _p\) a \(p\)-th root of unity and \(K=\mathbb {Q}(\zeta _p)\). Assume that \(p\) does not divide the size of the class group \(\operatorname{Cl}_K\). Then </p>
+<div class="displaymath" id="a0000000056">
+  \[ x^p+y^p=z^p \]
+</div>
+<p> has no solutions with \(x,y,z \in \mathbb {Z}\) and \(\gcd (xyz,p)=1\). </p>
+</div>
+
+    <a class="latex_link" href="sect0003.html#theorem:FLT case one">LaTeX</a>
+	</div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="theorem:FLT facts_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="theorem:FLT facts" style="display: none">
+    <div class="thm_thmheading">
+      <span class="theorem_thmcaption">
+      Theorem
+      </span>
+      <span class="theorem_thmlabel">3.8</span></div>
+    <div class="thm_thmcontent">
+<p>Let \(p \geq 5\) be an prime number, \(\zeta _p\) a \(p\)-th root of unity and \(K=\mathbb {Q}(\zeta _p)\). Assume that we have \(x,y,z \in \mathbb {Z}\) with \(\gcd (xyz,p)=1\) and such that </p>
+<div class="displaymath" id="a0000000047">
+  \[ x^p+y^p=z^p. \]
+</div>
+<ol class="enumerate">
+  <li><p>We cannot have </p>
+<div class="displaymath" id="a0000000048">
+  \[ x \equiv y \equiv -z \pmod p \]
+</div>
+<p> and, therefore, without loss of generality, we may assume </p>
+<div class="displaymath" id="a0000000049">
+  \[ x \not\equiv y \mod p. \]
+</div>
+</li>
+  <li><p>For \(i \neq j\) we can write </p>
+<div class="displaymath" id="a0000000050">
+  \[ (\zeta _p^i-\zeta _p^j)=u(1-\zeta _p) \]
+</div>
+<p> with \(u\) a unit in \(\mathbb {Z}[\zeta _p]\). From this it follows that the ideals </p>
+<div class="displaymath" id="a0000000051">
+  \[ (x+y),(x+\zeta _py),(x+\zeta _p^2y),\dots ,(x+\zeta _p^{p-1}y) \]
+</div>
+<p> are pairwise coprime. </p>
+</li>
+  <li><p>Let \(\alpha \in \mathbb {Z}[\zeta _p]\). Then \(\alpha ^p\) is congruent to an integer modulo \(p\). </p>
+</li>
+  <li><p>Let \(\alpha \in \mathbb {Z}[\zeta _p]\). Suppose that \(\alpha =a_0+a_1\zeta _p+\cdots +a_{p-1}\zeta _p^{p-1}\) with at least one \(a_i=0\). Then there is an integer \(n\) such that \(\alpha /n \in \mathbb {Z}[\zeta _p]\), then \(n\) divides each \(a_i\). </p>
+</li>
+  <li><p>Let \(i \in \{ 1,\dots ,p-1\} .\) Suppose that \(x+y\zeta _p^i=u \alpha ^p\) with \(u \in \mathbb {Z}[\zeta _p]^\times \) and \(\alpha \in \mathbb {Z}[\zeta _p]\). By considering \(x+y\zeta _p^i\) and its complex conjugate then there is an integer \(k\) such that </p>
+<div class="displaymath" id="a0000000052">
+  \[ x+y\zeta _p^i-\zeta _p^{2k}x-\zeta _p^{2k-i}y \equiv 0 \pmod p. \]
+</div>
+</li>
+</ol>
+</div>
+
+    <a class="latex_link" href="sect0003.html#theorem:FLT facts">LaTeX</a>
+	</div>
+    
+      </div>
+    </div>
+</div>
+</div> <!-- content -->
+</div> <!-- wrapper -->
+<script src="js/jquery.min.js" type="text/javascript"></script>
+
+<script src="js/d3.min.js"></script>
+<script src="js/hpcc.min.js"></script>
+<script src="js/d3-graphviz.js"></script>
+
+<script type="text/javascript">
+const graphContainer = d3.select("#graph");
+const width = graphContainer.node().clientWidth;
+const height = graphContainer.node().clientHeight;
+
+graphContainer.graphviz({useWorker: true})
+    .width(width)
+    .height(height)
+    .fit(true)
+    .renderDot('strict digraph "" {	graph [bgcolor=transparent];	node [label="\N",		penwidth=1.8	];	edge [arrowhead=vee];	"lemma: disc via embs"	[color=blue,		fillcolor="#a3d6ff",		label=" disc via embs",		shape=ellipse,		style=filled];	"lemma: disc of prim elt basis"	[label=" disc of prim elt basis",		shape=ellipse];	"lemma: disc via embs" -> "lemma: disc of prim elt basis"	[style=dashed];	"lemma: ideals mult to power"	[color=blue,		label=" ideals mult to power",		shape=ellipse];	"theorem:FLT facts"	[label="FLT facts",		shape=ellipse];	"lemma: ideals mult to power" -> "theorem:FLT facts"	[style=dashed];	"theorem:FLT case one"	[label="FLT case one",		shape=ellipse];	"theorem:FLT facts" -> "theorem:FLT case one"	[style=dashed];	"lemma: diff of irr pol"	[color=blue,		fillcolor="#a3d6ff",		label=" diff of irr pol",		shape=ellipse,		style=filled];	"lemma: disc change of basis"	[color=blue,		label=" disc change of basis",		shape=ellipse];	"lemma: disc int basis"	[label=" disc int basis",		shape=ellipse];	"lemma: disc change of basis" -> "lemma: disc int basis"	[style=dashed];	"lemma: eis crit and alg ints"	[label=" eis crit and alg ints",		shape=ellipse];	"theorem: ring of ints of cyclo"	[label=" ring of ints of cyclo",		shape=ellipse];	"lemma: eis crit and alg ints" -> "theorem: ring of ints of cyclo"	[style=dashed];	"lemma: fac of p in p_th root"	[color=blue,		label=" fac of p in p_th root",		shape=ellipse];	"lemma: fac of p in p_th root" -> "theorem:FLT facts"	[style=dashed];	"lemma: alg_int_abs_val_one"	[color=blue,		label=" alg_int_abs_val_one",		shape=ellipse];	"lemma: unit lemma"	[label=" unit lemma",		shape=ellipse];	"lemma: alg_int_abs_val_one" -> "lemma: unit lemma"	[style=dashed];	"lemma: unit lemma" -> "theorem:FLT facts"	[style=dashed];	"theorem: ring of ints of cyclo" -> "theorem:FLT facts"	[style=dashed];	"theorem: ring of ints of cyclo field"	[color=blue,		label=" ring of ints of cyclo field",		shape=ellipse];	"lemma: alt definition of norm and trace"	[color=blue,		label=" alt definition of norm and trace",		shape=ellipse];	"lemma: num field disc in terms of norm"	[label=" num field disc in terms of norm",		shape=ellipse];	"lemma: alt definition of norm and trace" -> "lemma: num field disc in terms of norm"	[style=dashed];	"lemma: num field disc in terms of norm" -> "theorem: ring of ints of cyclo"	[style=dashed];	"lemma: norm trace of alg int is int"	[color=blue,		label=" norm trace of alg int is int",		shape=ellipse];	"lemma: norm trace of alg int is int" -> "lemma: eis crit and alg ints"	[style=dashed];	"FLT regular case"	[label="FLT regular case",		shape=ellipse];	"lemma: disc of prim elt basis" -> "lemma: num field disc in terms of norm"	[style=dashed];	"lemma: int basis int disc"	[color=blue,		label=" int basis int disc",		shape=ellipse];	"lemma: int basis int disc" -> "lemma: disc int basis"	[style=dashed];	"lemma: cyclo poly"	[color=blue,		label=" cyclo poly",		shape=ellipse];	"theorem:FLT case one" -> "FLT regular case"	[style=dashed];	"lemma: disc int basis" -> "theorem: ring of ints of cyclo"	[style=dashed];}')
+    .on("end", interactive);
+
+clickNode = function() {
+  $("#statements div").hide()
+  var node_id = $('text', this).text();
+    console.log(node_id);
+  console.log('#'+node_id.replace(':', '\\:'));
+  $('.thm').hide();
+  $('#'+node_id.replace(':', '\\:')).show().children().show();
+}
+function interactive() {
+
+    d3.selectAll('.node')
+        .attr('pointer-events', 'fill')
+        .on('click', function () {
+           var title = d3.select(this).selectAll('title').text().trim();
+           $('#statements > div').hide()
+           $('.thm').hide();
+           $('#'+title.replace(':', '\\:')+'_modal').show().children().show().children().show();
+           $('#statements').show()
+        });
+
+    d3.selectAll('.dep-closebtn').on('click', function() {
+        var modal =
+            d3.select(this).node().parentNode.parentNode.parentNode ;
+        d3.select(modal).style('display', 'none');
+    });
+}
+
+</script>
+
+</body>
+</html>

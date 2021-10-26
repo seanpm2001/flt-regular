@@ -79,7 +79,7 @@
       </span>
       <span class="theorem_thmlabel">4.4</span></div>
     <div class="thm_thmcontent"><p>   Let \(p\) be a regular prime. Then </p>
-<div class="displaymath" id="a0000000059">
+<div class="displaymath" id="a0000000058">
   \[ x^p+y^p=z^p \]
 </div>
 <p> has no solutions with \(x,y,z \in \mathbb {Z}\) and \(xyz \ne 0\). </p>
@@ -567,7 +567,7 @@
       </span>
       <span class="theorem_thmlabel">4.3</span></div>
     <div class="thm_thmcontent"><p>  Let \(p\) be a regular prime. Then </p>
-<div class="displaymath" id="a0000000057">
+<div class="displaymath" id="a0000000056">
   \[ x^p+y^p=z^p \]
 </div>
 <p> has no solutions with \(x,y,z \in \mathbb {Z}\) and \(\gcd (xyz,p)=1\). </p>
@@ -595,25 +595,25 @@
       <span class="theorem_thmlabel">4.1</span></div>
     <div class="thm_thmcontent">
 <p>Let \(p \geq 5\) be an prime number, \(\zeta _p\) a \(p\)-th root of unity and \(K=\mathbb {Q}(\zeta _p)\). Assume that we have \(x,y,z \in \mathbb {Z}\) with \(\gcd (xyz,p)=1\) and such that </p>
-<div class="displaymath" id="a0000000048">
+<div class="displaymath" id="a0000000049">
   \[ x^p+y^p=z^p. \]
 </div>
 <ol class="enumerate">
   <li><p>We cannot have </p>
-<div class="displaymath" id="a0000000049">
+<div class="displaymath" id="a0000000050">
   \[ x \equiv y \equiv -z \pmod p \]
 </div>
 <p> and, therefore, without loss of generality, we may assume </p>
-<div class="displaymath" id="a0000000050">
+<div class="displaymath" id="a0000000051">
   \[ x \not\equiv y \mod p. \]
 </div>
 </li>
   <li><p>For \(i \neq j\) we can write </p>
-<div class="displaymath" id="a0000000051">
+<div class="displaymath" id="a0000000052">
   \[ (\zeta _p^i-\zeta _p^j)=u(1-\zeta _p) \]
 </div>
 <p> with \(u\) a unit in \(\mathbb {Z}[\zeta _p]\). From this it follows that the ideals </p>
-<div class="displaymath" id="a0000000052">
+<div class="displaymath" id="a0000000053">
   \[ (x+y),(x+\zeta _py),(x+\zeta _p^2y),\dots ,(x+\zeta _p^{p-1}y) \]
 </div>
 <p> are pairwise coprime. </p>
@@ -623,7 +623,7 @@
   <li><p>Let \(\alpha \in \mathbb {Z}[\zeta _p]\). Suppose that \(\alpha =a_0+a_1\zeta _p+\cdots +a_{p-1}\zeta _p^{p-1}\) with at least one \(a_i=0\). Then there is an integer \(n\) such that \(\alpha /n \in \mathbb {Z}[\zeta _p]\), then \(n\) divides each \(a_i\). </p>
 </li>
   <li><p>Let \(i \in \{ 1,\dots ,p-1\} .\) Suppose that \(x+y\zeta _p^i=u \alpha ^p\) with \(u \in \mathbb {Z}[\zeta _p]^\times \) and \(\alpha \in \mathbb {Z}[\zeta _p]\). By considering \(x+y\zeta _p^i\) and its complex conjugate then there is an integer \(k\) such that </p>
-<div class="displaymath" id="a0000000053">
+<div class="displaymath" id="a0000000054">
   \[ x+y\zeta _p^i-\zeta _p^{2k}x-\zeta _p^{2k-i}y \equiv 0 \pmod p. \]
 </div>
 </li>
@@ -653,7 +653,7 @@ graphContainer.graphviz({useWorker: true})
     .width(width)
     .height(height)
     .fit(true)
-    .renderDot('strict digraph "" {	graph [bgcolor=transparent];	node [label="\N",		penwidth=1.8	];	edge [arrowhead=vee];	"defn: is_regular_number"	[color=green,		fillcolor="#b0eca3",		label=" is_regular_number",		shape=box,		style=filled];	"theorem:FLT case one"	[label="FLT case one",		shape=ellipse];	"defn: is_regular_number" -> "theorem:FLT case one"	[style=dashed];	"lemma: diff of irr pol"	[color=blue,		fillcolor="#a3d6ff",		label=" diff of irr pol",		shape=ellipse,		style=filled];	"lemma: eis crit and alg ints"	[label=" eis crit and alg ints",		shape=ellipse];	"theorem: ring of ints of cyclo"	[label=" ring of ints of cyclo",		shape=ellipse];	"lemma: eis crit and alg ints" -> "theorem: ring of ints of cyclo"	[style=dashed];	"theorem:FLT facts"	[label="FLT facts",		shape=ellipse];	"theorem: ring of ints of cyclo" -> "theorem:FLT facts"	[style=dashed];	"lemma: disc of prim elt basis"	[label=" disc of prim elt basis",		shape=ellipse];	"lemma: num field disc in terms of norm"	[label=" num field disc in terms of norm",		shape=ellipse];	"lemma: disc of prim elt basis" -> "lemma: num field disc in terms of norm"	[style=dashed];	"lemma: int basis int disc"	[color=blue,		label=" int basis int disc",		shape=ellipse];	"lemma: disc int basis"	[label=" disc int basis",		shape=ellipse];	"lemma: int basis int disc" -> "lemma: disc int basis"	[style=dashed];	"lemma: cyclo poly"	[color=blue,		label=" cyclo poly",		shape=ellipse];	"lemma: fac of p in p_th root"	[color=blue,		label=" fac of p in p_th root",		shape=ellipse];	"lemma: fac of p in p_th root" -> "theorem:FLT facts"	[style=dashed];	"lemma: ideals mult to power"	[color=blue,		label=" ideals mult to power",		shape=ellipse];	"lemma: ideals mult to power" -> "theorem:FLT facts"	[style=dashed];	"FLT regular case"	[label="FLT regular case",		shape=ellipse];	"theorem:FLT case one" -> "FLT regular case"	[style=dashed];	"lemma: disc via embs"	[color=blue,		fillcolor="#a3d6ff",		label=" disc via embs",		shape=ellipse,		style=filled];	"lemma: disc via embs" -> "lemma: disc of prim elt basis"	[style=dashed];	"lemma: alg_int_abs_val_one"	[color=blue,		label=" alg_int_abs_val_one",		shape=ellipse];	"lemma: unit lemma"	[label=" unit lemma",		shape=ellipse];	"lemma: alg_int_abs_val_one" -> "lemma: unit lemma"	[style=dashed];	"lemma: disc change of basis"	[color=blue,		label=" disc change of basis",		shape=ellipse];	"lemma: disc change of basis" -> "lemma: disc int basis"	[style=dashed];	"lemma: num field disc in terms of norm" -> "theorem: ring of ints of cyclo"	[style=dashed];	"theorem:FLT facts" -> "theorem:FLT case one"	[style=dashed];	"lemma: alt definition of norm and trace"	[color=blue,		label=" alt definition of norm and trace",		shape=ellipse];	"lemma: alt definition of norm and trace" -> "lemma: num field disc in terms of norm"	[style=dashed];	"theorem: ring of ints of cyclo field"	[color=blue,		label=" ring of ints of cyclo field",		shape=ellipse];	"lemma: norm trace of alg int is int"	[color=blue,		label=" norm trace of alg int is int",		shape=ellipse];	"lemma: norm trace of alg int is int" -> "lemma: eis crit and alg ints"	[style=dashed];	"lemma: disc int basis" -> "theorem: ring of ints of cyclo"	[style=dashed];	"lemma: unit lemma" -> "theorem:FLT facts"	[style=dashed];}')
+    .renderDot('strict digraph "" {	graph [bgcolor=transparent];	node [label="\N",		penwidth=1.8	];	edge [arrowhead=vee];	"lemma: disc change of basis"	[color=blue,		label=" disc change of basis",		shape=ellipse];	"lemma: disc int basis"	[label=" disc int basis",		shape=ellipse];	"lemma: disc change of basis" -> "lemma: disc int basis"	[style=dashed];	"lemma: num field disc in terms of norm"	[label=" num field disc in terms of norm",		shape=ellipse];	"theorem: ring of ints of cyclo"	[label=" ring of ints of cyclo",		shape=ellipse];	"lemma: num field disc in terms of norm" -> "theorem: ring of ints of cyclo"	[style=dashed];	"defn: is_regular_number"	[color=green,		fillcolor="#b0eca3",		label=" is_regular_number",		shape=box,		style=filled];	"theorem:FLT case one"	[label="FLT case one",		shape=ellipse];	"defn: is_regular_number" -> "theorem:FLT case one"	[style=dashed];	"lemma: disc of prim elt basis"	[label=" disc of prim elt basis",		shape=ellipse];	"lemma: disc of prim elt basis" -> "lemma: num field disc in terms of norm"	[style=dashed];	"lemma: alt definition of norm and trace"	[color=blue,		label=" alt definition of norm and trace",		shape=ellipse];	"lemma: alt definition of norm and trace" -> "lemma: num field disc in terms of norm"	[style=dashed];	"theorem:FLT facts"	[label="FLT facts",		shape=ellipse];	"theorem:FLT facts" -> "theorem:FLT case one"	[style=dashed];	"theorem: ring of ints of cyclo field"	[color=blue,		label=" ring of ints of cyclo field",		shape=ellipse];	"lemma: norm trace of alg int is int"	[color=blue,		label=" norm trace of alg int is int",		shape=ellipse];	"lemma: eis crit and alg ints"	[label=" eis crit and alg ints",		shape=ellipse];	"lemma: norm trace of alg int is int" -> "lemma: eis crit and alg ints"	[style=dashed];	"FLT regular case"	[label="FLT regular case",		shape=ellipse];	"theorem:FLT case one" -> "FLT regular case"	[style=dashed];	"lemma: disc int basis" -> "theorem: ring of ints of cyclo"	[style=dashed];	"lemma: unit lemma"	[label=" unit lemma",		shape=ellipse];	"lemma: unit lemma" -> "theorem:FLT facts"	[style=dashed];	"lemma: diff of irr pol"	[color=blue,		fillcolor="#a3d6ff",		label=" diff of irr pol",		shape=ellipse,		style=filled];	"lemma: eis crit and alg ints" -> "theorem: ring of ints of cyclo"	[style=dashed];	"theorem: ring of ints of cyclo" -> "theorem:FLT facts"	[style=dashed];	"lemma: int basis int disc"	[color=blue,		label=" int basis int disc",		shape=ellipse];	"lemma: int basis int disc" -> "lemma: disc int basis"	[style=dashed];	"lemma: cyclo poly"	[color=blue,		label=" cyclo poly",		shape=ellipse];	"lemma: fac of p in p_th root"	[color=blue,		label=" fac of p in p_th root",		shape=ellipse];	"lemma: fac of p in p_th root" -> "theorem:FLT facts"	[style=dashed];	"lemma: ideals mult to power"	[color=blue,		label=" ideals mult to power",		shape=ellipse];	"lemma: ideals mult to power" -> "theorem:FLT facts"	[style=dashed];	"lemma: disc via embs"	[color=blue,		fillcolor="#a3d6ff",		label=" disc via embs",		shape=ellipse,		style=filled];	"lemma: disc via embs" -> "lemma: disc of prim elt basis"	[style=dashed];	"lemma: alg_int_abs_val_one"	[color=blue,		label=" alg_int_abs_val_one",		shape=ellipse];	"lemma: alg_int_abs_val_one" -> "lemma: unit lemma"	[style=dashed];}')
     .on("end", interactive);
 
 clickNode = function() {

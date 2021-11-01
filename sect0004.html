@@ -65,7 +65,7 @@
     <span class="theorem_thmlabel">4.1</span>
     <div class="thm_icons">
     <a class="icon proof" href="sect0004.html#theorem:FLT_facts">#</a>
-    <a class="icon proof" href="sect0004.html#a0000000047"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+    <a class="icon proof" href="sect0004.html#a0000000049"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
 </a>
     <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
 </button>
@@ -77,9 +77,9 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="sect0003.html#lemma:_unit_lemma">lemma 3.4</a></li>
-          <li><a href="sect0003.html#lemma:_ideals_mult_to_power">lemma 3.6</a></li>
-          <li><a href="sect0003.html#theorem:_ring_of_ints_of_cyclo">Theorem 3.2</a></li>
+          <li><a href="sect0003.html#lemma:unit_lemma">lemma 3.4</a></li>
+          <li><a href="sect0003.html#lemma:ideals_mult_to_power">lemma 3.6</a></li>
+          <li><a href="sect0003.html#theorem:ring_of_ints_of_cyclo">Theorem 3.2</a></li>
         </ul>
 
       </div>
@@ -90,35 +90,35 @@
   <div class="theorem_thmcontent">
   
 <p>Let \(p \geq 5\) be an prime number, \(\zeta _p\) a \(p\)-th root of unity and \(K=\mathbb {Q}(\zeta _p)\). Assume that we have \(x,y,z \in \mathbb {Z}\) with \(\gcd (xyz,p)=1\) and such that </p>
-<div class="displaymath" id="a0000000048">
+<div class="displaymath" id="a0000000050">
   \[ x^p+y^p=z^p. \]
 </div>
 <ol class="enumerate">
   <li><p>We cannot have </p>
-<div class="displaymath" id="a0000000049">
+<div class="displaymath" id="a0000000051">
   \[ x \equiv y \equiv -z \pmod p \]
 </div>
 <p> and, therefore, without loss of generality, we may assume </p>
-<div class="displaymath" id="a0000000050">
+<div class="displaymath" id="a0000000052">
   \[ x \not\equiv y \mod p. \]
 </div>
 </li>
   <li><p>For \(i \neq j\) we can write </p>
-<div class="displaymath" id="a0000000051">
+<div class="displaymath" id="a0000000053">
   \[ (\zeta _p^i-\zeta _p^j)=u(1-\zeta _p) \]
 </div>
 <p> with \(u\) a unit in \(\mathbb {Z}[\zeta _p]\). From this it follows that the ideals </p>
-<div class="displaymath" id="a0000000052">
+<div class="displaymath" id="a0000000054">
   \[ (x+y),(x+\zeta _py),(x+\zeta _p^2y),\dots ,(x+\zeta _p^{p-1}y) \]
 </div>
 <p> are pairwise coprime. </p>
 </li>
   <li><p>Let \(\alpha \in \mathbb {Z}[\zeta _p]\). Then \(\alpha ^p\) is congruent to an integer modulo \(p\). </p>
 </li>
-  <li><p>Let \(\alpha \in \mathbb {Z}[\zeta _p]\). Suppose that \(\alpha =a_0+a_1\zeta _p+\cdots +a_{p-1}\zeta _p^{p-1}\) with at least one \(a_i=0\). Then there is an integer \(n\) such that \(\alpha /n \in \mathbb {Z}[\zeta _p]\), then \(n\) divides each \(a_i\). </p>
+  <li><p>Let \(\alpha \in \mathbb {Z}[\zeta _p]\). Suppose that \(\alpha =a_0+a_1\zeta _p+\cdots +a_{p-1}\zeta _p^{p-1}\) with at least one \(a_i=0\). If there is an integer \(n\) such that \(\alpha /n \in \mathbb {Z}[\zeta _p]\), then \(n\) divides each \(a_i\). </p>
 </li>
   <li><p>Let \(i \in \{ 1,\dots ,p-1\} .\) Suppose that \(x+y\zeta _p^i=u \alpha ^p\) with \(u \in \mathbb {Z}[\zeta _p]^\times \) and \(\alpha \in \mathbb {Z}[\zeta _p]\). Then there is an integer \(k\) such that </p>
-<div class="displaymath" id="a0000000053">
+<div class="displaymath" id="a0000000055">
   \[ x+y\zeta _p^i-\zeta _p^{2k}x-\zeta _p^{2k-i}y \equiv 0 \pmod p. \]
 </div>
 </li>
@@ -126,7 +126,7 @@
 
   </div>
 </div> </p>
-<div class="proof_wrapper" id="a0000000047">
+<div class="proof_wrapper" id="a0000000049">
   <div class="proof_heading">
     <span class="proof_caption">
     Proof
@@ -135,14 +135,14 @@
   </div>
   <div class="proof_content">
   <p>\((1)\) Reducing modulo \(p\), using Fermat’s little theorem, you get that if \(x \equiv y \equiv -z \pmod,\) then \(3z \equiv 0 \pmod p\). But since \(p {\gt}3\) this means \(p |z\) but this contradicts \(\gcd (xyz,p)=1\). Now, if \(x \equiv y \pmod p\) then \(x \not\equiv -z \pmod p\) we can relabel \(y,z\) so that wlog \(x \not\equiv y\) (this uses that \(p\) is odd). </p>
-<p>\((2)\) Lemma <a href="sect0003.html#lemma:_fac_of_p_in_p_th_root">3.5</a> gives that \(u\) is a unit. So all that needs to be proved is that the ideals are coprime. Assume not, then for some \(i \neq j\) we have some prime ideal \(\mathfrak {p}\) dividing by \((x+y\zeta _p^i)\) and \((x+y\zeta _p^j)\). It must then also divide their sum and their difference, so we must have \(\mathfrak {p}| (1-\zeta _p)\) or \(\mathfrak {p}| y\). Similarly, \(\mathfrak {p}\) divides \(\zeta _p^j(x+y\zeta _p^i)-\zeta _p^i(x+y\zeta _p^j)\) so \(\mathfrak {p}\) divides \(x\) or \((1-\zeta _p)\). We can’t have \(\mathfrak {p}\) dividing \(x,y\) since they are coprime, therefore \(\mathfrak {p}|(1-\zeta _p)\). We know that since \((1-\zeta _p)\) has norm \(p\) it must be a prime ideal, so \(\mathfrak {p}=(1-\zeta _p)\). Now, note that \(x+y \equiv x+y\zeta _+p^i \equiv 0 \mod \mathfrak {p}\). But since \(x,y \in \mathbb {Z}\) this means we would have \(x+y \equiv 0 \pmod p\), which implies \(z^p \equiv 0 \pmod p\) which contradicts our assumptions. </p>
+<p>\((2)\) Lemma <a href="sect0003.html#lemma:fac_of_p_in_p_th_root">3.5</a> gives that \(u\) is a unit. So all that needs to be proved is that the ideals are coprime. Assume not, then for some \(i \neq j\) we have some prime ideal \(\mathfrak {p}\) dividing by \((x+y\zeta _p^i)\) and \((x+y\zeta _p^j)\). It must then also divide their sum and their difference, so we must have \(\mathfrak {p}| (1-\zeta _p)\) or \(\mathfrak {p}| y\). Similarly, \(\mathfrak {p}\) divides \(\zeta _p^j(x+y\zeta _p^i)-\zeta _p^i(x+y\zeta _p^j)\) so \(\mathfrak {p}\) divides \(x\) or \((1-\zeta _p)\). We can’t have \(\mathfrak {p}\) dividing \(x,y\) since they are coprime, therefore \(\mathfrak {p}|(1-\zeta _p)\). We know that since \((1-\zeta _p)\) has norm \(p\) it must be a prime ideal, so \(\mathfrak {p}=(1-\zeta _p)\). Now, note that \(x+y \equiv x+y\zeta _+p^i \equiv 0 \mod \mathfrak {p}\). But since \(x,y \in \mathbb {Z}\) this means we would have \(x+y \equiv 0 \pmod p\), which implies \(z^p \equiv 0 \pmod p\) which contradicts our assumptions. </p>
 <p>\((3)\) This is easy. Just use \((x+y)^p \equiv x^p + y^p \pmod p\) and that \(\zeta _p\) is a \(p\)-th root of unity. </p>
 <p>\((4)\) Looking at \(\alpha =a_0+a_1\zeta _p+\cdots +a_{p-1}\zeta _p^{p-1}\), if one of the \(a_i\)’s is zero and \(\alpha /n \in \mathbb {Z}[\zeta _p]\), then \(\alpha /n=\sum _i a_i/n \zeta _p^i\). Now, as \(\alpha /n \in \mathbb {Z}[\zeta _p]\), pick the basis of \(\mathbb {Z}[\zeta _p]\) which does not contain \(\zeta _p\) (which is possible as any subset of \(\{ 1,\zeta _p,\dots ,\zeta _p^{p-1}\} \) with \(p-1\) elements forms a basis of \(\mathbb {Z}[\zeta _p]\).]). Then \(\alpha =\sum _i b_i \zeta _p^i\) where \(b_i \in \mathbb {Z}\). Therefore comparing coefficients, we get the result. </p>
-<p>\((5)\) Using lemma <a href="sect0003.html#lemma:_unit_lemma">3.4</a> we have \((x+y\zeta _p^i) =\beta \zeta _p^k \alpha ^p\) which is equivalent to \(\beta \zeta _p^k a \pmod p\) with \(a\) and integer (using part \(3\)). Now, if we consider the complex conjugate we have \(\overline{(x+y\zeta _p^i) }\equiv \beta \zeta _p^{-k}a \pmod p\). Looking at \((x+y\zeta _p^i)-\zeta _p^{2k}\overline{(x+y\zeta _p^i) }\) then gives the result. </p>
+<p>\((5)\) Using lemma <a href="sect0003.html#lemma:unit_lemma">3.4</a> we have \((x+y\zeta _p^i) =\beta \zeta _p^k \alpha ^p\) which is equivalent to \(\beta \zeta _p^k a \pmod p\) with \(a\) and integer (using part \(3\)). Now, if we consider the complex conjugate we have \(\overline{(x+y\zeta _p^i) }\equiv \beta \zeta _p^{-k}a \pmod p\). Looking at \((x+y\zeta _p^i)-\zeta _p^{2k}\overline{(x+y\zeta _p^i) }\) then gives the result. </p>
 
   </div>
 </div>
-<p><div class="definition_thmwrapper" id="defn:_is_regular_number">
+<p><div class="definition_thmwrapper" id="defn:is_regular_number">
   <div class="definition_thmheading">
     <span class="definition_thmcaption">
     Definition
@@ -150,7 +150,7 @@
     <span class="definition_thmlabel">4.2</span>
     ✓
     <div class="thm_icons">
-    <a class="icon proof" href="sect0004.html#defn:_is_regular_number">#</a>
+    <a class="icon proof" href="sect0004.html#defn:is_regular_number">#</a>
     <button class="modal lean">L∃∀N</button>
     <div class="modal-container">
       <div class="modal-content">
@@ -160,7 +160,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/flt-regular//blob/c2d8a37626fda3c7ed2dfcf23b49f1aac847b6a4/src/number_theory/regular_primes.lean#L32">is_regular_number</a></li>
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/d28cf43bfb47623e1417427d077c5dd43f477582/src/number_theory/regular_primes.lean#L32">is_regular_number</a></li>
         </ul>
 
       </div>
@@ -181,7 +181,7 @@
     <span class="theorem_thmlabel">4.3</span>
     <div class="thm_icons">
     <a class="icon proof" href="sect0004.html#theorem:FLT_case_one">#</a>
-    <a class="icon proof" href="sect0004.html#a0000000054"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+    <a class="icon proof" href="sect0004.html#a0000000056"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
 </a>
     <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
 </button>
@@ -194,7 +194,7 @@
         </header>
                 <ul class="uses">
           <li><a href="sect0004.html#theorem:FLT_facts">Theorem 4.1</a></li>
-          <li><a href="sect0004.html#defn:_is_regular_number">Definition 4.2</a></li>
+          <li><a href="sect0004.html#defn:is_regular_number">Definition 4.2</a></li>
         </ul>
 
       </div>
@@ -204,14 +204,14 @@
   </div>
   <div class="theorem_thmcontent">
   <p>  Let \(p\) be a regular prime. Then </p>
-<div class="displaymath" id="a0000000055">
+<div class="displaymath" id="a0000000057">
   \[ x^p+y^p=z^p \]
 </div>
 <p> has no solutions with \(x,y,z \in \mathbb {Z}\) and \(\gcd (xyz,p)=1\). </p>
 
   </div>
 </div> </p>
-<div class="proof_wrapper" id="a0000000054">
+<div class="proof_wrapper" id="a0000000056">
   <div class="proof_heading">
     <span class="proof_caption">
     Proof
@@ -220,21 +220,71 @@
   </div>
   <div class="proof_content">
   <p>First thing is to note that if \(x^p+y^p=z^p\) then </p>
-<div class="displaymath" id="a0000000056">
+<div class="displaymath" id="a0000000058">
   \[ z^p=(x+y)(x+\zeta _py)\cdots (x+y\zeta _p^{p-1}) \]
 </div>
-<p> as ideals. Then since we know the ideals are coprime, then by lemma <a href="sect0003.html#lemma:_ideals_mult_to_power">3.6</a> we have that each \((x+y\zeta _p^i)=\mathfrak {a}^p\), for \(\mathfrak {a}\) some ideal. Note that, \([\mathfrak {a}^p]=1\) in the class group. Now, since \(p\) does not divide the size of the class group we have that \([\mathfrak {a}]=1\) in the class group, so its principal. So we have \(x+y\zeta _p^i=u_i\alpha _i^p\) with \(u_i\) a unit. So by <a href="sect0004.html#theorem:FLT_facts">4.1</a> part \(5\) we have some \(k\) such that \(x+y\zeta _p-\zeta _p^{2k}x-\zeta _p^{2k-1} \equiv 0 \pmod p\). If \(1,\zeta _p,\zeta _p^{2k},\zeta _p^{2k-1}\) are distinct, then <a href="sect0004.html#theorem:FLT_facts">4.1</a> part \(4\) (which uses that \(p{\gt}3\)) says that \(p\) divides \(x,y\), contrary to our assumption. So they cannot be distinct, but checking each case leads to a contradiction, therefore there cannot be any such solutions. </p>
+<p> as ideals. Then since we know the ideals are coprime, then by lemma <a href="sect0003.html#lemma:ideals_mult_to_power">3.6</a> we have that each \((x+y\zeta _p^i)=\mathfrak {a}^p\), for \(\mathfrak {a}\) some ideal. Note that, \([\mathfrak {a}^p]=1\) in the class group. Now, since \(p\) does not divide the size of the class group we have that \([\mathfrak {a}]=1\) in the class group, so its principal. So we have \(x+y\zeta _p^i=u_i\alpha _i^p\) with \(u_i\) a unit. So by <a href="sect0004.html#theorem:FLT_facts">4.1</a> part \(5\) we have some \(k\) such that \(x+y\zeta _p-\zeta _p^{2k}x-\zeta _p^{2k-1} \equiv 0 \pmod p\). If \(1,\zeta _p,\zeta _p^{2k},\zeta _p^{2k-1}\) are distinct, then <a href="sect0004.html#theorem:FLT_facts">4.1</a> part \(4\) (which uses that \(p{\gt}3\)) says that \(p\) divides \(x,y\), contrary to our assumption. So they cannot be distinct, but checking each case leads to a contradiction, therefore there cannot be any such solutions. </p>
 
   </div>
 </div>
-<p><div class="theorem_thmwrapper" id="FLT_regular_case">
+<p><div class="theorem_thmwrapper" id="theorem:FLT_case_two">
   <div class="theorem_thmheading">
     <span class="theorem_thmcaption">
     Theorem
     </span>
     <span class="theorem_thmlabel">4.4</span>
     <div class="thm_icons">
-    <a class="icon proof" href="sect0004.html#FLT_regular_case">#</a>
+    <a class="icon proof" href="sect0004.html#theorem:FLT_case_two">#</a>
+    <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
+</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Uses</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="sect0004.html#theorem:FLT_facts">Theorem 4.1</a></li>
+          <li><a href="sect0004.html#defn:is_regular_number">Definition 4.2</a></li>
+        </ul>
+
+      </div>
+    </div>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/d28cf43bfb47623e1417427d077c5dd43f477582/src/flt_regular.lean#L35">flt_regular_case_two</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="theorem_thmcontent">
+  <p>  Let \(p\) be a regular prime. Then </p>
+<div class="displaymath" id="a0000000059">
+  \[ x^p+y^p=z^p \]
+</div>
+<p> has no solutions with \(x,y,z \in \mathbb {Z}\) and \(p | xyz\). </p>
+
+  </div>
+</div> </p>
+<p><div class="theorem_thmwrapper" id="FLT_regular">
+  <div class="theorem_thmheading">
+    <span class="theorem_thmcaption">
+    Theorem
+    </span>
+    <span class="theorem_thmlabel">4.5</span>
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0004.html#FLT_regular">#</a>
     <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
 </button>
     <div class="modal-container">
@@ -259,7 +309,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/flt-regular//blob/c2d8a37626fda3c7ed2dfcf23b49f1aac847b6a4/src/flt_regular.lean#L35">flt_regular</a></li>
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/d28cf43bfb47623e1417427d077c5dd43f477582/src/flt_regular.lean#L38">flt_regular</a></li>
         </ul>
 
       </div>
@@ -269,7 +319,7 @@
   </div>
   <div class="theorem_thmcontent">
   <p>   Let \(p\) be a regular prime. Then </p>
-<div class="displaymath" id="a0000000057">
+<div class="displaymath" id="a0000000060">
   \[ x^p+y^p=z^p \]
 </div>
 <p> has no solutions with \(x,y,z \in \mathbb {Z}\) and \(xyz \ne 0\). </p>

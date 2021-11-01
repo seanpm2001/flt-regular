@@ -54,12 +54,12 @@
       <span class="definition_thmcaption">
       Definition
       </span>
-      <span class="definition_thmlabel">4.2</span></div>
+      <span class="definition_thmlabel">4.6</span></div>
     <div class="thm_thmcontent"><p>  A prime number \(p\) is called regular if it does not divide the class number of \(\mathbb {Q}(\zeta _p)\). </p>
 </div>
 
     <a class="latex_link" href="sect0004.html#defn:is_regular_number">LaTeX</a>
-	<a class="lean_link" href="https://github.com/leanprover-community/flt-regular//blob/ead964fbc46b9af050fa5b9ba674c5d68b7c805d/src/number_theory/regular_primes.lean#L32">Lean</a></div>
+	<a class="lean_link" href="https://github.com/leanprover-community/flt-regular//blob/1e62f49f5cdfe054aa9c65a47ce244654a2a426d/src/number_theory/regular_primes.lean#L32">Lean</a></div>
     
       </div>
     </div>
@@ -101,7 +101,7 @@
 </div>
 
     <a class="latex_link" href="sect0002.html#defn_of_disc">LaTeX</a>
-	<a class="lean_link" href="https://github.com/leanprover-community/flt-regular//blob/ead964fbc46b9af050fa5b9ba674c5d68b7c805d/src/number_theory/discriminant/basic.lean#L24">Lean</a></div>
+	<a class="lean_link" href="https://github.com/leanprover-community/flt-regular//blob/1e62f49f5cdfe054aa9c65a47ce244654a2a426d/src/number_theory/discriminant/basic.lean#L24">Lean</a></div>
     
       </div>
     </div>
@@ -119,16 +119,16 @@
       <span class="theorem_thmcaption">
       Theorem
       </span>
-      <span class="theorem_thmlabel">4.5</span></div>
+      <span class="theorem_thmlabel">4.9</span></div>
     <div class="thm_thmcontent"><p>   Let \(p\) be a regular prime. Then </p>
-<div class="displaymath" id="a0000000060">
+<div class="displaymath" id="a0000000063">
   \[ x^p+y^p=z^p \]
 </div>
 <p> has no solutions with \(x,y,z \in \mathbb {Z}\) and \(xyz \ne 0\). </p>
 </div>
 
     <a class="latex_link" href="sect0004.html#FLT_regular">LaTeX</a>
-	<a class="lean_link" href="https://github.com/leanprover-community/flt-regular//blob/ead964fbc46b9af050fa5b9ba674c5d68b7c805d/src/flt_regular.lean#L38">Lean</a></div>
+	<a class="lean_link" href="https://github.com/leanprover-community/flt-regular//blob/1e62f49f5cdfe054aa9c65a47ce244654a2a426d/src/flt_regular.lean#L38">Lean</a></div>
     
       </div>
     </div>
@@ -154,6 +154,111 @@
 </div>
 
     <a class="latex_link" href="sect0002.html#lem:disc_change_of_basis">LaTeX</a>
+	</div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="lem:flt_fact_2_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="lem:flt_fact_2" style="display: none">
+    <div class="thm_thmheading">
+      <span class="lemma_thmcaption">
+      lemma
+      </span>
+      <span class="lemma_thmlabel">4.1</span></div>
+    <div class="thm_thmcontent"><p>  Let \(p \geq 5\) be an prime number, \(\zeta _p\) a \(p\)-th root of unity and \(x, y \in \mathbb {Z}\) coprime. </p>
+<p>For \(i \neq j\) we can write </p>
+<div class="displaymath" id="a0000000050">
+  \[ (\zeta _p^i-\zeta _p^j)=u(1-\zeta _p) \]
+</div>
+<p> with \(u\) a unit in \(\mathbb {Z}[\zeta _p]\). From this it follows that the ideals </p>
+<div class="displaymath" id="a0000000051">
+  \[ (x+y),(x+\zeta _py),(x+\zeta _p^2y),\dots ,(x+\zeta _p^{p-1}y) \]
+</div>
+<p> are pairwise coprime. </p>
+</div>
+
+    <a class="latex_link" href="sect0004.html#lem:flt_fact_2">LaTeX</a>
+	<a class="lean_link" href="https://github.com/leanprover-community/flt-regular//blob/1e62f49f5cdfe054aa9c65a47ce244654a2a426d/src/number_theory/cyclotomic/rat.lean#L47">Lean</a></div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="lem:flt_fact_3_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="lem:flt_fact_3" style="display: none">
+    <div class="thm_thmheading">
+      <span class="lemma_thmcaption">
+      lemma
+      </span>
+      <span class="lemma_thmlabel">4.2</span></div>
+    <div class="thm_thmcontent">
+<p>Let \(p\) be an prime number, \(\zeta _p\) a \(p\)-th root of unity and \(\alpha \in \alpha \in \mathbb {Z}[\zeta _p]\). Then \(\alpha ^p\) is congruent to an integer modulo \(p\). </p>
+</div>
+
+    <a class="latex_link" href="sect0004.html#lem:flt_fact_3">LaTeX</a>
+	<a class="lean_link" href="https://github.com/leanprover-community/flt-regular//blob/1e62f49f5cdfe054aa9c65a47ce244654a2a426d/src/number_theory/cyclotomic/rat.lean#L41">Lean</a></div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="lem:flt_fact_4_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="lem:flt_fact_4" style="display: none">
+    <div class="thm_thmheading">
+      <span class="lemma_thmcaption">
+      lemma
+      </span>
+      <span class="lemma_thmlabel">4.3</span></div>
+    <div class="thm_thmcontent"><p> Let \(p \geq 5\) be an prime number, \(\zeta _p\) a \(p\)-th root of unity and \(\alpha \in \alpha \in \mathbb {Z}[\zeta _p]\). If there is an integer \(n\) such that \(\alpha /n \in \mathbb {Z}[\zeta _p]\), then \(n\) divides each \(a_i\). </p>
+</div>
+
+    <a class="latex_link" href="sect0004.html#lem:flt_fact_4">LaTeX</a>
+	</div>
+    
+      </div>
+    </div>
+
+
+    
+    <div class="dep-modal-container" id="lem:flt_fact_5_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="lem:flt_fact_5" style="display: none">
+    <div class="thm_thmheading">
+      <span class="lemma_thmcaption">
+      lemma
+      </span>
+      <span class="lemma_thmlabel">4.4</span></div>
+    <div class="thm_thmcontent"><p>  Let \(p \geq 5\) be an prime number, \(\zeta _p\) a \(p\)-th root of unity and \(\alpha \in \alpha \in \mathbb {Z}[\zeta _p]\). Suppose that \(x+y\zeta _p^i=u \alpha ^p\) with \(u \in \mathbb {Z}[\zeta _p]^\times \) and \(\alpha \in \mathbb {Z}[\zeta _p]\). Then there is an integer \(k\) such that </p>
+<div class="displaymath" id="a0000000055">
+  \[ x+y\zeta _p^i-\zeta _p^{2k}x-\zeta _p^{2k-i}y \equiv 0 \pmod p. \]
+</div>
+</div>
+
+    <a class="latex_link" href="sect0004.html#lem:flt_fact_5">LaTeX</a>
 	</div>
     
       </div>
@@ -200,7 +305,7 @@
 </div>
 
     <a class="latex_link" href="sect0003.html#lemma:alg_int_abs_val_one">LaTeX</a>
-	<a class="lean_link" href="https://github.com/leanprover-community/flt-regular//blob/ead964fbc46b9af050fa5b9ba674c5d68b7c805d/src/number_theory/cyclotomic/absolute_value.lean#L482">Lean</a></div>
+	<a class="lean_link" href="https://github.com/leanprover-community/flt-regular//blob/1e62f49f5cdfe054aa9c65a47ce244654a2a426d/src/number_theory/cyclotomic/absolute_value.lean#L482">Lean</a></div>
     
       </div>
     </div>
@@ -520,6 +625,37 @@
 
 
     
+    <div class="dep-modal-container" id="lemma:may_assume_modal">
+      <div class="dep-modal-content">
+          <button class="dep-closebtn">
+<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        
+  <div class="thm" id="lemma:may_assume" style="display: none">
+    <div class="thm_thmheading">
+      <span class="lemma_thmcaption">
+      lemma
+      </span>
+      <span class="lemma_thmlabel">4.5</span></div>
+    <div class="thm_thmcontent">
+<p>Let \(p \geq 5\) be an prime number, \(\zeta _p\) a \(p\)-th root of unity and \(K=\mathbb {Q}(\zeta _p)\). Assume that we have \(x,y,z \in \mathbb {Z}\) with \(\gcd (xyz,p)=1\) and such that </p>
+<div class="displaymath" id="a0000000057">
+  \[ x^p+y^p=z^p. \]
+</div>
+<p>Then without loss of generality, we may assume \(x,y,z\) are pairwise coprime and </p>
+<div class="displaymath" id="a0000000058">
+  \[ x \not\equiv y \mod p. \]
+</div>
+</div>
+
+    <a class="latex_link" href="sect0004.html#lemma:may_assume">LaTeX</a>
+	</div>
+    
+      </div>
+    </div>
+
+
+    
     <div class="dep-modal-container" id="lemma:norm_trace_of_alg_int_is_int_modal">
       <div class="dep-modal-content">
           <button class="dep-closebtn">
@@ -604,9 +740,9 @@
       <span class="theorem_thmcaption">
       Theorem
       </span>
-      <span class="theorem_thmlabel">4.3</span></div>
+      <span class="theorem_thmlabel">4.7</span></div>
     <div class="thm_thmcontent"><p>  Let \(p\) be a regular prime. Then </p>
-<div class="displaymath" id="a0000000057">
+<div class="displaymath" id="a0000000060">
   \[ x^p+y^p=z^p \]
 </div>
 <p> has no solutions with \(x,y,z \in \mathbb {Z}\) and \(\gcd (xyz,p)=1\). </p>
@@ -631,73 +767,16 @@
       <span class="theorem_thmcaption">
       Theorem
       </span>
-      <span class="theorem_thmlabel">4.4</span></div>
+      <span class="theorem_thmlabel">4.8</span></div>
     <div class="thm_thmcontent"><p>  Let \(p\) be a regular prime. Then </p>
-<div class="displaymath" id="a0000000059">
+<div class="displaymath" id="a0000000062">
   \[ x^p+y^p=z^p \]
 </div>
 <p> has no solutions with \(x,y,z \in \mathbb {Z}\) and \(p | xyz\). </p>
 </div>
 
     <a class="latex_link" href="sect0004.html#theorem:FLT_case_two">LaTeX</a>
-	<a class="lean_link" href="https://github.com/leanprover-community/flt-regular//blob/ead964fbc46b9af050fa5b9ba674c5d68b7c805d/src/flt_regular.lean#L35">Lean</a></div>
-    
-      </div>
-    </div>
-
-
-    
-    <div class="dep-modal-container" id="theorem:FLT_facts_modal">
-      <div class="dep-modal-content">
-          <button class="dep-closebtn">
-<svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
-</button>
-        
-  <div class="thm" id="theorem:FLT_facts" style="display: none">
-    <div class="thm_thmheading">
-      <span class="theorem_thmcaption">
-      Theorem
-      </span>
-      <span class="theorem_thmlabel">4.1</span></div>
-    <div class="thm_thmcontent">
-<p>Let \(p \geq 5\) be an prime number, \(\zeta _p\) a \(p\)-th root of unity and \(K=\mathbb {Q}(\zeta _p)\). Assume that we have \(x,y,z \in \mathbb {Z}\) with \(\gcd (xyz,p)=1\) and such that </p>
-<div class="displaymath" id="a0000000050">
-  \[ x^p+y^p=z^p. \]
-</div>
-<ol class="enumerate">
-  <li><p>We cannot have </p>
-<div class="displaymath" id="a0000000051">
-  \[ x \equiv y \equiv -z \pmod p \]
-</div>
-<p> and, therefore, without loss of generality, we may assume </p>
-<div class="displaymath" id="a0000000052">
-  \[ x \not\equiv y \mod p. \]
-</div>
-</li>
-  <li><p>For \(i \neq j\) we can write </p>
-<div class="displaymath" id="a0000000053">
-  \[ (\zeta _p^i-\zeta _p^j)=u(1-\zeta _p) \]
-</div>
-<p> with \(u\) a unit in \(\mathbb {Z}[\zeta _p]\). From this it follows that the ideals </p>
-<div class="displaymath" id="a0000000054">
-  \[ (x+y),(x+\zeta _py),(x+\zeta _p^2y),\dots ,(x+\zeta _p^{p-1}y) \]
-</div>
-<p> are pairwise coprime. </p>
-</li>
-  <li><p>Let \(\alpha \in \mathbb {Z}[\zeta _p]\). Then \(\alpha ^p\) is congruent to an integer modulo \(p\). </p>
-</li>
-  <li><p>Let \(\alpha \in \mathbb {Z}[\zeta _p]\). Suppose that \(\alpha =a_0+a_1\zeta _p+\cdots +a_{p-1}\zeta _p^{p-1}\) with at least one \(a_i=0\). If there is an integer \(n\) such that \(\alpha /n \in \mathbb {Z}[\zeta _p]\), then \(n\) divides each \(a_i\). </p>
-</li>
-  <li><p>Let \(i \in \{ 1,\dots ,p-1\} .\) Suppose that \(x+y\zeta _p^i=u \alpha ^p\) with \(u \in \mathbb {Z}[\zeta _p]^\times \) and \(\alpha \in \mathbb {Z}[\zeta _p]\). Then there is an integer \(k\) such that </p>
-<div class="displaymath" id="a0000000055">
-  \[ x+y\zeta _p^i-\zeta _p^{2k}x-\zeta _p^{2k-i}y \equiv 0 \pmod p. \]
-</div>
-</li>
-</ol>
-</div>
-
-    <a class="latex_link" href="sect0004.html#theorem:FLT_facts">LaTeX</a>
-	</div>
+	<a class="lean_link" href="https://github.com/leanprover-community/flt-regular//blob/1e62f49f5cdfe054aa9c65a47ce244654a2a426d/src/flt_regular.lean#L35">Lean</a></div>
     
       </div>
     </div>
@@ -745,7 +824,7 @@ graphContainer.graphviz({useWorker: true})
     .width(width)
     .height(height)
     .fit(true)
-    .renderDot('strict digraph "" {	graph [bgcolor=transparent];	node [label="\N",		penwidth=1.8	];	edge [arrowhead=vee];	"lemma:alt_definition_of_norm_and_trace"	[color=blue,		label=alt_definition_of_norm_and_trace,		shape=ellipse];	"lemma:num_field_disc_in_terms_of_norm"	[label=num_field_disc_in_terms_of_norm,		shape=ellipse];	"lemma:alt_definition_of_norm_and_trace" -> "lemma:num_field_disc_in_terms_of_norm"	[style=dashed];	"lemma:disc_of_prim_elt_basis"	[label=disc_of_prim_elt_basis,		shape=ellipse];	"lemma:disc_of_prim_elt_basis" -> "lemma:num_field_disc_in_terms_of_norm"	[style=dashed];	"lemma:unit_lemma"	[label=unit_lemma,		shape=ellipse];	"theorem:FLT_facts"	[label=FLT_facts,		shape=ellipse];	"lemma:unit_lemma" -> "theorem:FLT_facts"	[style=dashed];	"theorem:FLT_case_one"	[label=FLT_case_one,		shape=ellipse];	"theorem:FLT_facts" -> "theorem:FLT_case_one"	[style=dashed];	"theorem:FLT_case_two"	[label=FLT_case_two,		shape=ellipse];	"theorem:FLT_facts" -> "theorem:FLT_case_two"	[style=dashed];	"lemma:disc_int_basis"	[label=disc_int_basis,		shape=ellipse];	"theorem:ring_of_ints_of_cyclo"	[label=ring_of_ints_of_cyclo,		shape=ellipse];	"lemma:disc_int_basis" -> "theorem:ring_of_ints_of_cyclo"	[style=dashed];	"lem:lin_indep_iff_disc_ne_zero"	[color=blue,		label=lin_indep_iff_disc_ne_zero,		shape=ellipse];	"lemma:int_basis_int_disc"	[color=blue,		label=int_basis_int_disc,		shape=ellipse];	"lemma:int_basis_int_disc" -> "lemma:disc_int_basis"	[style=dashed];	FLT_regular	[label=FLT_regular,		shape=ellipse];	"theorem:FLT_case_one" -> FLT_regular	[style=dashed];	defn_of_disc	[color=blue,		label=defn_of_disc,		shape=box];	"defn:is_regular_number"	[color=green,		fillcolor="#b0eca3",		label=is_regular_number,		shape=box,		style=filled];	"defn:is_regular_number" -> "theorem:FLT_case_one"	[style=dashed];	"defn:is_regular_number" -> "theorem:FLT_case_two"	[style=dashed];	"lemma:diff_of_irr_pol"	[color=blue,		fillcolor="#a3d6ff",		label=diff_of_irr_pol,		shape=ellipse,		style=filled];	"lemma:fac_of_p_in_p_th_root"	[color=blue,		label=fac_of_p_in_p_th_root,		shape=ellipse];	"lem:disc_change_of_basis"	[color=blue,		label=disc_change_of_basis,		shape=ellipse];	"lemma:disc_via_embs"	[color=blue,		fillcolor="#a3d6ff",		label=disc_via_embs,		shape=ellipse,		style=filled];	"lemma:disc_via_embs" -> "lemma:disc_of_prim_elt_basis"	[style=dashed];	"lemma:cyclo_poly"	[color=blue,		label=cyclo_poly,		shape=ellipse];	"lemma:ideals_mult_to_power"	[color=blue,		label=ideals_mult_to_power,		shape=ellipse];	"lemma:ideals_mult_to_power" -> "theorem:FLT_facts"	[style=dashed];	"theorem:ring_of_ints_of_cyclo" -> "theorem:FLT_facts"	[style=dashed];	"lemma:num_field_disc_in_terms_of_norm" -> "theorem:ring_of_ints_of_cyclo"	[style=dashed];	"lemma:disc_change_of_basis"	[color=blue,		label=disc_change_of_basis,		shape=ellipse];	"lemma:disc_change_of_basis" -> "lemma:disc_int_basis"	[style=dashed];	"lemma:norm_trace_of_alg_int_is_int"	[color=blue,		label=norm_trace_of_alg_int_is_int,		shape=ellipse];	"lemma:eis_crit_and_alg_ints"	[label=eis_crit_and_alg_ints,		shape=ellipse];	"lemma:norm_trace_of_alg_int_is_int" -> "lemma:eis_crit_and_alg_ints"	[style=dashed];	"lemma:eis_crit_and_alg_ints" -> "theorem:ring_of_ints_of_cyclo"	[style=dashed];	"lemma:alg_int_abs_val_one"	[color=blue,		label=alg_int_abs_val_one,		shape=ellipse];	"lemma:alg_int_abs_val_one" -> "lemma:unit_lemma"	[style=dashed];}')
+    .renderDot('strict digraph "" {	graph [bgcolor=transparent];	node [label="\N",		penwidth=1.8	];	edge [arrowhead=vee];	"lemma:alt_definition_of_norm_and_trace"	[color=blue,		label=alt_definition_of_norm_and_trace,		shape=ellipse];	"lemma:num_field_disc_in_terms_of_norm"	[label=num_field_disc_in_terms_of_norm,		shape=ellipse];	"lemma:alt_definition_of_norm_and_trace" -> "lemma:num_field_disc_in_terms_of_norm"	[style=dashed];	"lemma:disc_of_prim_elt_basis"	[label=disc_of_prim_elt_basis,		shape=ellipse];	"lemma:disc_of_prim_elt_basis" -> "lemma:num_field_disc_in_terms_of_norm"	[style=dashed];	"lemma:unit_lemma"	[label=unit_lemma,		shape=ellipse];	"lemma:may_assume"	[label=may_assume,		shape=ellipse];	"lemma:unit_lemma" -> "lemma:may_assume"	[style=dashed];	"lem:flt_fact_2"	[color=blue,		fillcolor="#a3d6ff",		label=flt_fact_2,		shape=ellipse,		style=filled];	"theorem:FLT_case_one"	[label=FLT_case_one,		shape=ellipse];	"lem:flt_fact_2" -> "theorem:FLT_case_one"	[style=dashed];	"theorem:FLT_case_two"	[label=FLT_case_two,		shape=ellipse];	FLT_regular	[label=FLT_regular,		shape=ellipse];	"defn:is_regular_number"	[color=green,		fillcolor="#b0eca3",		label=is_regular_number,		shape=box,		style=filled];	"defn:is_regular_number" -> "theorem:FLT_case_two"	[style=dashed];	"defn:is_regular_number" -> "theorem:FLT_case_one"	[style=dashed];	"lemma:disc_int_basis"	[label=disc_int_basis,		shape=ellipse];	"theorem:ring_of_ints_of_cyclo"	[label=ring_of_ints_of_cyclo,		shape=ellipse];	"lemma:disc_int_basis" -> "theorem:ring_of_ints_of_cyclo"	[style=dashed];	"lem:flt_fact_4"	[color=blue,		fillcolor="#a3d6ff",		label=flt_fact_4,		shape=ellipse,		style=filled];	"lem:flt_fact_4" -> "theorem:FLT_case_one"	[style=dashed];	"lem:flt_fact_5"	[label=flt_fact_5,		shape=ellipse];	"lem:flt_fact_4" -> "lem:flt_fact_5"	[style=dashed];	"lemma:may_assume" -> "theorem:FLT_case_two"	[style=dashed];	"lemma:may_assume" -> "theorem:FLT_case_one"	[style=dashed];	"lem:lin_indep_iff_disc_ne_zero"	[color=blue,		label=lin_indep_iff_disc_ne_zero,		shape=ellipse];	"lemma:int_basis_int_disc"	[color=blue,		label=int_basis_int_disc,		shape=ellipse];	"lemma:int_basis_int_disc" -> "lemma:disc_int_basis"	[style=dashed];	"lem:flt_fact_3"	[color=blue,		fillcolor="#a3d6ff",		label=flt_fact_3,		shape=ellipse,		style=filled];	defn_of_disc	[color=blue,		label=defn_of_disc,		shape=box];	"lemma:diff_of_irr_pol"	[color=blue,		fillcolor="#a3d6ff",		label=diff_of_irr_pol,		shape=ellipse,		style=filled];	"lemma:fac_of_p_in_p_th_root"	[color=blue,		label=fac_of_p_in_p_th_root,		shape=ellipse];	"theorem:FLT_case_one" -> FLT_regular	[style=dashed];	"lem:disc_change_of_basis"	[color=blue,		label=disc_change_of_basis,		shape=ellipse];	"lemma:disc_via_embs"	[color=blue,		fillcolor="#a3d6ff",		label=disc_via_embs,		shape=ellipse,		style=filled];	"lemma:disc_via_embs" -> "lemma:disc_of_prim_elt_basis"	[style=dashed];	"lemma:cyclo_poly"	[color=blue,		label=cyclo_poly,		shape=ellipse];	"lemma:ideals_mult_to_power"	[color=blue,		label=ideals_mult_to_power,		shape=ellipse];	"lemma:ideals_mult_to_power" -> "lemma:may_assume"	[style=dashed];	"lem:flt_fact_5" -> "theorem:FLT_case_one"	[style=dashed];	"theorem:ring_of_ints_of_cyclo" -> "lemma:may_assume"	[style=dashed];	"lemma:num_field_disc_in_terms_of_norm" -> "theorem:ring_of_ints_of_cyclo"	[style=dashed];	"lemma:disc_change_of_basis"	[color=blue,		label=disc_change_of_basis,		shape=ellipse];	"lemma:disc_change_of_basis" -> "lemma:disc_int_basis"	[style=dashed];	"lemma:norm_trace_of_alg_int_is_int"	[color=blue,		label=norm_trace_of_alg_int_is_int,		shape=ellipse];	"lemma:eis_crit_and_alg_ints"	[label=eis_crit_and_alg_ints,		shape=ellipse];	"lemma:norm_trace_of_alg_int_is_int" -> "lemma:eis_crit_and_alg_ints"	[style=dashed];	"lemma:eis_crit_and_alg_ints" -> "theorem:ring_of_ints_of_cyclo"	[style=dashed];	"lemma:alg_int_abs_val_one"	[color=blue,		label=alg_int_abs_val_one,		shape=ellipse];	"lemma:alg_int_abs_val_one" -> "lemma:unit_lemma"	[style=dashed];}')
     .on("end", interactive);
 
 clickNode = function() {

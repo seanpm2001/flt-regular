@@ -7,7 +7,7 @@ universes u
 
 open finite_dimensional
 
-variables (p : ℕ+)
+variables (p : ℕ+) [fact (((p : ℕ) : ℚ) ≠ 0)]
 
 local notation `KK` := cyclotomic_field p ℚ
 

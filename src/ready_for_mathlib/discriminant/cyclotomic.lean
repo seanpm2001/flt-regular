@@ -2,6 +2,9 @@ import ring_theory.adjoin.power_basis
 import algebra.char_p.algebra
 
 import ready_for_mathlib.discriminant.basic
+
+import ring_theory.discriminant
+import ring_theory.norm
 import number_theory.cyclotomic.cyclotomic_units
 import ready_for_mathlib.cyclotomic
 import number_theory.cyclotomic.rat
@@ -50,8 +53,9 @@ begin
   simp,
 end
 
+open algebra
 lemma discriminant_prime [hp : fact (p : ℕ).prime] (hodd : p ≠ 2) :
-  discriminant ℚ (zeta'.power_basis p ℚ K).basis =
+  discr ℚ (zeta'.power_basis p ℚ K).basis =
   (-1) ^ (((p : ℕ) - 1) / 2) * p ^ ((p : ℕ) - 2) :=
 begin
   have hprim := zeta'_primitive_root p ℚ K,

@@ -11,6 +11,32 @@ import number_theory.cyclotomic.factoring
 -- TODO I (alex) commented this out as it seems redundent now? -- agree, seems redundant - Eric
 -- lemma flt_coprime (p a b c : ℕ) [fact p.prime] (h : a ^ p + b ^ p = c ^ p) (hab : a.coprime b)
 --     : b.coprime c ∧ a.coprime c := sorry
+theorem eq_pow_of_prod_eq_pow {α : Type*} [comm_cancel_monoid_with_zero α]
+  [unique_factorization_monoid α] [nontrivial α] {c : associates α} (A : finset (associates α))
+  (hA : ∀ (a : associates α) (ha : a ∈ A), a ≠ 0)
+  (hab : set.pairwise (↑A : set (associates α)) (λ a b, ∀ d, d ∣ a → d ∣ b → ¬ prime d)) {k : ℕ} (h : A.prod id = c ^ k) :
+  ∀ (a : associates α) (ha : a ∈ A), ∃ (d : associates α), a = d ^ k :=
+begin
+  classical,
+  induction A using finset.induction_on with a A ha hi generalizing h,
+  { simp, },
+  { simp only [ha, forall_eq_or_imp, finset.prod_insert,
+      id.def, not_false_iff, finset.mem_insert] at h ⊢,
+    split,
+    { refine associates.eq_pow_of_mul_eq_pow (hA a (A.mem_insert_self a)) _ _ h,
+      { rw finset.prod_ne_zero_iff,
+        intros b hb,
+        exact hA b (finset.mem_insert_of_mem hb), },
+      sorry, },
+    { apply hi,
+      intros b hb,
+      exact hA b (finset.mem_insert_of_mem hb),
+      simp at hab,
+      rw set.pairwise_insert at hab,
+      exact hab.1,
+      rw mul_comm at h, },
+     },
+end
 
 lemma flt_three_case_one_aux {A B C : zmod 9} (h : A ^ 3 + B ^ 3 = C ^ 3) : 3 ∣ A * B * C :=
 by dec_trivial!
@@ -23,13 +49,23 @@ theorem flt_regular_case_one_main {p a b c : ℕ} [h_prime : fact p.prime] (hp :
 begin
   have h_prime : p.prime := fact.out _,
   let pp : ℕ+ := ⟨p, nat.prime.pos h_prime⟩,
-  have := pow_add_pow_eq_prod_add_zeta_mul (nat.odd_iff.mp (nat.prime.odd h_prime hp_ne_two))
+  have h_fac := pow_add_pow_eq_prod_add_zeta_mul (nat.odd_iff.mp (nat.prime.odd h_prime hp_ne_two))
     (is_cyclotomic_extension.zeta'_primitive_root pp ℚ (cyclotomic_field pp ℚ)) a b,
-  rw_mod_cast h at this,
-  symmetry' at this,
-  push_cast at this,
-  apply_fun span_singleton (cyclotomic_ring pp ℤ ℚ)⁰ at this,
-  simp at this,
+  have h_faci : ↑a ^ p + ↑b ^ p =
+    (nth_roots_finset p (cyclotomic_ring pp ℤ ℚ)).prod (λ (ζ : cyclotomic_ring pp ℤ ℚ), ↑a + ζ * ↑b)
+    := sorry,
+  -- TODO need to generalize a few mathlib results for this it seems
+  rw_mod_cast h at h_fac,
+  rw_mod_cast h at h_faci,
+  symmetry' at h_fac,
+  symmetry' at h_faci,
+  push_cast at h_fac,
+  push_cast at h_faci,
+  have h_frac := congr_arg (span_singleton (cyclotomic_ring pp ℤ ℚ)⁰) h_fac,
+  -- ideal is a UFM but fractional ideal not, is there a sensible notion of UFG?
+  have h_ideal := congr_arg (λ t, (ideal.span {t} : ideal (cyclotomic_ring pp ℤ ℚ))) h_faci,
+  simp only [span_singleton_prod, span_singleton_pow,
+    ←ideal.span_singleton_pow, ideal.span_singleton_prod] at h_frac h_ideal,
   sorry,
 end
 

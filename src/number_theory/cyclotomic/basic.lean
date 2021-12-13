@@ -249,7 +249,7 @@ section field
 lemma splits_X_pow_sub_one [H : is_cyclotomic_extension S K L] (hS : n ∈ S) (hn : (n : K) ≠ 0) :
   splits (algebra_map K L) (X ^ (n : ℕ) - 1) :=
 begin
-  rw [← splits_id_iff_splits, map_sub, map_one, map_pow, map_X],
+  rw [← splits_id_iff_splits, polynomial.map_sub, polynomial.map_one, polynomial.map_pow, map_X],
   obtain ⟨z, hz⟩ := ((iff _ _ _).1 H).1 n hS,
   rw [aeval_def, eval₂_eq_eval_map, map_cyclotomic] at hz,
   replace hn : ((n : ℕ) : L) ≠ 0,
@@ -282,7 +282,7 @@ lemma splitting_field_X_pow_sub_one (hn : (n : K) ≠ 0) :
     congr,
     refine set.ext (λ x, _),
     simp only [map_pow, mem_singleton_iff, multiset.mem_to_finset, exists_eq_left, mem_set_of_eq,
-      map_X, map_one, finset.mem_coe, map_sub],
+      map_X, polynomial.map_one, finset.mem_coe, polynomial.map_sub],
     rwa [← ring_hom.map_one C, mem_roots (@X_pow_sub_C_ne_zero _ (field.to_nontrivial L) _ _
       n.pos _), is_root.def, eval_sub, eval_pow, eval_C, eval_X, sub_eq_zero]
   end }
@@ -318,7 +318,7 @@ def cyclotomic_field : Type w := (cyclotomic n K).splitting_field
 
 namespace cyclotomic_field
 
-instance is_cyclotomic_extension [hn : fact (((n : ℕ) : K) ≠ 0)] :
+instance is_cyclotomic_extension [char_zero K] :
   is_cyclotomic_extension {n} K (cyclotomic_field n K) :=
 { ex_root := λ a han,
   begin
@@ -330,8 +330,9 @@ instance is_cyclotomic_extension [hn : fact (((n : ℕ) : K) ≠ 0)] :
   begin
     replace hn : ((n : ℕ) : cyclotomic_field n K) ≠ 0,
     { rw [←(algebra_map K (cyclotomic_field n K)).map_nat_cast, algebra_map_eq_smul_one,
-           smul_ne_zero_iff_ne' hn.out],
-      exact one_ne_zero },
+           smul_ne_zero_iff_ne' _],
+      exact one_ne_zero,
+      exact nat.cast_ne_zero.mpr n.ne_zero, },
     rw [←algebra.eq_top_iff, ←splitting_field.adjoin_roots, eq_comm],
     letI := classical.dec_eq (cyclotomic_field n K),
     refine is_cyclotomic_extension.adjoin_roots_cyclotomic_eq_adjoin_nth_roots n _,

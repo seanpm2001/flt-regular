@@ -11,7 +11,7 @@ import number_theory.cyclotomic.factoring
 -- TODO I (alex) commented this out as it seems redundent now? -- agree, seems redundant - Eric
 -- lemma flt_coprime (p a b c : ℕ) [fact p.prime] (h : a ^ p + b ^ p = c ^ p) (hab : a.coprime b)
 --     : b.coprime c ∧ a.coprime c := sorry
-theorem eq_pow_of_prod_eq_pow {α : Type*} [comm_cancel_monoid_with_zero α]
+theorem eq_pow_of_prod_eq_pow {α : Type*} [cancel_comm_monoid_with_zero α]
   [unique_factorization_monoid α] [nontrivial α] {c : associates α} (A : finset (associates α))
   (hA : ∀ (a : associates α) (ha : a ∈ A), a ≠ 0)
   (hab : set.pairwise (↑A : set (associates α)) (λ a b, ∀ d, d ∣ a → d ∣ b → ¬ prime d)) {k : ℕ} (h : A.prod id = c ^ k) :

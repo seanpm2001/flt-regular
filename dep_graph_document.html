@@ -60,14 +60,11 @@
       Definition
       </span>
       <span class="definition_thmlabel">4.6</span></div>
-    <div class="thm_thmcontent">{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}</div>
+    <div class="thm_thmcontent"><p>  A prime number \(p\) is called regular if it does not divide the class number of \(\mathbb {Q}(\zeta _p)\). </p>
+</div>
 
     <a class="latex_link" href="sect0004.html#defn:is_regular_number">LaTeX</a>
-  <a class="lean_link" href="https://github.com/leanprover-community/flt-regular//blob/1c48a1bdf7b49a7a15dcd8b1d045cd333474fad3/src/number_theory/regular_primes.lean#L32">Lean</a></div>
+  <a class="lean_link" href="https://github.com/leanprover-community/flt-regular//blob/f724f13c96b8042d835ae3e595c581df91f425df/src/number_theory/regular_primes.lean#L32">Lean</a></div>
     
       </div>
     </div>
@@ -86,18 +83,30 @@
       Definition
       </span>
       <span class="definition_thmlabel">2.2</span></div>
-    <div class="thm_thmcontent">{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}</div>
+    <div class="thm_thmcontent"><p>  Let \(A,K\) be commutative rings with \(K\) and \(A\)-algebra. let \(B=\{ b_1,\dots ,b_n\} \) be a set of elements in \(K\). The discriminant of \(B\) is defined as </p>
+<div class="displaymath" id="a0000000008">
+  \[ \Delta (B)= \det \left(\begin{matrix}  \operatorname {Tr}_{K/A}(b_1b_1) 
+
+& \cdots 
+
+&  \operatorname {Tr}_{K/A}(b_1b_n)
+
+\\ \vdots 
+
+& &  \vdots 
+
+\\ \operatorname {Tr}_{K/A}(b_nb_1) 
+
+& \cdots 
+
+&  \operatorname {Tr}_{K/A}(b_nb_n) 
+
+\end{matrix} \right). \]
+</div>
+</div>
 
     <a class="latex_link" href="sect0002.html#defn_of_disc">LaTeX</a>
-  <a class="lean_link" href="https://github.com/leanprover-community/mathlib/blob/5b8bb9b4f790724f05fcefd83bd3f482836c6fd6/src/ring_theory/discriminant.lean#L65">Lean</a></div>
+  <a class="lean_link" href="https://github.com/leanprover-community/mathlib/blob/0765994dbf07dfa81622be12ef255dbe3fbcf7e7/src/ring_theory/discriminant.lean#L65">Lean</a></div>
     
       </div>
     </div>
@@ -116,22 +125,15 @@
       Theorem
       </span>
       <span class="theorem_thmlabel">4.10</span></div>
-    <div class="thm_thmcontent">{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}</div>
+    <div class="thm_thmcontent"><p>   Let \(p\) be an odd regular prime. Then </p>
+<div class="displaymath" id="a0000000065">
+  \[ x^p+y^p=z^p \]
+</div>
+<p> has no solutions with \(x,y,z \in \mathbb {Z}\) and \(xyz \ne 0\). </p>
+</div>
 
     <a class="latex_link" href="sect0004.html#FLT_regular">LaTeX</a>
-  <a class="lean_link" href="https://github.com/leanprover-community/flt-regular//blob/1c48a1bdf7b49a7a15dcd8b1d045cd333474fad3/src/flt_regular.lean#L61">Lean</a></div>
+  <a class="lean_link" href="https://github.com/leanprover-community/flt-regular//blob/f724f13c96b8042d835ae3e595c581df91f425df/src/flt_regular.lean#L61">Lean</a></div>
     
       </div>
     </div>
@@ -150,15 +152,11 @@
       lemma
       </span>
       <span class="lemma_thmlabel">2.4</span></div>
-    <div class="thm_thmcontent">{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}</div>
+    <div class="thm_thmcontent"><p>  Let \(K\) be a number field and \(B,B'\) bases for \(K/\mathbb {Q}\). If \(P\) denotes the change of basis matrix, then </p>
+<div class="displaymath" id="a0000000009">
+  \[ \Delta (B)=\det (P)^2 \Delta (B'). \]
+</div>
+</div>
 
     <a class="latex_link" href="sect0002.html#lem:disc_change_of_basis">LaTeX</a>
   </div>
@@ -180,34 +178,20 @@
       lemma
       </span>
       <span class="lemma_thmlabel">4.1</span></div>
-    <div class="thm_thmcontent">{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}</div>
+    <div class="thm_thmcontent"><p>  Let \(p \geq 5\) be an prime number, \(\zeta _p\) a \(p\)-th root of unity and \(x, y \in \mathbb {Z}\) coprime. </p>
+<p>For \(i \neq j\) we can write </p>
+<div class="displaymath" id="a0000000052">
+  \[ (\zeta _p^i-\zeta _p^j)=u(1-\zeta _p) \]
+</div>
+<p> with \(u\) a unit in \(\mathbb {Z}[\zeta _p]\). From this it follows that the ideals </p>
+<div class="displaymath" id="a0000000053">
+  \[ (x+y),(x+\zeta _py),(x+\zeta _p^2y),\dots ,(x+\zeta _p^{p-1}y) \]
+</div>
+<p> are pairwise coprime. </p>
+</div>
 
     <a class="latex_link" href="sect0004.html#lem:flt_fact_2">LaTeX</a>
-  <a class="lean_link" href="https://github.com/leanprover-community/flt-regular//blob/1c48a1bdf7b49a7a15dcd8b1d045cd333474fad3/src/number_theory/cyclotomic/rat.lean#L207">Lean</a></div>
+  <a class="lean_link" href="https://github.com/leanprover-community/flt-regular//blob/f724f13c96b8042d835ae3e595c581df91f425df/src/number_theory/cyclotomic/rat.lean#L207">Lean</a></div>
     
       </div>
     </div>
@@ -226,18 +210,12 @@
       lemma
       </span>
       <span class="lemma_thmlabel">4.2</span></div>
-    <div class="thm_thmcontent">{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}</div>
+    <div class="thm_thmcontent">
+<p>Let \(p\) be an prime number, \(\zeta _p\) a \(p\)-th root of unity and \(\alpha \in \mathbb {Z}[\zeta _p]\). Then \(\alpha ^p\) is congruent to an integer modulo \(p\). </p>
+</div>
 
     <a class="latex_link" href="sect0004.html#lem:flt_fact_3">LaTeX</a>
-  <a class="lean_link" href="https://github.com/leanprover-community/flt-regular//blob/1c48a1bdf7b49a7a15dcd8b1d045cd333474fad3/src/number_theory/cyclotomic/rat.lean#L105">Lean</a></div>
+  <a class="lean_link" href="https://github.com/leanprover-community/flt-regular//blob/f724f13c96b8042d835ae3e595c581df91f425df/src/number_theory/cyclotomic/rat.lean#L105">Lean</a></div>
     
       </div>
     </div>
@@ -256,11 +234,8 @@
       lemma
       </span>
       <span class="lemma_thmlabel">4.3</span></div>
-    <div class="thm_thmcontent">{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}</div>
+    <div class="thm_thmcontent"><p>  Let \(p \geq 5\) be an prime number, \(\zeta _p\) a \(p\)-th root of unity and \( \alpha \in \mathbb {Z}[\zeta _p]\). If there is an integer \(n\) such that \(\alpha /n \in \mathbb {Z}[\zeta _p]\), then \(n\) divides each \(a_i\). </p>
+</div>
 
     <a class="latex_link" href="sect0004.html#lem:flt_fact_4">LaTeX</a>
   </div>
@@ -282,15 +257,11 @@
       lemma
       </span>
       <span class="lemma_thmlabel">4.4</span></div>
-    <div class="thm_thmcontent">{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}</div>
+    <div class="thm_thmcontent"><p>   Let \(p \geq 5\) be an prime number, \(\zeta _p\) a \(p\)-th root of unity and \( \alpha \in \mathbb {Z}[\zeta _p]\). Suppose that \(x+y\zeta _p^i=u \alpha ^p\) with \(u \in \mathbb {Z}[\zeta _p]^\times \) and \(\alpha \in \mathbb {Z}[\zeta _p]\). Then there is an integer \(k\) such that </p>
+<div class="displaymath" id="a0000000057">
+  \[ x+y\zeta _p^i-\zeta _p^{2k}x-\zeta _p^{2k-i}y \equiv 0 \pmod p. \]
+</div>
+</div>
 
     <a class="latex_link" href="sect0004.html#lem:flt_fact_5">LaTeX</a>
   </div>
@@ -312,11 +283,8 @@
       lemma
       </span>
       <span class="lemma_thmlabel">2.3</span></div>
-    <div class="thm_thmcontent">{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}</div>
+    <div class="thm_thmcontent"><p>  Let \(K\) be a number field and let \(B=\{ b_1,\dots ,b_n\} \) be a set of elements in \(K\). Then \(\Delta (B) \neq 0\) if and only if the elements in \(B\) are linearly independent. </p>
+</div>
 
     <a class="latex_link" href="sect0002.html#lem:lin_indep_iff_disc_ne_zero">LaTeX</a>
   </div>
@@ -338,14 +306,11 @@
       lemma
       </span>
       <span class="lemma_thmlabel">3.4</span></div>
-    <div class="thm_thmcontent">{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}</div>
+    <div class="thm_thmcontent"><p>  Let \(p\) be a prime, \(K=\mathbb {Q}(\zeta _p)\) \(\alpha \in K\) such that there exists \(n \in \mathbb {N}\) such that \(\alpha ^n=1\), then \(\alpha =\pm \zeta _p^k\) for some \(k\). </p>
+</div>
 
     <a class="latex_link" href="sect0003.html#lem:roots_of_unity_in_cyclo">LaTeX</a>
-  <a class="lean_link" href="https://github.com/leanprover-community/flt-regular//blob/1c48a1bdf7b49a7a15dcd8b1d045cd333474fad3/src/number_theory/cyclotomic/Unit_lemmas.lean#L126">Lean</a></div>
+  <a class="lean_link" href="https://github.com/leanprover-community/flt-regular//blob/f724f13c96b8042d835ae3e595c581df91f425df/src/number_theory/cyclotomic/Unit_lemmas.lean#L126">Lean</a></div>
     
       </div>
     </div>
@@ -364,14 +329,11 @@
       lemma
       </span>
       <span class="lemma_thmlabel">3.3</span></div>
-    <div class="thm_thmcontent">{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}</div>
+    <div class="thm_thmcontent"><p> Let \(\alpha \) be an algebraic integer all of whose conjugates have absolute value one. Then \(\alpha \) is a root of unity. </p>
+</div>
 
     <a class="latex_link" href="sect0003.html#lemma:alg_int_abs_val_one">LaTeX</a>
-  <a class="lean_link" href="https://github.com/leanprover-community/flt-regular//blob/1c48a1bdf7b49a7a15dcd8b1d045cd333474fad3/src/number_theory/cyclotomic/absolute_value.lean#L409">Lean</a></div>
+  <a class="lean_link" href="https://github.com/leanprover-community/flt-regular//blob/f724f13c96b8042d835ae3e595c581df91f425df/src/number_theory/cyclotomic/absolute_value.lean#L409">Lean</a></div>
     
       </div>
     </div>
@@ -390,15 +352,11 @@
       lemma
       </span>
       <span class="lemma_thmlabel">2.1</span></div>
-    <div class="thm_thmcontent">{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}</div>
+    <div class="thm_thmcontent"><p> Let \(K\) be a number field, \(\alpha \in K\) and let \(\sigma _i\) be the embeddings of \(K\) into \(\mathbb {C}\). Then </p>
+<div class="displaymath" id="a0000000007">
+  \[ \operatorname {Tr}_{K/\mathbb {Q}}(\alpha ) =\sum _i \sigma _i(\alpha ) \qquad N_{K/\mathbb {Q}}(\alpha )=\prod _i \sigma _i(\alpha )  \]
+</div>
+</div>
 
     <a class="latex_link" href="sect0002.html#lemma:alt_definition_of_norm_and_trace">LaTeX</a>
   </div>
@@ -420,14 +378,11 @@
       lemma
       </span>
       <span class="lemma_thmlabel">3.1</span></div>
-    <div class="thm_thmcontent">{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}</div>
+    <div class="thm_thmcontent"><p> For \(n\) any integer, \(\Phi _n\) (the \(n\)-th cyclotomic polynomial) is an irreducible polynomial of degree \(\varphi (n)\) (where \(\varphi \) is Euler’s Totient function). </p>
+</div>
 
     <a class="latex_link" href="sect0003.html#lemma:cyclo_poly">LaTeX</a>
-  <a class="lean_link" href="https://github.com/leanprover-community/mathlib/blob/5b8bb9b4f790724f05fcefd83bd3f482836c6fd6/src/ring_theory/polynomial/cyclotomic/basic.lean#L359">Lean</a></div>
+  <a class="lean_link" href="https://github.com/leanprover-community/mathlib/blob/0765994dbf07dfa81622be12ef255dbe3fbcf7e7/src/ring_theory/polynomial/cyclotomic/basic.lean#L359">Lean</a></div>
     
       </div>
     </div>
@@ -446,19 +401,12 @@
       lemma
       </span>
       <span class="lemma_thmlabel">2.7</span></div>
-    <div class="thm_thmcontent">{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}</div>
+    <div class="thm_thmcontent"><p> Let \(f\) be a monic irreducible polynomial over a number field \(K\) and let \(\alpha \) be one of its roots in \(\mathbb {C}\). Then </p>
+<div class="displaymath" id="a0000000018">
+  \[ f'(\alpha )=\prod _{\beta \neq \alpha } (\alpha -\beta ),  \]
+</div>
+<p> where the product is over the roots of \(f\) different from \(\alpha \). </p>
+</div>
 
     <a class="latex_link" href="sect0002.html#lemma:diff_of_irr_pol">LaTeX</a>
   </div>
@@ -480,18 +428,14 @@
       lemma
       </span>
       <span class="lemma_thmlabel">2.9</span></div>
-    <div class="thm_thmcontent">{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}</div>
+    <div class="thm_thmcontent"><p>  Let \(K\) be a number field and \(B,B'\) bases for \(K/\mathbb {Q}\). If \(P\) denotes the change of basis matrix, then </p>
+<div class="displaymath" id="a0000000024">
+  \[ \Delta (B)=\det (P)^2 \Delta (B'). \]
+</div>
+</div>
 
     <a class="latex_link" href="sect0002.html#lemma:disc_change_of_basis">LaTeX</a>
-  <a class="lean_link" href="https://github.com/leanprover-community/mathlib/blob/5b8bb9b4f790724f05fcefd83bd3f482836c6fd6/src/ring_theory/discriminant.lean#L110">Lean</a></div>
+  <a class="lean_link" href="https://github.com/leanprover-community/mathlib/blob/0765994dbf07dfa81622be12ef255dbe3fbcf7e7/src/ring_theory/discriminant.lean#L110">Lean</a></div>
     
       </div>
     </div>
@@ -510,27 +454,16 @@
       lemma
       </span>
       <span class="lemma_thmlabel">2.12</span></div>
-    <div class="thm_thmcontent">{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}</div>
+    <div class="thm_thmcontent"><p>  Let \(K\) be a number field and \(B=\{ b_1,\dots ,b_n\} \) be a basis for \(K/\mathbb {Q}\) consisting of algebraic integers. If \(B\) is not an integral basis then there exists an algebraic integer of the form </p>
+<div class="displaymath" id="a0000000026">
+  \[ \alpha =\frac{x_1b_1+\cdots +x_nb_n}{p} \]
+</div>
+<p> where \(p\) is a prime and \(x_i \in \{ 0,\dots ,p-1\} \) with not all \(x_i\) zero. Moreover, if \(x_i \neq 0\) and we let \(B'\) be the basis obtained by replacing \(b_i\) with \(\alpha \), then </p>
+<div class="displaymath" id="a0000000027">
+  \[ \Delta (B')= \frac{x_i^2}{p^2} \Delta (B). \]
+</div>
+<p> In particular \(p^2 \mid \Delta (B)\). </p>
+</div>
 
     <a class="latex_link" href="sect0002.html#lemma:disc_int_basis">LaTeX</a>
   </div>
@@ -552,22 +485,15 @@
       lemma
       </span>
       <span class="lemma_thmlabel">2.6</span></div>
-    <div class="thm_thmcontent">{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}</div>
+    <div class="thm_thmcontent"><p>   Let \(K\) be a number field and \(B=\{ 1,\alpha ,\alpha ^2,\dots ,\alpha ^{n-1}\} \) for some \(\alpha \in K\). Then </p>
+<div class="displaymath" id="a0000000015">
+  \[ \Delta (B)=\prod _{i {\lt} j} (\sigma _i(\alpha )-\sigma _j(\alpha ))^2 \]
+</div>
+<p> where \(\sigma _i\) are the embeddings of \(K \) into \(\mathbb {C}\). Here \(\Delta (B)\) denotes the discriminant. </p>
+</div>
 
     <a class="latex_link" href="sect0002.html#lemma:disc_of_prim_elt_basis">LaTeX</a>
-  <a class="lean_link" href="https://github.com/leanprover-community/mathlib/blob/5b8bb9b4f790724f05fcefd83bd3f482836c6fd6/src/ring_theory/discriminant.lean#L155">Lean</a></div>
+  <a class="lean_link" href="https://github.com/leanprover-community/mathlib/blob/0765994dbf07dfa81622be12ef255dbe3fbcf7e7/src/ring_theory/discriminant.lean#L155">Lean</a></div>
     
       </div>
     </div>
@@ -586,23 +512,31 @@
       lemma
       </span>
       <span class="lemma_thmlabel">2.5</span></div>
-    <div class="thm_thmcontent">{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}</div>
+    <div class="thm_thmcontent"><p>  Let \(K\) be a number field with basis \(B=\{ b_1,\dots ,b_n\} \) and let \(\sigma _1,\dots ,\sigma _n\) be the embeddings of \(K\) into \(\mathbb {C}\). Now let \(M\) be the matrix </p>
+<div class="displaymath" id="a0000000011">
+  \[ \left(\begin{matrix}  \sigma _1(b_1) 
+
+& \cdots 
+
+&  \sigma _1(b_n)
+
+\\ \vdots 
+
+& &  \vdots 
+
+\\ \sigma _n(b_1) 
+
+& \cdots 
+
+&  \sigma _n(b_n) 
+
+\end{matrix} \right). \]
+</div>
+<p> Then </p>
+<div class="displaymath" id="a0000000012">
+  \[ \Delta (B)=\det (M)^2. \]
+</div>
+</div>
 
     <a class="latex_link" href="sect0002.html#lemma:disc_via_embs">LaTeX</a>
   </div>
@@ -624,19 +558,12 @@
       lemma
       </span>
       <span class="lemma_thmlabel">2.13</span></div>
-    <div class="thm_thmcontent">{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}</div>
+    <div class="thm_thmcontent"><p>  Let \(K=\mathbb {Q}(\alpha )\) and \(\alpha \) be an algebraic integer such that \(m_\alpha \) satisfies Eisensteins Criterion for a prime \(p\). Then none of the elements </p>
+<div class="displaymath" id="a0000000033">
+  \[ \phi =\frac{1}{p}(x_0+x_1\alpha +\cdots +x_{n-1}\alpha ^{n-1}) \]
+</div>
+<p> is an algebraic integer, where \(n=\deg (m_\alpha )\) and \(x_i \in \{ 0,\dots ,p-1\} .\) </p>
+</div>
 
     <a class="latex_link" href="sect0002.html#lemma:eis_crit_and_alg_ints">LaTeX</a>
   </div>
@@ -658,19 +585,12 @@
       lemma
       </span>
       <span class="lemma_thmlabel">3.6</span></div>
-    <div class="thm_thmcontent">{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}</div>
+    <div class="thm_thmcontent"><p> Let \(p\) be a prime and \(n=p^k\). Then </p>
+<div class="displaymath" id="a0000000048">
+  \[ p=u(1-\zeta _n)^{\varphi (n)} \]
+</div>
+<p> where \(u \in \mathbb {Z}[\zeta _n]^{\times }\). </p>
+</div>
 
     <a class="latex_link" href="sect0003.html#lemma:fac_of_p_in_p_th_root">LaTeX</a>
   </div>
@@ -692,23 +612,15 @@
       lemma
       </span>
       <span class="lemma_thmlabel">3.7</span></div>
-    <div class="thm_thmcontent">{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}</div>
+    <div class="thm_thmcontent"><p> Let \(R\) be a Dedekind domain, \(p\) a prime and \(\mathfrak {a},\mathfrak {b},\mathfrak {c}\) ideals such that </p>
+<div class="displaymath" id="a0000000049">
+  \[ \mathfrak {a}\mathfrak {b}=\mathfrak {c}^p \]
+</div>
+<p> and suppose \(\mathfrak {a},\mathfrak {b}\) are coprime. Then there exist ideals \(\mathfrak {e},\mathfrak {d}\) such that </p>
+<div class="displaymath" id="a0000000050">
+  \[ \mathfrak {a}=\mathfrak {e}^p \qquad \mathfrak {b}=\mathfrak {d}^p \qquad \mathfrak {e}\mathfrak {d}=\mathfrak {c} \]
+</div>
+</div>
 
     <a class="latex_link" href="sect0003.html#lemma:ideals_mult_to_power">LaTeX</a>
   </div>
@@ -730,11 +642,8 @@
       lemma
       </span>
       <span class="lemma_thmlabel">2.11</span></div>
-    <div class="thm_thmcontent">{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}</div>
+    <div class="thm_thmcontent"><p> Let \(K\) be a number field and \(B=\{ b_1,\dots ,b_n\} \) be elements in \(\mathcal{O}_K\), then \(\Delta (B) \in \mathbb {Z}\). </p>
+</div>
 
     <a class="latex_link" href="sect0002.html#lemma:int_basis_int_disc">LaTeX</a>
   </div>
@@ -756,27 +665,16 @@
       lemma
       </span>
       <span class="lemma_thmlabel">4.5</span></div>
-    <div class="thm_thmcontent">{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}</div>
+    <div class="thm_thmcontent">
+<p>Let \(p \geq 5\) be an prime number, \(\zeta _p\) a \(p\)-th root of unity and \(K=\mathbb {Q}(\zeta _p)\). Assume that we have \(x,y,z \in \mathbb {Z}\) with \(\gcd (xyz,p)=1\) and such that </p>
+<div class="displaymath" id="a0000000059">
+  \[ x^p+y^p=z^p. \]
+</div>
+<p>Then without loss of generality, we may assume \(x,y,z\) are pairwise coprime and </p>
+<div class="displaymath" id="a0000000060">
+  \[ x \not\equiv y \mod p. \]
+</div>
+</div>
 
     <a class="latex_link" href="sect0004.html#lemma:may_assume">LaTeX</a>
   </div>
@@ -798,11 +696,8 @@
       lemma
       </span>
       <span class="lemma_thmlabel">2.10</span></div>
-    <div class="thm_thmcontent">{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}</div>
+    <div class="thm_thmcontent"><p> If \(K\) is a number field and \(\alpha \in \mathcal{O}_K\) then \(\operatorname {Tr}_{K/\mathbb {Q}}(\alpha )\) and \(N_{K/\mathbb {Q}}(\alpha )\) are both in \(\mathbb {Z}\). </p>
+</div>
 
     <a class="latex_link" href="sect0002.html#lemma:norm_trace_of_alg_int_is_int">LaTeX</a>
   </div>
@@ -824,19 +719,12 @@
       lemma
       </span>
       <span class="lemma_thmlabel">2.8</span></div>
-    <div class="thm_thmcontent">{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}</div>
+    <div class="thm_thmcontent"><p>   Let \(K=\mathbb {Q}(\alpha )\) be a number field with \(n=[K:\mathbb {Q}]\) and let \(B=\{ 1,\alpha ,\alpha ^2,\dots ,\alpha ^{n-1}\} \). Then </p>
+<div class="displaymath" id="a0000000021">
+  \[ \Delta (B)=(-1)^{\frac{n(n-1)}{2}}N_{K/\mathbb {Q}}(m_\alpha '(\alpha )) \]
+</div>
+<p> where \(m_\alpha '\) is the derivative of \(m_\alpha (x)\) (which we recall denotes the minimal polynomial of \(\alpha \)). </p>
+</div>
 
     <a class="latex_link" href="sect0002.html#lemma:num_field_disc_in_terms_of_norm">LaTeX</a>
   </div>
@@ -858,11 +746,8 @@
       lemma
       </span>
       <span class="lemma_thmlabel">3.5</span></div>
-    <div class="thm_thmcontent">{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}</div>
+    <div class="thm_thmcontent"><p>   Any unit \(u\) in \(\mathbb {Z}[\zeta _p]\) can be written in the form \(\beta \zeta _p^k \) with \(k\) an integer and \(\beta \in \mathbb {R}\). </p>
+</div>
 
     <a class="latex_link" href="sect0003.html#lemma:unit_lemma">LaTeX</a>
   </div>
@@ -884,22 +769,15 @@
       Theorem
       </span>
       <span class="theorem_thmlabel">4.7</span></div>
-    <div class="thm_thmcontent">{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}</div>
+    <div class="thm_thmcontent"><p>   Let \(p\) be an odd regular prime. Then </p>
+<div class="displaymath" id="a0000000062">
+  \[ x^p+y^p=z^p \]
+</div>
+<p> has no solutions with \(x,y,z \in \mathbb {Z}\) and \(\gcd (xyz,p)=1\). </p>
+</div>
 
     <a class="latex_link" href="sect0004.html#theorem:FLT_case_one">LaTeX</a>
-  <a class="lean_link" href="https://github.com/leanprover-community/flt-regular//blob/1c48a1bdf7b49a7a15dcd8b1d045cd333474fad3/src/flt_regular.lean#L42">Lean</a></div>
+  <a class="lean_link" href="https://github.com/leanprover-community/flt-regular//blob/f724f13c96b8042d835ae3e595c581df91f425df/src/flt_regular.lean#L42">Lean</a></div>
     
       </div>
     </div>
@@ -918,22 +796,15 @@
       Theorem
       </span>
       <span class="theorem_thmlabel">4.9</span></div>
-    <div class="thm_thmcontent">{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}</div>
+    <div class="thm_thmcontent"><p>   Let \(p\) be an odd regular prime. Then </p>
+<div class="displaymath" id="a0000000064">
+  \[ x^p+y^p=z^p \]
+</div>
+<p> has no solutions with \(x,y,z \in \mathbb {Z}\) and \(p | xyz\). </p>
+</div>
 
     <a class="latex_link" href="sect0004.html#theorem:FLT_case_two">LaTeX</a>
-  <a class="lean_link" href="https://github.com/leanprover-community/flt-regular//blob/1c48a1bdf7b49a7a15dcd8b1d045cd333474fad3/src/number_theory/kummers_lemma.lean#L12">Lean</a></div>
+  <a class="lean_link" href="https://github.com/leanprover-community/flt-regular//blob/f724f13c96b8042d835ae3e595c581df91f425df/src/number_theory/kummers_lemma.lean#L12">Lean</a></div>
     
       </div>
     </div>
@@ -952,15 +823,11 @@
       Theorem
       </span>
       <span class="theorem_thmlabel">3.2</span></div>
-    <div class="thm_thmcontent">{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}</div>
+    <div class="thm_thmcontent"><p>  Let \(\zeta _p\) be a \(p\)-th root of unity for \(p\) an odd prime, let \(\lambda _p=1-\zeta _p\) and \(K=\mathbb {Q}(\zeta _p)\). Then \(\mathcal{O}_K=\mathbb {Z}[\zeta _p]=\mathbb {Z}[\lambda _p]\) moreover </p>
+<div class="displaymath" id="a0000000041">
+  \[ \Delta (\{ 1,\zeta _p,\dots ,\zeta _p^{p-2}\} )=\Delta (\{ 1,\lambda _p,\dots ,\lambda _p^{p-2}\} )=(-1)^{\frac{(p-1)}{2}}p^{p-2}. \]
+</div>
+</div>
 
     <a class="latex_link" href="sect0003.html#theorem:ring_of_ints_of_cyclo">LaTeX</a>
   </div>
@@ -982,11 +849,8 @@
       Theorem
       </span>
       <span class="theorem_thmlabel">4.8</span></div>
-    <div class="thm_thmcontent">{% if obj.blockType %}
-{{ obj }}
-{% else %}
-<p>{{ obj }}</p>
-{% endif %}</div>
+    <div class="thm_thmcontent"><p> Let \(p\) be a regular prime and let \(u \in \mathbb {Z}[\zeta _p]^\times \). If \(u^p \equiv a \mod p\) for some \(a \in \mathbb {Z}\), then there exists \(v \in \mathbb {Z}[\zeta _p]^\times \) such that \(u=v^p\). </p>
+</div>
 
     <a class="latex_link" href="sect0004.html#thm:Kummers_lemma">LaTeX</a>
   </div>
@@ -1012,7 +876,7 @@ graphContainer.graphviz({useWorker: true})
     .width(width)
     .height(height)
     .fit(true)
-    .renderDot('strict digraph "" {	graph [bgcolor=transparent];	node [label="\N",		penwidth=1.8	];	edge [arrowhead=vee];	"lemma:diff_of_irr_pol"	[color=blue,		fillcolor="#a3d6ff",		label=diff_of_irr_pol,		shape=ellipse,		style=filled];	"lemma:norm_trace_of_alg_int_is_int"	[color=blue,		label=norm_trace_of_alg_int_is_int,		shape=ellipse];	"lemma:eis_crit_and_alg_ints"	[label=eis_crit_and_alg_ints,		shape=ellipse];	"lemma:norm_trace_of_alg_int_is_int" -> "lemma:eis_crit_and_alg_ints"	[style=dashed];	"lemma:alg_int_abs_val_one"	[color=blue,		label=alg_int_abs_val_one,		shape=ellipse];	"lemma:unit_lemma"	[label=unit_lemma,		shape=ellipse];	"lemma:alg_int_abs_val_one" -> "lemma:unit_lemma"	[style=dashed];	defn_of_disc	[color=blue,		label=defn_of_disc,		shape=box];	"lemma:disc_of_prim_elt_basis"	[color=green,		fillcolor="#a3d6ff",		label=disc_of_prim_elt_basis,		shape=ellipse,		style=filled];	defn_of_disc -> "lemma:disc_of_prim_elt_basis"	[style=dashed];	"lem:disc_change_of_basis"	[label=disc_change_of_basis,		shape=ellipse];	defn_of_disc -> "lem:disc_change_of_basis"	[style=dashed];	"lemma:disc_via_embs"	[label=disc_via_embs,		shape=ellipse];	defn_of_disc -> "lemma:disc_via_embs"	[style=dashed];	"lem:lin_indep_iff_disc_ne_zero"	[label=lin_indep_iff_disc_ne_zero,		shape=ellipse];	defn_of_disc -> "lem:lin_indep_iff_disc_ne_zero"	[style=dashed];	"lemma:alt_definition_of_norm_and_trace"	[color=blue,		label=alt_definition_of_norm_and_trace,		shape=ellipse];	"lemma:num_field_disc_in_terms_of_norm"	[color=green,		fillcolor="#a3d6ff",		label=num_field_disc_in_terms_of_norm,		shape=ellipse,		style=filled];	"lemma:alt_definition_of_norm_and_trace" -> "lemma:num_field_disc_in_terms_of_norm"	[style=dashed];	"lemma:disc_of_prim_elt_basis" -> "lemma:num_field_disc_in_terms_of_norm"	[style=dashed];	"lemma:int_basis_int_disc"	[color=blue,		label=int_basis_int_disc,		shape=ellipse];	"lemma:disc_int_basis"	[label=disc_int_basis,		shape=ellipse];	"lemma:int_basis_int_disc" -> "lemma:disc_int_basis"	[style=dashed];	"theorem:ring_of_ints_of_cyclo"	[label=ring_of_ints_of_cyclo,		shape=ellipse];	"lemma:eis_crit_and_alg_ints" -> "theorem:ring_of_ints_of_cyclo"	[style=dashed];	"lemma:ideals_mult_to_power"	[color=blue,		label=ideals_mult_to_power,		shape=ellipse];	"lemma:may_assume"	[label=may_assume,		shape=ellipse];	"lemma:ideals_mult_to_power" -> "lemma:may_assume"	[style=dashed];	"lemma:num_field_disc_in_terms_of_norm" -> "theorem:ring_of_ints_of_cyclo"	[style=dashed];	"lemma:disc_change_of_basis"	[color=green,		label=disc_change_of_basis,		shape=ellipse];	"lemma:disc_change_of_basis" -> "lemma:disc_int_basis"	[style=dashed];	"theorem:FLT_case_one"	[label=FLT_case_one,		shape=ellipse];	FLT_regular	[label=FLT_regular,		shape=ellipse];	"theorem:FLT_case_one" -> FLT_regular	[style=dashed];	"lemma:disc_via_embs" -> "lemma:disc_of_prim_elt_basis"	[style=dashed];	"lemma:unit_lemma" -> "lemma:may_assume"	[style=dashed];	"lemma:disc_int_basis" -> "theorem:ring_of_ints_of_cyclo"	[style=dashed];	"lemma:fac_of_p_in_p_th_root"	[color=blue,		label=fac_of_p_in_p_th_root,		shape=ellipse];	"lem:flt_fact_3"	[color=blue,		fillcolor="#a3d6ff",		label=flt_fact_3,		shape=ellipse,		style=filled];	"lem:flt_fact_5"	[label=flt_fact_5,		shape=ellipse];	"lem:flt_fact_3" -> "lem:flt_fact_5"	[style=dashed];	"lem:flt_fact_4"	[color=blue,		fillcolor="#a3d6ff",		label=flt_fact_4,		shape=ellipse,		style=filled];	"lem:flt_fact_4" -> "theorem:FLT_case_one"	[style=dashed];	"lem:flt_fact_4" -> "lem:flt_fact_5"	[style=dashed];	"theorem:ring_of_ints_of_cyclo" -> "lemma:may_assume"	[style=dashed];	"defn:is_regular_number"	[color=green,		fillcolor="#b0eca3",		label=is_regular_number,		shape=box,		style=filled];	"defn:is_regular_number" -> "theorem:FLT_case_one"	[style=dashed];	"theorem:FLT_case_two"	[label=FLT_case_two,		shape=ellipse];	"defn:is_regular_number" -> "theorem:FLT_case_two"	[style=dashed];	"lem:flt_fact_2"	[color=blue,		fillcolor="#a3d6ff",		label=flt_fact_2,		shape=ellipse,		style=filled];	"lem:flt_fact_2" -> "theorem:FLT_case_one"	[style=dashed];	"lemma:may_assume" -> "theorem:FLT_case_one"	[style=dashed];	"lemma:may_assume" -> "theorem:FLT_case_two"	[style=dashed];	"lemma:cyclo_poly"	[color=blue,		label=cyclo_poly,		shape=ellipse];	"thm:Kummers_lemma"	[color=blue,		label=Kummers_lemma,		shape=ellipse];	"thm:Kummers_lemma" -> "theorem:FLT_case_two"	[style=dashed];	"theorem:FLT_case_two" -> FLT_regular	[style=dashed];	"lem:roots_of_unity_in_cyclo"	[color=blue,		fillcolor="#a3d6ff",		label=roots_of_unity_in_cyclo,		shape=ellipse,		style=filled];	"lem:roots_of_unity_in_cyclo" -> "lemma:unit_lemma"	[style=dashed];	"lem:flt_fact_5" -> "theorem:FLT_case_one"	[style=dashed];}')
+    .renderDot('strict digraph "" {	graph [bgcolor=transparent];	node [label="\N",		penwidth=1.8	];	edge [arrowhead=vee];	"lemma:diff_of_irr_pol"	[color=blue,		fillcolor="#a3d6ff",		label=diff_of_irr_pol,		shape=ellipse,		style=filled];	"lemma:alg_int_abs_val_one"	[color=blue,		label=alg_int_abs_val_one,		shape=ellipse];	"lemma:unit_lemma"	[label=unit_lemma,		shape=ellipse];	"lemma:alg_int_abs_val_one" -> "lemma:unit_lemma"	[style=dashed];	defn_of_disc	[color=blue,		label=defn_of_disc,		shape=box];	"lemma:disc_of_prim_elt_basis"	[color=green,		fillcolor="#a3d6ff",		label=disc_of_prim_elt_basis,		shape=ellipse,		style=filled];	defn_of_disc -> "lemma:disc_of_prim_elt_basis"	[style=dashed];	"lem:disc_change_of_basis"	[label=disc_change_of_basis,		shape=ellipse];	defn_of_disc -> "lem:disc_change_of_basis"	[style=dashed];	"lemma:disc_via_embs"	[label=disc_via_embs,		shape=ellipse];	defn_of_disc -> "lemma:disc_via_embs"	[style=dashed];	"lem:lin_indep_iff_disc_ne_zero"	[label=lin_indep_iff_disc_ne_zero,		shape=ellipse];	defn_of_disc -> "lem:lin_indep_iff_disc_ne_zero"	[style=dashed];	"lemma:alt_definition_of_norm_and_trace"	[color=blue,		label=alt_definition_of_norm_and_trace,		shape=ellipse];	"lemma:num_field_disc_in_terms_of_norm"	[color=green,		fillcolor="#a3d6ff",		label=num_field_disc_in_terms_of_norm,		shape=ellipse,		style=filled];	"lemma:alt_definition_of_norm_and_trace" -> "lemma:num_field_disc_in_terms_of_norm"	[style=dashed];	"lemma:disc_of_prim_elt_basis" -> "lemma:num_field_disc_in_terms_of_norm"	[style=dashed];	"lemma:int_basis_int_disc"	[color=blue,		label=int_basis_int_disc,		shape=ellipse];	"lemma:disc_int_basis"	[label=disc_int_basis,		shape=ellipse];	"lemma:int_basis_int_disc" -> "lemma:disc_int_basis"	[style=dashed];	"lemma:eis_crit_and_alg_ints"	[label=eis_crit_and_alg_ints,		shape=ellipse];	"theorem:ring_of_ints_of_cyclo"	[label=ring_of_ints_of_cyclo,		shape=ellipse];	"lemma:eis_crit_and_alg_ints" -> "theorem:ring_of_ints_of_cyclo"	[style=dashed];	"lemma:ideals_mult_to_power"	[color=blue,		label=ideals_mult_to_power,		shape=ellipse];	"lemma:may_assume"	[label=may_assume,		shape=ellipse];	"lemma:ideals_mult_to_power" -> "lemma:may_assume"	[style=dashed];	"lemma:num_field_disc_in_terms_of_norm" -> "theorem:ring_of_ints_of_cyclo"	[style=dashed];	"theorem:FLT_case_one"	[label=FLT_case_one,		shape=ellipse];	FLT_regular	[label=FLT_regular,		shape=ellipse];	"theorem:FLT_case_one" -> FLT_regular	[style=dashed];	"lemma:disc_via_embs" -> "lemma:disc_of_prim_elt_basis"	[style=dashed];	"lemma:disc_change_of_basis"	[color=green,		label=disc_change_of_basis,		shape=ellipse];	"lemma:disc_change_of_basis" -> "lemma:disc_int_basis"	[style=dashed];	"lemma:unit_lemma" -> "lemma:may_assume"	[style=dashed];	"lemma:disc_int_basis" -> "theorem:ring_of_ints_of_cyclo"	[style=dashed];	"lemma:fac_of_p_in_p_th_root"	[color=blue,		label=fac_of_p_in_p_th_root,		shape=ellipse];	"lem:flt_fact_3"	[color=blue,		fillcolor="#a3d6ff",		label=flt_fact_3,		shape=ellipse,		style=filled];	"lem:flt_fact_5"	[label=flt_fact_5,		shape=ellipse];	"lem:flt_fact_3" -> "lem:flt_fact_5"	[style=dashed];	"lem:flt_fact_4"	[color=blue,		fillcolor="#a3d6ff",		label=flt_fact_4,		shape=ellipse,		style=filled];	"lem:flt_fact_4" -> "theorem:FLT_case_one"	[style=dashed];	"lem:flt_fact_4" -> "lem:flt_fact_5"	[style=dashed];	"theorem:ring_of_ints_of_cyclo" -> "lemma:may_assume"	[style=dashed];	"defn:is_regular_number"	[color=green,		fillcolor="#b0eca3",		label=is_regular_number,		shape=box,		style=filled];	"defn:is_regular_number" -> "theorem:FLT_case_one"	[style=dashed];	"theorem:FLT_case_two"	[label=FLT_case_two,		shape=ellipse];	"defn:is_regular_number" -> "theorem:FLT_case_two"	[style=dashed];	"lemma:norm_trace_of_alg_int_is_int"	[color=blue,		label=norm_trace_of_alg_int_is_int,		shape=ellipse];	"lemma:norm_trace_of_alg_int_is_int" -> "lemma:eis_crit_and_alg_ints"	[style=dashed];	"lem:flt_fact_2"	[color=blue,		fillcolor="#a3d6ff",		label=flt_fact_2,		shape=ellipse,		style=filled];	"lem:flt_fact_2" -> "theorem:FLT_case_one"	[style=dashed];	"lemma:may_assume" -> "theorem:FLT_case_one"	[style=dashed];	"lemma:may_assume" -> "theorem:FLT_case_two"	[style=dashed];	"lemma:cyclo_poly"	[color=blue,		label=cyclo_poly,		shape=ellipse];	"thm:Kummers_lemma"	[color=blue,		label=Kummers_lemma,		shape=ellipse];	"thm:Kummers_lemma" -> "theorem:FLT_case_two"	[style=dashed];	"theorem:FLT_case_two" -> FLT_regular	[style=dashed];	"lem:roots_of_unity_in_cyclo"	[color=blue,		fillcolor="#a3d6ff",		label=roots_of_unity_in_cyclo,		shape=ellipse,		style=filled];	"lem:roots_of_unity_in_cyclo" -> "lemma:unit_lemma"	[style=dashed];	"lem:flt_fact_5" -> "theorem:FLT_case_one"	[style=dashed];}')
     .on("end", interactive);
 
 clickNode = function() {

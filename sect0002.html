@@ -54,21 +54,70 @@
 
 <div class="main-text">
 <h1 id="a0000000003">2 Discriminants of number fields</h1>
-<p> <div class="lemma_thmwrapper" id="lemma:alt_definition_of_norm_and_trace">
+<p> <div class="lemma_thmwrapper" id="lemma:alt_definition_of_norm">
   <div class="lemma_thmheading">
     <span class="lemma_thmcaption">
     lemma
     </span>
     <span class="lemma_thmlabel">2.1</span>
+    ✓
     <div class="thm_icons">
-    <a class="icon proof" href="sect0002.html#lemma:alt_definition_of_norm_and_trace">#</a>
+    <a class="icon proof" href="sect0002.html#lemma:alt_definition_of_norm">#</a>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/c414df7d5fe3eff4bc124f2d7f25e7d56060ad6f/src/ring_theory/norm.lean#L275">algebra.norm_eq_prod_embeddings</a></li>
+        </ul>
+
+      </div>
+    </div>
 
   </div>
   </div>
   <div class="lemma_thmcontent">
-  <p> Let \(K\) be a number field, \(\alpha \in K\) and let \(\sigma _i\) be the embeddings of \(K\) into \(\mathbb {C}\). Then </p>
+  <p>  Let \(K\) be a number field, \(\alpha \in K\) and let \(\sigma _i\) be the embeddings of \(K\) into \(\mathbb {C}\). Then </p>
 <div class="displaymath" id="a0000000007">
-  \[ \operatorname {Tr}_{K/\mathbb {Q}}(\alpha ) =\sum _i \sigma _i(\alpha ) \qquad N_{K/\mathbb {Q}}(\alpha )=\prod _i \sigma _i(\alpha )  \]
+  \[ N_{K/\mathbb {Q}}(\alpha )=\prod _i \sigma _i(\alpha )  \]
+</div>
+
+  </div>
+</div> </p>
+<p><div class="lemma_thmwrapper" id="lemma:alt_definition_of_trace">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    lemma
+    </span>
+    <span class="lemma_thmlabel">2.2</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0002.html#lemma:alt_definition_of_trace">#</a>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/c414df7d5fe3eff4bc124f2d7f25e7d56060ad6f/src/ring_theory/trace.lean#L347">trace_eq_sum_embeddings</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p>  Let \(K\) be a number field, \(\alpha \in K\) and let \(\sigma _i\) be the embeddings of \(K\) into \(\mathbb {C}\). Then </p>
+<div class="displaymath" id="a0000000008">
+  \[ \operatorname {Tr}_{K/\mathbb {Q}}(\alpha ) =\sum _i \sigma _i(\alpha )  \]
 </div>
 
   </div>
@@ -78,7 +127,7 @@
     <span class="definition_thmcaption">
     Definition
     </span>
-    <span class="definition_thmlabel">2.2</span>
+    <span class="definition_thmlabel">2.3</span>
     ✓
     <div class="thm_icons">
     <a class="icon proof" href="sect0002.html#defn_of_disc">#</a>
@@ -91,7 +140,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/mathlib/blob/8dd4619ba9467b52f253b3af114f95a0be181a59/src/ring_theory/discriminant.lean#L65">algebra.discr</a></li>
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/c414df7d5fe3eff4bc124f2d7f25e7d56060ad6f/src/ring_theory/discriminant.lean#L65">algebra.discr</a></li>
         </ul>
 
       </div>
@@ -101,7 +150,7 @@
   </div>
   <div class="definition_thmcontent">
   <p>  Let \(A,K\) be commutative rings with \(K\) and \(A\)-algebra. let \(B=\{ b_1,\dots ,b_n\} \) be a set of elements in \(K\). The discriminant of \(B\) is defined as </p>
-<div class="displaymath" id="a0000000008">
+<div class="displaymath" id="a0000000009">
   \[ \Delta (B)= \det \left(\begin{matrix}  \operatorname {Tr}_{K/A}(b_1b_1) 
 
 & \cdots 
@@ -128,7 +177,7 @@
     <span class="lemma_thmcaption">
     lemma
     </span>
-    <span class="lemma_thmlabel">2.3</span>
+    <span class="lemma_thmlabel">2.4</span>
     <div class="thm_icons">
     <a class="icon proof" href="sect0002.html#lem:lin_indep_iff_disc_ne_zero">#</a>
     <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
@@ -141,7 +190,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="sect0002.html#defn_of_disc">Definition 2.2</a></li>
+          <li><a href="sect0002.html#defn_of_disc">Definition 2.3</a></li>
         </ul>
 
       </div>
@@ -159,7 +208,7 @@
     <span class="lemma_thmcaption">
     lemma
     </span>
-    <span class="lemma_thmlabel">2.4</span>
+    <span class="lemma_thmlabel">2.5</span>
     <div class="thm_icons">
     <a class="icon proof" href="sect0002.html#lem:disc_change_of_basis">#</a>
     <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
@@ -172,7 +221,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="sect0002.html#defn_of_disc">Definition 2.2</a></li>
+          <li><a href="sect0002.html#defn_of_disc">Definition 2.3</a></li>
         </ul>
 
       </div>
@@ -182,7 +231,7 @@
   </div>
   <div class="lemma_thmcontent">
   <p>  Let \(K\) be a number field and \(B,B'\) bases for \(K/\mathbb {Q}\). If \(P\) denotes the change of basis matrix, then </p>
-<div class="displaymath" id="a0000000009">
+<div class="displaymath" id="a0000000010">
   \[ \Delta (B)=\det (P)^2 \Delta (B'). \]
 </div>
 
@@ -193,10 +242,10 @@
     <span class="lemma_thmcaption">
     lemma
     </span>
-    <span class="lemma_thmlabel">2.5</span>
+    <span class="lemma_thmlabel">2.6</span>
     <div class="thm_icons">
     <a class="icon proof" href="sect0002.html#lemma:disc_via_embs">#</a>
-    <a class="icon proof" href="sect0002.html#a0000000010"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+    <a class="icon proof" href="sect0002.html#a0000000011"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
 </a>
     <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
 </button>
@@ -208,7 +257,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="sect0002.html#defn_of_disc">Definition 2.2</a></li>
+          <li><a href="sect0002.html#defn_of_disc">Definition 2.3</a></li>
         </ul>
 
       </div>
@@ -218,7 +267,7 @@
   </div>
   <div class="lemma_thmcontent">
   <p>  Let \(K\) be a number field with basis \(B=\{ b_1,\dots ,b_n\} \) and let \(\sigma _1,\dots ,\sigma _n\) be the embeddings of \(K\) into \(\mathbb {C}\). Now let \(M\) be the matrix </p>
-<div class="displaymath" id="a0000000011">
+<div class="displaymath" id="a0000000012">
   \[ \left(\begin{matrix}  \sigma _1(b_1) 
 
 & \cdots 
@@ -238,13 +287,13 @@
 \end{matrix} \right). \]
 </div>
 <p> Then </p>
-<div class="displaymath" id="a0000000012">
+<div class="displaymath" id="a0000000013">
   \[ \Delta (B)=\det (M)^2. \]
 </div>
 
   </div>
 </div> </p>
-<div class="proof_wrapper" id="a0000000010">
+<div class="proof_wrapper" id="a0000000011">
   <div class="proof_heading">
     <span class="proof_caption">
     Proof
@@ -252,8 +301,8 @@
     <span class="expand-proof">▼</span>
   </div>
   <div class="proof_content">
-  <p>By Proposition <a href="sect0002.html#lemma:alt_definition_of_norm_and_trace">2.1</a> we know that \(\operatorname {Tr}_{K/\mathbb {Q}}(b_i b_j)= \sum _k \sigma _k(b_i)\sigma _k(b_j)\) which is the same as the \((i,j)\) entry of \(M^t M\). Therefore </p>
-<div class="displaymath" id="a0000000013">
+  <p>By Proposition <a href="sect0002.html#lemma:alt_definition_of_trace">2.2</a> we know that \(\operatorname {Tr}_{K/\mathbb {Q}}(b_i b_j)= \sum _k \sigma _k(b_i)\sigma _k(b_j)\) which is the same as the \((i,j)\) entry of \(M^t M\). Therefore </p>
+<div class="displaymath" id="a0000000014">
   \[ \det (T_B)=\det (M^t M)=\det (M)^2. \]
 </div>
 
@@ -264,10 +313,10 @@
     <span class="lemma_thmcaption">
     lemma
     </span>
-    <span class="lemma_thmlabel">2.6</span>
+    <span class="lemma_thmlabel">2.7</span>
     <div class="thm_icons">
     <a class="icon proof" href="sect0002.html#lemma:disc_of_prim_elt_basis">#</a>
-    <a class="icon proof" href="sect0002.html#a0000000014"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+    <a class="icon proof" href="sect0002.html#a0000000015"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
 </a>
     <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
 </button>
@@ -279,8 +328,8 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="sect0002.html#defn_of_disc">Definition 2.2</a></li>
-          <li><a href="sect0002.html#lemma:disc_via_embs">lemma 2.5</a></li>
+          <li><a href="sect0002.html#defn_of_disc">Definition 2.3</a></li>
+          <li><a href="sect0002.html#lemma:disc_via_embs">lemma 2.6</a></li>
         </ul>
 
       </div>
@@ -294,7 +343,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/mathlib/blob/8dd4619ba9467b52f253b3af114f95a0be181a59/src/ring_theory/discriminant.lean#L153">algebra.discr_power_basis_eq_prod</a></li>
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/c414df7d5fe3eff4bc124f2d7f25e7d56060ad6f/src/ring_theory/discriminant.lean#L153">algebra.discr_power_basis_eq_prod</a></li>
         </ul>
 
       </div>
@@ -304,14 +353,14 @@
   </div>
   <div class="lemma_thmcontent">
   <p>   Let \(K\) be a number field and \(B=\{ 1,\alpha ,\alpha ^2,\dots ,\alpha ^{n-1}\} \) for some \(\alpha \in K\). Then </p>
-<div class="displaymath" id="a0000000015">
+<div class="displaymath" id="a0000000016">
   \[ \Delta (B)=\prod _{i {\lt} j} (\sigma _i(\alpha )-\sigma _j(\alpha ))^2 \]
 </div>
 <p> where \(\sigma _i\) are the embeddings of \(K \) into \(\mathbb {C}\). Here \(\Delta (B)\) denotes the discriminant. </p>
 
   </div>
 </div> </p>
-<div class="proof_wrapper" id="a0000000014">
+<div class="proof_wrapper" id="a0000000015">
   <div class="proof_heading">
     <span class="proof_caption">
     Proof
@@ -320,7 +369,7 @@
   </div>
   <div class="proof_content">
   <p>First we recall a classical linear algebra result relating to the Vandermonde matrix, which states that </p>
-<div class="displaymath" id="a0000000016">
+<div class="displaymath" id="a0000000017">
   \[ \det \left(\begin{matrix}  1 
 
 &  x_1
@@ -347,7 +396,7 @@
 
 \end{matrix} \right) =\prod _{i{\lt}j} (x_i-x_j). \]
 </div>
-<p> Combining this with Proposition <a href="sect0002.html#lemma:disc_via_embs">2.5</a> gives the result. </p>
+<p> Combining this with Proposition <a href="sect0002.html#lemma:disc_via_embs">2.6</a> gives the result. </p>
 
   </div>
 </div>
@@ -356,24 +405,24 @@
     <span class="lemma_thmcaption">
     lemma
     </span>
-    <span class="lemma_thmlabel">2.7</span>
+    <span class="lemma_thmlabel">2.8</span>
     <div class="thm_icons">
     <a class="icon proof" href="sect0002.html#lemma:diff_of_irr_pol">#</a>
-    <a class="icon proof" href="sect0002.html#a0000000017"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+    <a class="icon proof" href="sect0002.html#a0000000018"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
 </a>
 
   </div>
   </div>
   <div class="lemma_thmcontent">
   <p> Let \(f\) be a monic irreducible polynomial over a number field \(K\) and let \(\alpha \) be one of its roots in \(\mathbb {C}\). Then </p>
-<div class="displaymath" id="a0000000018">
+<div class="displaymath" id="a0000000019">
   \[ f'(\alpha )=\prod _{\beta \neq \alpha } (\alpha -\beta ),  \]
 </div>
 <p> where the product is over the roots of \(f\) different from \(\alpha \). </p>
 
   </div>
 </div> </p>
-<div class="proof_wrapper" id="a0000000017">
+<div class="proof_wrapper" id="a0000000018">
   <div class="proof_heading">
     <span class="proof_caption">
     Proof
@@ -382,7 +431,7 @@
   </div>
   <div class="proof_content">
   <p>We first write \(f(x)=(x-\alpha )g(x)\) which we can do (over \(\mathbb {C}\)) as \(\alpha \) is a root of \(f\), where now \(g(x)=\prod _{\beta \neq \alpha } (x-\beta )\). Differentiating we get </p>
-<div class="displaymath" id="a0000000019">
+<div class="displaymath" id="a0000000020">
   \[ f'(x)=g(x)+(x-\alpha )g'(x). \]
 </div>
 <p> If we now evaluate at \(\alpha \) we get the result. </p>
@@ -394,10 +443,10 @@
     <span class="lemma_thmcaption">
     lemma
     </span>
-    <span class="lemma_thmlabel">2.8</span>
+    <span class="lemma_thmlabel">2.9</span>
     <div class="thm_icons">
     <a class="icon proof" href="sect0002.html#lemma:num_field_disc_in_terms_of_norm">#</a>
-    <a class="icon proof" href="sect0002.html#a0000000020"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+    <a class="icon proof" href="sect0002.html#a0000000021"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
 </a>
     <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
 </button>
@@ -409,8 +458,8 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="sect0002.html#lemma:disc_of_prim_elt_basis">lemma 2.6</a></li>
-          <li><a href="sect0002.html#lemma:alt_definition_of_norm_and_trace">lemma 2.1</a></li>
+          <li><a href="sect0002.html#lemma:disc_of_prim_elt_basis">lemma 2.7</a></li>
+          <li><a href="sect0002.html#lemma:alt_definition_of_norm">lemma 2.1</a></li>
         </ul>
 
       </div>
@@ -433,14 +482,14 @@
   </div>
   <div class="lemma_thmcontent">
   <p>   Let \(K=\mathbb {Q}(\alpha )\) be a number field with \(n=[K:\mathbb {Q}]\) and let \(B=\{ 1,\alpha ,\alpha ^2,\dots ,\alpha ^{n-1}\} \). Then </p>
-<div class="displaymath" id="a0000000021">
+<div class="displaymath" id="a0000000022">
   \[ \Delta (B)=(-1)^{\frac{n(n-1)}{2}}N_{K/\mathbb {Q}}(m_\alpha '(\alpha )) \]
 </div>
 <p> where \(m_\alpha '\) is the derivative of \(m_\alpha (x)\) (which we recall denotes the minimal polynomial of \(\alpha \)). </p>
 
   </div>
 </div> </p>
-<div class="proof_wrapper" id="a0000000020">
+<div class="proof_wrapper" id="a0000000021">
   <div class="proof_heading">
     <span class="proof_caption">
     Proof
@@ -448,12 +497,12 @@
     <span class="expand-proof">▼</span>
   </div>
   <div class="proof_content">
-  <p>By Proposition <a href="sect0002.html#lemma:disc_of_prim_elt_basis">2.6</a> we have \(\Delta (B)=\prod _{i {\lt} j}(\alpha _i-\alpha _j)^2\) where \(\alpha _k:=\sigma _k(\alpha )\). Next, we note that the number of terms in this product is \(1+2+\cdots +(n-1)=\frac{n(n-1)}{2}\). So if we write each term as \((\alpha _i-\alpha _j)^2=-(\alpha _i-\alpha _j)(\alpha _j-\alpha _i)\) we get </p>
-<div class="displaymath" id="a0000000022">
+  <p>By Proposition <a href="sect0002.html#lemma:disc_of_prim_elt_basis">2.7</a> we have \(\Delta (B)=\prod _{i {\lt} j}(\alpha _i-\alpha _j)^2\) where \(\alpha _k:=\sigma _k(\alpha )\). Next, we note that the number of terms in this product is \(1+2+\cdots +(n-1)=\frac{n(n-1)}{2}\). So if we write each term as \((\alpha _i-\alpha _j)^2=-(\alpha _i-\alpha _j)(\alpha _j-\alpha _i)\) we get </p>
+<div class="displaymath" id="a0000000023">
   \[ \Delta (B)=(-1)^{\frac{n(n-1)}{2}}\prod _{i=1}^n \prod _{i \neq j} (\alpha _i-\alpha _j).  \]
 </div>
-<p>Now, by lemma <a href="sect0002.html#lemma:diff_of_irr_pol">2.7</a> and Proposition <a href="sect0002.html#lemma:alt_definition_of_norm_and_trace">2.1</a> we see that </p>
-<div class="displaymath" id="a0000000023">
+<p>Now, by lemma <a href="sect0002.html#lemma:diff_of_irr_pol">2.8</a> and Proposition <a href="sect0002.html#lemma:alt_definition_of_norm">2.1</a> we see that </p>
+<div class="displaymath" id="a0000000024">
   \[ N_{K/\mathbb {Q}}(m_\alpha '(\alpha ))=\prod _{i=1}^n m_\alpha '(\alpha _i)=\prod _{i=1}^n \prod _{i \neq j} (\alpha _i-\alpha _j), \]
 </div>
 <p> which gives the result. </p>
@@ -465,7 +514,7 @@
     <span class="lemma_thmcaption">
     lemma
     </span>
-    <span class="lemma_thmlabel">2.9</span>
+    <span class="lemma_thmlabel">2.10</span>
     ✓
     <div class="thm_icons">
     <a class="icon proof" href="sect0002.html#lemma:disc_change_of_basis">#</a>
@@ -478,7 +527,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/mathlib/blob/8dd4619ba9467b52f253b3af114f95a0be181a59/src/ring_theory/discriminant.lean#L110">algebra.discr_of_matrix_mul_vec</a></li>
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/c414df7d5fe3eff4bc124f2d7f25e7d56060ad6f/src/ring_theory/discriminant.lean#L110">algebra.discr_of_matrix_mul_vec</a></li>
         </ul>
 
       </div>
@@ -488,7 +537,7 @@
   </div>
   <div class="lemma_thmcontent">
   <p>  Let \(K\) be a number field and \(B,B'\) bases for \(K/\mathbb {Q}\). If \(P\) denotes the change of basis matrix, then </p>
-<div class="displaymath" id="a0000000024">
+<div class="displaymath" id="a0000000025">
   \[ \Delta (B)=\det (P)^2 \Delta (B'). \]
 </div>
 
@@ -499,7 +548,7 @@
     <span class="lemma_thmcaption">
     lemma
     </span>
-    <span class="lemma_thmlabel">2.10</span>
+    <span class="lemma_thmlabel">2.11</span>
     <div class="thm_icons">
     <a class="icon proof" href="sect0002.html#lemma:norm_trace_of_alg_int_is_int">#</a>
 
@@ -515,7 +564,7 @@
     <span class="lemma_thmcaption">
     lemma
     </span>
-    <span class="lemma_thmlabel">2.11</span>
+    <span class="lemma_thmlabel">2.12</span>
     <div class="thm_icons">
     <a class="icon proof" href="sect0002.html#lemma:int_basis_int_disc">#</a>
 
@@ -531,10 +580,10 @@
     <span class="lemma_thmcaption">
     lemma
     </span>
-    <span class="lemma_thmlabel">2.12</span>
+    <span class="lemma_thmlabel">2.13</span>
     <div class="thm_icons">
     <a class="icon proof" href="sect0002.html#lemma:disc_int_basis">#</a>
-    <a class="icon proof" href="sect0002.html#a0000000025"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+    <a class="icon proof" href="sect0002.html#a0000000026"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
 </a>
     <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
 </button>
@@ -546,8 +595,8 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="sect0002.html#lemma:disc_change_of_basis">lemma 2.9</a></li>
-          <li><a href="sect0002.html#lemma:int_basis_int_disc">lemma 2.11</a></li>
+          <li><a href="sect0002.html#lemma:disc_change_of_basis">lemma 2.10</a></li>
+          <li><a href="sect0002.html#lemma:int_basis_int_disc">lemma 2.12</a></li>
         </ul>
 
       </div>
@@ -557,18 +606,18 @@
   </div>
   <div class="lemma_thmcontent">
   <p>  Let \(K\) be a number field and \(B=\{ b_1,\dots ,b_n\} \) be a basis for \(K/\mathbb {Q}\) consisting of algebraic integers. If \(B\) is not an integral basis then there exists an algebraic integer of the form </p>
-<div class="displaymath" id="a0000000026">
+<div class="displaymath" id="a0000000027">
   \[ \alpha =\frac{x_1b_1+\cdots +x_nb_n}{p} \]
 </div>
 <p> where \(p\) is a prime and \(x_i \in \{ 0,\dots ,p-1\} \) with not all \(x_i\) zero. Moreover, if \(x_i \neq 0\) and we let \(B'\) be the basis obtained by replacing \(b_i\) with \(\alpha \), then </p>
-<div class="displaymath" id="a0000000027">
+<div class="displaymath" id="a0000000028">
   \[ \Delta (B')= \frac{x_i^2}{p^2} \Delta (B). \]
 </div>
 <p> In particular \(p^2 \mid \Delta (B)\). </p>
 
   </div>
 </div> </p>
-<div class="proof_wrapper" id="a0000000025">
+<div class="proof_wrapper" id="a0000000026">
   <div class="proof_heading">
     <span class="proof_caption">
     Proof
@@ -577,21 +626,21 @@
   </div>
   <div class="proof_content">
   <p>If \(B\) is not an integral basis then we can find some element \(\phi \in \mathcal{O}_K\) such that </p>
-<div class="displaymath" id="a0000000028">
+<div class="displaymath" id="a0000000029">
   \[ \phi =y_1b_1+\dots y_nb_n \]
 </div>
 <p> with not all the \(y_i\) in \(\mathbb {Z}\). So, let \(N\) be the least common multiple of the denominators of the \(y_i\) (meaning \(Ny_i \in \mathbb {Z}\) for all \(i\)). Now, let \(p\) be a prime factor of \(N\). If we now consider \((N/p)\phi \) then all of the coefficients of \(b_i\) are in \(\frac{1}{p} \mathbb {Z}\) (so they have denominator \(1\) or \(p\).) and at least one of them has denominator \(p\) (since not all the \(y_i\) where in \(\mathbb {Z}\)). So by relabelling, wlog we can assume </p>
-<div class="displaymath" id="a0000000029">
+<div class="displaymath" id="a0000000030">
   \[ \phi =y_1b_1+\dots y_nb_n \]
 </div>
 <p> with \(y_i \in \frac{1}{p} \mathbb {Z}\) </p>
 <p>Now look at </p>
-<div class="displaymath" id="a0000000030">
+<div class="displaymath" id="a0000000031">
   \[ \psi :=\lfloor y_1 \rfloor b_1+\cdots +\lfloor y_n \rfloor b_n \]
 </div>
 <p> (here \(\lfloor x \rfloor \) denotes the integer part of \(x\)). The both \(\psi \) and \(\phi \) are algebraic integers (as the \(b_i\) are algebraic integers). Therefore, so is \(\theta =\phi -\psi \). By construction, \(\theta \) has coefficients of the for \(\frac{x_i}{p}:=y_i-\lfloor y_i \rfloor \) where \(x_i \in \{ 0,\dots ,p-1\} \) and not all the \(x_i\) are zero (since, again, not all the \(y_i\) were in \(\mathbb {Z}\)). This gives the first part of the lemma. </p>
 <p>Now, assume \(x_i \neq 0\), then let us replace \(b_i \in B\) with \(\theta \) to get a new basis \(B'\) which again consists of algebraic integers. Next, we note that the change of basis matrix from \(B\) to \(B'\) is </p>
-<div class="displaymath" id="a0000000031">
+<div class="displaymath" id="a0000000032">
   \[  \left( \begin{matrix}  1
 
 & 0
@@ -639,7 +688,7 @@
 \\ \end{matrix} \right)  \]
 </div>
 <p>(here the column of \(x_j/p\)’s is in the \(i\)-th column). </p>
-<p>This matrix has determinant \(\frac{x_i}{p}.\) Therefore, by Proposition <a href="sect0002.html#lemma:disc_change_of_basis">2.9</a> we see that \(\Delta (B')=\frac{x_i^2}{p^2}\Delta (B)\). But both \(\Delta (B),\Delta (B')\) are in \(\mathbb {Z}\) by Proposition <a href="sect0002.html#lemma:int_basis_int_disc">2.11</a>, therefore \(p^2 \mid \Delta (B)\) giving the result. </p>
+<p>This matrix has determinant \(\frac{x_i}{p}.\) Therefore, by Proposition <a href="sect0002.html#lemma:disc_change_of_basis">2.10</a> we see that \(\Delta (B')=\frac{x_i^2}{p^2}\Delta (B)\). But both \(\Delta (B),\Delta (B')\) are in \(\mathbb {Z}\) by Proposition <a href="sect0002.html#lemma:int_basis_int_disc">2.12</a>, therefore \(p^2 \mid \Delta (B)\) giving the result. </p>
 
   </div>
 </div>
@@ -648,10 +697,10 @@
     <span class="lemma_thmcaption">
     lemma
     </span>
-    <span class="lemma_thmlabel">2.13</span>
+    <span class="lemma_thmlabel">2.14</span>
     <div class="thm_icons">
     <a class="icon proof" href="sect0002.html#lemma:eis_crit_and_alg_ints">#</a>
-    <a class="icon proof" href="sect0002.html#a0000000032"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+    <a class="icon proof" href="sect0002.html#a0000000033"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
 </a>
     <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
 </button>
@@ -663,7 +712,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="sect0002.html#lemma:norm_trace_of_alg_int_is_int">lemma 2.10</a></li>
+          <li><a href="sect0002.html#lemma:norm_trace_of_alg_int_is_int">lemma 2.11</a></li>
         </ul>
 
       </div>
@@ -673,14 +722,14 @@
   </div>
   <div class="lemma_thmcontent">
   <p>  Let \(K=\mathbb {Q}(\alpha )\) and \(\alpha \) be an algebraic integer such that \(m_\alpha \) satisfies Eisensteins Criterion for a prime \(p\). Then none of the elements </p>
-<div class="displaymath" id="a0000000033">
+<div class="displaymath" id="a0000000034">
   \[ \phi =\frac{1}{p}(x_0+x_1\alpha +\cdots +x_{n-1}\alpha ^{n-1}) \]
 </div>
 <p> is an algebraic integer, where \(n=\deg (m_\alpha )\) and \(x_i \in \{ 0,\dots ,p-1\} .\) </p>
 
   </div>
 </div> </p>
-<div class="proof_wrapper" id="a0000000032">
+<div class="proof_wrapper" id="a0000000033">
   <div class="proof_heading">
     <span class="proof_caption">
     Proof
@@ -689,30 +738,30 @@
   </div>
   <div class="proof_content">
   <p>Suppose for contradiction that \(\phi \in \mathcal{O}_K\) and let \(x_d\) be the first non-zero coefficient, so </p>
-<div class="displaymath" id="a0000000034">
+<div class="displaymath" id="a0000000035">
   \[ \phi =\frac{1}{p}(x_d\alpha ^d+x_{d+1}\alpha ^{d+1}+\cdots +x_{n-1}\alpha ^{n-1}) \in \mathcal{O}_K. \]
 </div>
 <p>Now, rewrite this as \(\phi =\frac{1}{p}(x_d\alpha ^d +\alpha ^{d+1}\beta )\) for some \(\beta \in \mathcal{O}_K\). Next, multiply through by \(\alpha ^{n-1-d}\), then we have </p>
-<div class="displaymath" id="a0000000035">
+<div class="displaymath" id="a0000000036">
   \[ \frac{x_d\alpha ^{n-1}}{p}+\frac{\alpha ^n\beta }{p} \in \mathcal{O}_K. \]
 </div>
 <p>Now, since \(m_\alpha \) satisfies Eisenstein at \(p\), we see that \(\alpha ^n=pf(\alpha )\) for some \(f \in \mathbb {Z}[x]\) and therefore the above gives us that </p>
-<div class="displaymath" id="a0000000036">
+<div class="displaymath" id="a0000000037">
   \[ \frac{x_d\alpha ^{n-1}}{p}+\beta f(\alpha ) \in \mathcal{O}_K. \]
 </div>
 <p> and thus </p>
-<div class="displaymath" id="a0000000037">
+<div class="displaymath" id="a0000000038">
   \[ \frac{x_d\alpha ^{n-1}}{p} \in \mathcal{O}_K. \]
 </div>
 <p>Lets now calculate the norm of this: </p>
-<div class="displaymath" id="a0000000038">
+<div class="displaymath" id="a0000000039">
   \[ N_{K/\mathbb {Q}} \left(\frac{x_d\alpha ^{n-1}}{p} \right)=\frac{x_d^n N_{K/\mathbb {Q}}(\alpha )^{n-1}}{p^n}. \]
 </div>
 <p> By Eisenstein the constant coefficient of \(m_\alpha \) is divisible by \(p\) but not \(p^2\), so since the constant coefficient of \(m_\alpha \) is \(N_{K/\mathbb {Q}}(\alpha )\) we see that \(N_{K/\mathbb {Q}}(\alpha )=p a\) where \(p \nmid a\). Therefore we have </p>
-<div class="displaymath" id="a0000000039">
+<div class="displaymath" id="a0000000040">
   \[ N_{K/\mathbb {Q}} \left(\frac{x_d\alpha ^{n-1}}{p} \right)=\frac{x_d^n p^{n-1}a^{n-1}}{p^n}= \frac{x_d^n a^{n-1}}{p}. \]
 </div>
-<p> But this cant be in \(\mathbb {Z}\) since \(p\) doesn’t divide \(x_d\) or \(a\), and this gives us a contradiction since Proposition <a href="sect0002.html#lemma:norm_trace_of_alg_int_is_int">2.10</a> says that the norm of an algebraic integer must be an integer. So \(\phi \) couldn’t have been an algebraic integer. </p>
+<p> But this cant be in \(\mathbb {Z}\) since \(p\) doesn’t divide \(x_d\) or \(a\), and this gives us a contradiction since Proposition <a href="sect0002.html#lemma:norm_trace_of_alg_int_is_int">2.11</a> says that the norm of an algebraic integer must be an integer. So \(\phi \) couldn’t have been an algebraic integer. </p>
 
   </div>
 </div>

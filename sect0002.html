@@ -54,7 +54,7 @@
 
 <div class="main-text">
 <h1 id="a0000000003">2 Discriminants of number fields</h1>
-<p> <div class="lemma_thmwrapper" id="lemma:alt_definition_of_norm">
+<p> <div class="lemma_thmwrapper" id="lemma:alt_definition_of_trace">
   <div class="lemma_thmheading">
     <span class="lemma_thmcaption">
     lemma
@@ -62,56 +62,7 @@
     <span class="lemma_thmlabel">2.1</span>
     ✓
     <div class="thm_icons">
-    <a class="icon proof" href="sect0002.html#lemma:alt_definition_of_norm">#</a>
-    <button class="modal lean">L∃∀N</button>
-    <div class="modal-container">
-      <div class="modal-content">
-        <header>
-          <h1>Lean declarations</h1>
-          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
-</button>
-        </header>
-                <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/mathlib/blob/c414df7d5fe3eff4bc124f2d7f25e7d56060ad6f/src/ring_theory/norm.lean#L275">algebra.norm_eq_prod_embeddings</a></li>
-        </ul>
-
-      </div>
-    </div>
-
-  </div>
-  </div>
-  <div class="lemma_thmcontent">
-  <p>  Let \(K\) be a number field, \(\alpha \in K\) and let \(\sigma _i\) be the embeddings of \(K\) into \(\mathbb {C}\). Then </p>
-<div class="displaymath" id="a0000000007">
-  \[ N_{K/\mathbb {Q}}(\alpha )=\prod _i \sigma _i(\alpha )  \]
-</div>
-<p>. </p>
-
-  </div>
-</div> </p>
-<div class="proof_wrapper" id="a0000000008">
-  <div class="proof_heading">
-    <span class="proof_caption">
-    Proof
-    </span>
-    <span class="expand-proof">▼</span>
-  </div>
-  <div class="proof_content">
-  <p>The proof is standard. </p>
-
-  </div>
-</div>
-<p><div class="lemma_thmwrapper" id="lemma:alt_definition_of_trace">
-  <div class="lemma_thmheading">
-    <span class="lemma_thmcaption">
-    lemma
-    </span>
-    <span class="lemma_thmlabel">2.2</span>
-    ✓
-    <div class="thm_icons">
     <a class="icon proof" href="sect0002.html#lemma:alt_definition_of_trace">#</a>
-    <a class="icon proof" href="sect0002.html#a0000000009"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
-</a>
     <button class="modal lean">L∃∀N</button>
     <div class="modal-container">
       <div class="modal-content">
@@ -131,8 +82,57 @@
   </div>
   <div class="lemma_thmcontent">
   <p>  Let \(K\) be a number field, \(\alpha \in K\) and let \(\sigma _i\) be the embeddings of \(K\) into \(\mathbb {C}\). Then </p>
-<div class="displaymath" id="a0000000010">
+<div class="displaymath" id="a0000000007">
   \[ \operatorname {Tr}_{K/\mathbb {Q}}(\alpha ) =\sum _i \sigma _i(\alpha )  \]
+</div>
+<p>. </p>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000008">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  <p>The proof is standard. </p>
+
+  </div>
+</div>
+<p><div class="lemma_thmwrapper" id="lemma:alt_definition_of_norm">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    lemma
+    </span>
+    <span class="lemma_thmlabel">2.2</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0002.html#lemma:alt_definition_of_norm">#</a>
+    <a class="icon proof" href="sect0002.html#a0000000009"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/c414df7d5fe3eff4bc124f2d7f25e7d56060ad6f/src/ring_theory/norm.lean#L275">algebra.norm_eq_prod_embeddings</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p>  Let \(K\) be a number field, \(\alpha \in K\) and let \(\sigma _i\) be the embeddings of \(K\) into \(\mathbb {C}\). Then </p>
+<div class="displaymath" id="a0000000010">
+  \[ N_{K/\mathbb {Q}}(\alpha )=\prod _i \sigma _i(\alpha )  \]
 </div>
 <p>. </p>
 
@@ -222,7 +222,7 @@
         </header>
                 <ul class="uses">
           <li><a href="sect0002.html#defn_of_disc">Definition 2.3</a></li>
-          <li><a href="sect0002.html#lemma:alt_definition_of_norm">lemma 2.1</a></li>
+          <li><a href="sect0002.html#lemma:alt_definition_of_norm">lemma 2.2</a></li>
         </ul>
 
       </div>
@@ -403,7 +403,7 @@
     <span class="expand-proof">▼</span>
   </div>
   <div class="proof_content">
-  <p>By Proposition <a href="sect0002.html#lemma:alt_definition_of_trace">2.2</a> we know that \(\operatorname {Tr}_{K/\mathbb {Q}}(b_i b_j)= \sum _k \sigma _k(b_i)\sigma _k(b_j)\) which is the same as the \((i,j)\) entry of \(M^t M\). Therefore </p>
+  <p>By Proposition <a href="sect0002.html#lemma:alt_definition_of_trace">2.1</a> we know that \(\operatorname {Tr}_{K/\mathbb {Q}}(b_i b_j)= \sum _k \sigma _k(b_i)\sigma _k(b_j)\) which is the same as the \((i,j)\) entry of \(M^t M\). Therefore </p>
 <div class="displaymath" id="a0000000018">
   \[ \det (T_B)=\det (M^t M)=\det (M)^2. \]
 </div>
@@ -578,7 +578,7 @@
         </header>
                 <ul class="uses">
           <li><a href="sect0002.html#lemma:disc_of_prim_elt_basis">lemma 2.7</a></li>
-          <li><a href="sect0002.html#lemma:alt_definition_of_norm">lemma 2.1</a></li>
+          <li><a href="sect0002.html#lemma:alt_definition_of_norm">lemma 2.2</a></li>
         </ul>
 
       </div>
@@ -620,7 +620,7 @@
 <div class="displaymath" id="a0000000027">
   \[ \Delta (B)=(-1)^{\frac{n(n-1)}{2}}\prod _{i=1}^n \prod _{i \neq j} (\alpha _i-\alpha _j).  \]
 </div>
-<p>Now, by lemma <a href="sect0002.html#lemma:diff_of_irr_pol">2.8</a> and Proposition <a href="sect0002.html#lemma:alt_definition_of_norm">2.1</a> we see that </p>
+<p>Now, by lemma <a href="sect0002.html#lemma:diff_of_irr_pol">2.8</a> and Proposition <a href="sect0002.html#lemma:alt_definition_of_norm">2.2</a> we see that </p>
 <div class="displaymath" id="a0000000028">
   \[ N_{K/\mathbb {Q}}(m_\alpha '(\alpha ))=\prod _{i=1}^n m_\alpha '(\alpha _i)=\prod _{i=1}^n \prod _{i \neq j} (\alpha _i-\alpha _j), \]
 </div>

@@ -93,7 +93,7 @@
     <span class="theorem_thmlabel">3.2</span>
     <div class="thm_icons">
     <a class="icon proof" href="sect0003.html#theorem:ring_of_ints_of_cyclo">#</a>
-    <a class="icon proof" href="sect0003.html#a0000000041"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+    <a class="icon proof" href="sect0003.html#a0000000043"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
 </a>
     <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
 </button>
@@ -131,13 +131,13 @@
   </div>
   <div class="theorem_thmcontent">
   <p>   Let \(\zeta _p\) be a \(p\)-th root of unity for \(p\) an odd prime, let \(\lambda _p=1-\zeta _p\) and \(K=\mathbb {Q}(\zeta _p)\). Then \(\mathcal{O}_K=\mathbb {Z}[\zeta _p]=\mathbb {Z}[\lambda _p]\) moreover </p>
-<div class="displaymath" id="a0000000042">
+<div class="displaymath" id="a0000000044">
   \[ \Delta (\{ 1,\zeta _p,\dots ,\zeta _p^{p-2}\} )=\Delta (\{ 1,\lambda _p,\dots ,\lambda _p^{p-2}\} )=(-1)^{\frac{(p-1)}{2}}p^{p-2}. \]
 </div>
 
   </div>
 </div> </p>
-<div class="proof_wrapper" id="a0000000041">
+<div class="proof_wrapper" id="a0000000043">
   <div class="proof_heading">
     <span class="proof_caption">
     Proof
@@ -147,23 +147,23 @@
   <div class="proof_content">
   <p>First note \([K:\mathbb {Q}]=p-1\). </p>
 <p>Since \(\zeta _p=1-\lambda _p\) we at once get \(\mathbb {Z}[\zeta _p]=\mathbb {Z}[\lambda _p]\) (just do double inclusion). Next, let \(\alpha _i=\sigma _i(\zeta _p)\) denote the conjugates of \(\zeta _p\), which is the same as the image of \(\zeta _p\) under one of the embeddings \(\sigma _i: \mathbb {Q}(\zeta _p) \to \mathbb {C}\). Now by Proposition <a href="sect0002.html#lemma:disc_of_prim_elt_basis">2.7</a> we have </p>
-<div class="displaymath" id="a0000000043">
+<div class="displaymath" id="a0000000045">
   \begin{align*} \Delta (\{ 1,\zeta _p,\dots ,\zeta _p^{p-2}\} )=\prod _{i {\lt} j} (\alpha _i-\alpha _j)^2 & =\prod _{i {\lt} j} ((1-\alpha _i)-(1-\alpha _j))^2\\ & =\Delta (\{ 1,\lambda _p,\dots ,\lambda _p^{p-2}\} )\end{align*}
 </div>
 <p>Now, by Proposition <a href="sect0002.html#lemma:num_field_disc_in_terms_of_norm">2.9</a>, we have </p>
-<div class="displaymath" id="a0000000044">
+<div class="displaymath" id="a0000000046">
   \[ \Delta (\{ 1,\zeta _p,\cdots ,\zeta _p^{p-2}\} )=(-1)^{\frac{(p-1)(p-2)}{2}}N_{K/\mathbb {Q}}(\Phi _p'(\zeta _p) ) \]
 </div>
 <p> Since \(p\) is odd \((-1)^{\frac{(p-1)(p-2)}{2}}=(-1)^{\frac{(p-1)}{2}}\). Next, we see that </p>
-<div class="displaymath" id="a0000000045">
+<div class="displaymath" id="a0000000047">
   \[ \Phi _p'(x)=\frac{px^{p-1}(x-1)-(x^p-1)}{(x-1)^2} \]
 </div>
 <p> therefore </p>
-<div class="displaymath" id="a0000000046">
+<div class="displaymath" id="a0000000048">
   \[ \Phi _p'(\zeta _p)=-\frac{p\zeta _p^{p-1}}{\lambda _p}. \]
 </div>
 <p>Lastly, note that \(N_{K/\mathbb {Q}}(\zeta _p)=1\), since this is the constant term in its minimal polynomial. Similarly, we see \(N_{K/\mathbb {Q}}(\lambda _p)=p\). Putting this all together, we get </p>
-<div class="displaymath" id="a0000000047">
+<div class="displaymath" id="a0000000049">
   \[ N_{K/\mathbb {Q}}(\Phi _p'(\zeta _p) )=\frac{N_{K/\mathbb {Q}}(p)N_{K\mathbb {Q}}(\zeta _p)^{p-1}}{N_{K/\mathbb {Q}}(-\lambda _p)}=(-1)^{p-1}p^{p-2}=p^{p-2} \]
 </div>
 <p>So the last thing we need to prove is that \(\mathcal{O}_K=\mathbb {Z}[\zeta _p]\). From the calculation we just did, the only prime dividing the discriminant is \(p\), therefore Lemma <a href="sect0002.html#lemma:disc_int_basis">2.13</a> tells us the only prime we need to check is \(p\). But from Lemma <a href="sect0002.html#lemma:eis_crit_and_alg_ints">2.14</a> we know that dividing by \(p\) wont give us any new integral elements, so this must be an integral basis which give the result. </p>
@@ -187,7 +187,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/flt-regular//blob/10117f78df53f82c00f103bd6b830e87969531d9/src/number_theory/cyclotomic/absolute_value.lean#L406">mem_roots_of_unity_of_abs_eq_one</a></li>
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/8f134ba00ccacac28d9a714412b98f5d1a0a634d/src/number_theory/cyclotomic/absolute_value.lean#L406">mem_roots_of_unity_of_abs_eq_one</a></li>
         </ul>
 
       </div>
@@ -208,7 +208,7 @@
     <span class="lemma_thmlabel">3.4</span>
     <div class="thm_icons">
     <a class="icon proof" href="sect0003.html#lem:roots_of_unity_in_cyclo">#</a>
-    <a class="icon proof" href="sect0003.html#a0000000048"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+    <a class="icon proof" href="sect0003.html#a0000000050"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
 </a>
     <button class="modal lean">L∃∀N</button>
     <div class="modal-container">
@@ -219,7 +219,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/flt-regular//blob/10117f78df53f82c00f103bd6b830e87969531d9/src/number_theory/cyclotomic/Unit_lemmas.lean#L314">roots_of_unity_in_cyclo</a></li>
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/8f134ba00ccacac28d9a714412b98f5d1a0a634d/src/number_theory/cyclotomic/Unit_lemmas.lean#L314">roots_of_unity_in_cyclo</a></li>
         </ul>
 
       </div>
@@ -232,7 +232,7 @@
 
   </div>
 </div> </p>
-<div class="proof_wrapper" id="a0000000048">
+<div class="proof_wrapper" id="a0000000050">
   <div class="proof_heading">
     <span class="proof_caption">
     Proof
@@ -302,7 +302,7 @@
   </div>
   <div class="lemma_thmcontent">
   <p> Let \(p\) be a prime and \(n=p^k\). Then </p>
-<div class="displaymath" id="a0000000049">
+<div class="displaymath" id="a0000000051">
   \[ p=u(1-\zeta _n)^{\varphi (n)} \]
 </div>
 <p> where \(u \in \mathbb {Z}[\zeta _n]^{\times }\). </p>
@@ -322,11 +322,11 @@
   </div>
   <div class="lemma_thmcontent">
   <p> Let \(R\) be a Dedekind domain, \(p\) a prime and \(\mathfrak {a},\mathfrak {b},\mathfrak {c}\) ideals such that </p>
-<div class="displaymath" id="a0000000050">
+<div class="displaymath" id="a0000000052">
   \[ \mathfrak {a}\mathfrak {b}=\mathfrak {c}^p \]
 </div>
 <p> and suppose \(\mathfrak {a},\mathfrak {b}\) are coprime. Then there exist ideals \(\mathfrak {e},\mathfrak {d}\) such that </p>
-<div class="displaymath" id="a0000000051">
+<div class="displaymath" id="a0000000053">
   \[ \mathfrak {a}=\mathfrak {e}^p \qquad \mathfrak {b}=\mathfrak {d}^p \qquad \mathfrak {e}\mathfrak {d}=\mathfrak {c} \]
 </div>
 

@@ -144,15 +144,15 @@
 
   </div>
 </div>
-<p><div class="prop_thmwrapper" id="prop:discr_of_cyclo">
-  <div class="prop_thmheading">
-    <span class="prop_thmcaption">
-    Proposition
+<p><div class="lemma_thmwrapper" id="lem:discr_of_cyclo">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
     </span>
-    <span class="prop_thmlabel">3.3</span>
+    <span class="lemma_thmlabel">3.3</span>
     ✓
     <div class="thm_icons">
-    <a class="icon proof" href="sect0003.html#prop:discr_of_cyclo">#</a>
+    <a class="icon proof" href="sect0003.html#lem:discr_of_cyclo">#</a>
     <a class="icon proof" href="sect0003.html#a0000000036"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
 </a>
     <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
@@ -181,6 +181,7 @@
 </button>
         </header>
                 <ul class="uses">
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/1a1895cd74de2b3272df34347fa37e69bea8d1b3/src/number_theory/cyclotomic/rat.lean#L55">is_cyclotomic_extension.rat.discr_prime_pow'</a></li>
         </ul>
 
       </div>
@@ -188,7 +189,7 @@
 
   </div>
   </div>
-  <div class="prop_thmcontent">
+  <div class="lemma_thmcontent">
   <p>   Let \(\zeta _p\) be a \(p\)-th root of unity for \(p\) an odd prime, let \(\lambda _p=1-\zeta _p\) and \(K=\mathbb {Q}(\zeta _p)\). Then </p>
 <div class="displaymath" id="a0000000037">
   \[ \Delta (\{ 1,\zeta _p,\dots ,\zeta _p^{p-2}\} )=\Delta (\{ 1,\lambda _p,\dots ,\lambda _p^{p-2}\} )=(-1)^{\frac{(p-1)}{2}}p^{p-2}. \]
@@ -249,7 +250,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="sect0003.html#prop:discr_of_cyclo">Proposition 3.3</a></li>
+          <li><a href="sect0003.html#lem:discr_of_cyclo">Lemma 3.3</a></li>
           <li><a href="sect0002.html#lemma:eis_crit_and_alg_ints">Lemma 2.14</a></li>
           <li><a href="sect0002.html#lemma:disc_int_basis">Lemma 2.13</a></li>
         </ul>
@@ -286,7 +287,7 @@
     <span class="expand-proof">▼</span>
   </div>
   <div class="proof_content">
-  <p>We need to prove is that \(\mathcal{O}_K=\mathbb {Z}[\zeta _p]\). The inclusion \(\mathbb {Z}[\zeta _p] \subseteq \mathcal{O}_K\) is obvious. Let now \(x \in \mathcal{O}_K\). By Lemma <a href="sect0002.html#lemma:disc_int_basis">2.13</a> and Proposition <a href="sect0003.html#prop:discr_of_cyclo">3.3</a>, there is \(k \in \mathbb {N}\) such that \(p^k x \in \mathbb {Z}[\zeta _p]\). We conclude by Lemma <a href="sect0002.html#lemma:eis_crit_and_alg_ints">2.14</a>. </p>
+  <p>We need to prove is that \(\mathcal{O}_K=\mathbb {Z}[\zeta _p]\). The inclusion \(\mathbb {Z}[\zeta _p] \subseteq \mathcal{O}_K\) is obvious. Let now \(x \in \mathcal{O}_K\). By Lemma <a href="sect0002.html#lemma:disc_int_basis">2.13</a> and Proposition <a href="sect0003.html#lem:discr_of_cyclo">3.3</a>, there is \(k \in \mathbb {N}\) such that \(p^k x \in \mathbb {Z}[\zeta _p]\). We conclude by Lemma <a href="sect0002.html#lemma:eis_crit_and_alg_ints">2.14</a>. </p>
 
   </div>
 </div>
@@ -307,7 +308,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/flt-regular//blob/85eb9c9ac6823e9312aa5552c2651dfaf8f40a5d/src/number_theory/cyclotomic/absolute_value.lean#L406">mem_roots_of_unity_of_abs_eq_one</a></li>
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/703e75870488350f443df90d473e361b714f145e/src/number_theory/cyclotomic/absolute_value.lean#L406">mem_roots_of_unity_of_abs_eq_one</a></li>
         </ul>
 
       </div>
@@ -339,7 +340,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/flt-regular//blob/85eb9c9ac6823e9312aa5552c2651dfaf8f40a5d/src/number_theory/cyclotomic/Unit_lemmas.lean#L314">roots_of_unity_in_cyclo</a></li>
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/703e75870488350f443df90d473e361b714f145e/src/number_theory/cyclotomic/Unit_lemmas.lean#L360">roots_of_unity_in_cyclo</a></li>
         </ul>
 
       </div>
@@ -449,7 +450,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/flt-regular//blob/85eb9c9ac6823e9312aa5552c2651dfaf8f40a5d/src/ready_for_mathlib/exists_eq_pow_of_mul_eq_pow.lean#L12">ideal.exists_eq_pow_of_mul_eq_pow</a></li>
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/703e75870488350f443df90d473e361b714f145e/src/ready_for_mathlib/exists_eq_pow_of_mul_eq_pow.lean#L12">ideal.exists_eq_pow_of_mul_eq_pow</a></li>
         </ul>
 
       </div>

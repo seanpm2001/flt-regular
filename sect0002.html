@@ -54,7 +54,8 @@
 
 <div class="main-text">
 <h1 id="a0000000003">2 Discriminants of number fields</h1>
-<p> We recall basic facts about the discriminant. <div class="lemma_thmwrapper" id="lemma:alt_definition_of_trace">
+<p> We recall basic facts about the discriminant. </p>
+<p><div class="lemma_thmwrapper" id="lemma:alt_definition_of_norm">
   <div class="lemma_thmheading">
     <span class="lemma_thmcaption">
     Lemma
@@ -62,7 +63,9 @@
     <span class="lemma_thmlabel">2.1</span>
     ✓
     <div class="thm_icons">
-    <a class="icon proof" href="sect0002.html#lemma:alt_definition_of_trace">#</a>
+    <a class="icon proof" href="sect0002.html#lemma:alt_definition_of_norm">#</a>
+    <a class="icon proof" href="sect0002.html#a0000000007"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
     <button class="modal lean">L∃∀N</button>
     <div class="modal-container">
       <div class="modal-content">
@@ -72,7 +75,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/mathlib/blob/4a4cd6d61e404c116144088a9f7ba1cc07985052/src/ring_theory/trace.lean#L347">trace_eq_sum_embeddings</a></li>
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/0c08bd430ade2616ffbd83d34d0af901bac9fb77/src/ring_theory/norm.lean#L275">algebra.norm_eq_prod_embeddings</a></li>
         </ul>
 
       </div>
@@ -82,13 +85,14 @@
   </div>
   <div class="lemma_thmcontent">
   <p>  Let \(K\) be a number field, \(\alpha \in K\) and let \(\sigma _i\) be the embeddings of \(K\) into \(\mathbb {C}\). Then </p>
-<div class="displaymath" id="a0000000007">
-  \[ \operatorname {Tr}_{K/\mathbb {Q}}(\alpha ) =\sum _i \sigma _i(\alpha ).  \]
+<div class="displaymath" id="a0000000008">
+  \[ N_{K/\mathbb {Q}}(\alpha )=\prod _i \sigma _i(\alpha )  \]
 </div>
+<p>. </p>
 
   </div>
 </div> </p>
-<div class="proof_wrapper" id="a0000000008">
+<div class="proof_wrapper" id="a0000000007">
   <div class="proof_heading">
     <span class="proof_caption">
     Proof
@@ -100,7 +104,7 @@
 
   </div>
 </div>
-<p><div class="lemma_thmwrapper" id="lemma:alt_definition_of_norm">
+<p><div class="lemma_thmwrapper" id="lemma:alt_definition_of_trace">
   <div class="lemma_thmheading">
     <span class="lemma_thmcaption">
     Lemma
@@ -108,7 +112,7 @@
     <span class="lemma_thmlabel">2.2</span>
     ✓
     <div class="thm_icons">
-    <a class="icon proof" href="sect0002.html#lemma:alt_definition_of_norm">#</a>
+    <a class="icon proof" href="sect0002.html#lemma:alt_definition_of_trace">#</a>
     <a class="icon proof" href="sect0002.html#a0000000009"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
 </a>
     <button class="modal lean">L∃∀N</button>
@@ -120,7 +124,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/mathlib/blob/4a4cd6d61e404c116144088a9f7ba1cc07985052/src/ring_theory/norm.lean#L275">algebra.norm_eq_prod_embeddings</a></li>
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/0c08bd430ade2616ffbd83d34d0af901bac9fb77/src/ring_theory/trace.lean#L347">trace_eq_sum_embeddings</a></li>
         </ul>
 
       </div>
@@ -131,9 +135,8 @@
   <div class="lemma_thmcontent">
   <p>  Let \(K\) be a number field, \(\alpha \in K\) and let \(\sigma _i\) be the embeddings of \(K\) into \(\mathbb {C}\). Then </p>
 <div class="displaymath" id="a0000000010">
-  \[ N_{K/\mathbb {Q}}(\alpha )=\prod _i \sigma _i(\alpha )  \]
+  \[ \operatorname {Tr}_{K/\mathbb {Q}}(\alpha ) =\sum _i \sigma _i(\alpha ).  \]
 </div>
-<p>. </p>
 
   </div>
 </div> </p>
@@ -167,7 +170,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/mathlib/blob/4a4cd6d61e404c116144088a9f7ba1cc07985052/src/ring_theory/discriminant.lean#L65">algebra.discr</a></li>
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/0c08bd430ade2616ffbd83d34d0af901bac9fb77/src/ring_theory/discriminant.lean#L65">algebra.discr</a></li>
         </ul>
 
       </div>
@@ -221,7 +224,7 @@
         </header>
                 <ul class="uses">
           <li><a href="sect0002.html#defn_of_disc">Definition 2.3</a></li>
-          <li><a href="sect0002.html#lemma:alt_definition_of_norm">Lemma 2.2</a></li>
+          <li><a href="sect0002.html#lemma:alt_definition_of_norm">Lemma 2.1</a></li>
         </ul>
 
       </div>
@@ -235,7 +238,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/mathlib/blob/4a4cd6d61e404c116144088a9f7ba1cc07985052/src/ring_theory/discriminant.lean#L124">algebra.discr_not_zero_of_basis</a></li>
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/0c08bd430ade2616ffbd83d34d0af901bac9fb77/src/ring_theory/discriminant.lean#L124">algebra.discr_not_zero_of_basis</a></li>
         </ul>
 
       </div>
@@ -295,7 +298,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/mathlib/blob/4a4cd6d61e404c116144088a9f7ba1cc07985052/src/ring_theory/discriminant.lean#L110">algebra.discr_of_matrix_mul_vec</a></li>
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/0c08bd430ade2616ffbd83d34d0af901bac9fb77/src/ring_theory/discriminant.lean#L110">algebra.discr_of_matrix_mul_vec</a></li>
         </ul>
 
       </div>
@@ -345,7 +348,7 @@
         </header>
                 <ul class="uses">
           <li><a href="sect0002.html#defn_of_disc">Definition 2.3</a></li>
-          <li><a href="sect0002.html#lemma:alt_definition_of_trace">Lemma 2.1</a></li>
+          <li><a href="sect0002.html#lemma:alt_definition_of_trace">Lemma 2.2</a></li>
         </ul>
 
       </div>
@@ -359,7 +362,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/mathlib/blob/4a4cd6d61e404c116144088a9f7ba1cc07985052/src/ring_theory/discriminant.lean#L146">algebra.discr_eq_det_embeddings_matrix_reindex_pow_two</a></li>
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/0c08bd430ade2616ffbd83d34d0af901bac9fb77/src/ring_theory/discriminant.lean#L146">algebra.discr_eq_det_embeddings_matrix_reindex_pow_two</a></li>
         </ul>
 
       </div>
@@ -403,7 +406,7 @@
     <span class="expand-proof">▼</span>
   </div>
   <div class="proof_content">
-  <p>By Lemma <a href="sect0002.html#lemma:alt_definition_of_trace">2.1</a> we know that \(\operatorname {Tr}_{K/\mathbb {Q}}(b_i b_j)= \sum _k \sigma _k(b_i)\sigma _k(b_j)\) which is the same as the \((i,j)\) entry of \(M^t M\). Therefore </p>
+  <p>By Lemma <a href="sect0002.html#lemma:alt_definition_of_trace">2.2</a> we know that \(\operatorname {Tr}_{K/\mathbb {Q}}(b_i b_j)= \sum _k \sigma _k(b_i)\sigma _k(b_j)\) which is the same as the \((i,j)\) entry of \(M^t M\). Therefore </p>
 <div class="displaymath" id="a0000000018">
   \[ \det (T_B)=\det (M^t M)=\det (M)^2. \]
 </div>
@@ -446,7 +449,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/mathlib/blob/4a4cd6d61e404c116144088a9f7ba1cc07985052/src/ring_theory/discriminant.lean#L153">algebra.discr_power_basis_eq_prod</a></li>
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/0c08bd430ade2616ffbd83d34d0af901bac9fb77/src/ring_theory/discriminant.lean#L153">algebra.discr_power_basis_eq_prod</a></li>
         </ul>
 
       </div>
@@ -523,7 +526,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/mathlib/blob/4a4cd6d61e404c116144088a9f7ba1cc07985052/src/field_theory/splitting_field.lean#L495">polynomial.aeval_root_derivative_of_splits</a></li>
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/0c08bd430ade2616ffbd83d34d0af901bac9fb77/src/field_theory/splitting_field.lean#L495">polynomial.aeval_root_derivative_of_splits</a></li>
         </ul>
 
       </div>
@@ -578,7 +581,7 @@
         </header>
                 <ul class="uses">
           <li><a href="sect0002.html#lemma:disc_of_prim_elt_basis">Lemma 2.7</a></li>
-          <li><a href="sect0002.html#lemma:alt_definition_of_norm">Lemma 2.2</a></li>
+          <li><a href="sect0002.html#lemma:alt_definition_of_norm">Lemma 2.1</a></li>
         </ul>
 
       </div>
@@ -620,7 +623,7 @@
 <div class="displaymath" id="a0000000027">
   \[ \Delta (B)=(-1)^{\frac{n(n-1)}{2}}\prod _{i=1}^n \prod _{i \neq j} (\alpha _i-\alpha _j).  \]
 </div>
-<p>Now, by lemmas <a href="sect0002.html#lemma:diff_of_irr_pol">2.8</a> and <a href="sect0002.html#lemma:alt_definition_of_norm">2.2</a> we see that </p>
+<p>Now, by lemmas <a href="sect0002.html#lemma:diff_of_irr_pol">2.8</a> and <a href="sect0002.html#lemma:alt_definition_of_norm">2.1</a> we see that </p>
 <div class="displaymath" id="a0000000028">
   \[ N_{K/\mathbb {Q}}(m_\alpha '(\alpha ))=\prod _{i=1}^n m_\alpha '(\alpha _i)=\prod _{i=1}^n \prod _{i \neq j} (\alpha _i-\alpha _j), \]
 </div>
@@ -648,7 +651,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/mathlib/blob/4a4cd6d61e404c116144088a9f7ba1cc07985052/src/ring_theory/norm.lean#L286">algebra.is_integral_norm</a></li>
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/0c08bd430ade2616ffbd83d34d0af901bac9fb77/src/ring_theory/norm.lean#L286">algebra.is_integral_norm</a></li>
         </ul>
 
       </div>
@@ -693,7 +696,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/mathlib/blob/4a4cd6d61e404c116144088a9f7ba1cc07985052/src/ring_theory/trace.lean#L284">algebra.is_integral_trace</a></li>
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/0c08bd430ade2616ffbd83d34d0af901bac9fb77/src/ring_theory/trace.lean#L284">algebra.is_integral_trace</a></li>
         </ul>
 
       </div>
@@ -754,7 +757,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/mathlib/blob/4a4cd6d61e404c116144088a9f7ba1cc07985052/src/ring_theory/discriminant.lean#L271">algebra.discr_is_integral</a></li>
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/0c08bd430ade2616ffbd83d34d0af901bac9fb77/src/ring_theory/discriminant.lean#L271">algebra.discr_is_integral</a></li>
         </ul>
 
       </div>
@@ -815,7 +818,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/mathlib/blob/4a4cd6d61e404c116144088a9f7ba1cc07985052/src/ring_theory/discriminant.lean#L317">algebra.discr_mul_is_integral_mem_adjoin</a></li>
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/0c08bd430ade2616ffbd83d34d0af901bac9fb77/src/ring_theory/discriminant.lean#L317">algebra.discr_mul_is_integral_mem_adjoin</a></li>
         </ul>
 
       </div>
@@ -876,7 +879,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/mathlib/blob/4a4cd6d61e404c116144088a9f7ba1cc07985052/src/ring_theory/polynomial/eisenstein.lean#L550">mem_adjoin_of_smul_prime_pow_smul_of_minpoly_is_eiseinstein_at</a></li>
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/0c08bd430ade2616ffbd83d34d0af901bac9fb77/src/ring_theory/polynomial/eisenstein.lean#L550">mem_adjoin_of_smul_prime_pow_smul_of_minpoly_is_eiseinstein_at</a></li>
         </ul>
 
       </div>

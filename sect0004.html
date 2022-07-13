@@ -74,7 +74,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="sect0003.html#lemma:sum_pow_unit">Lemma 3.8</a></li>
+          <li><a href="sect0003.html#lemma:zeta_pow_sub_eq_unit_zeta_sub_one">Lemma 3.8</a></li>
         </ul>
 
       </div>
@@ -88,7 +88,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/flt-regular//blob/b0476c8e7a220a5fed7a696c4245fcd38471be16/src/number_theory/cyclotomic/cycl_rat.lean#L131">flt_fact_2</a></li>
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/71c509b064b5f4fd9bb59710d4f32304f05addd7/src/number_theory/cyclotomic/cycl_rat.lean#L131">flt_fact_2</a></li>
         </ul>
 
       </div>
@@ -118,7 +118,7 @@
     <span class="expand-proof">▼</span>
   </div>
   <div class="proof_content">
-  <p>Lemma <a href="sect0003.html#lemma:sum_pow_unit">3.8</a> gives that \(u\) is a unit. So all that needs to be proved is that the ideals are coprime. Assume not, then for some \(i \neq j\) we have some prime ideal \(\mathfrak {p}\) dividing by \((x+y\zeta _p^i)\) and \((x+y\zeta _p^j)\). It must then also divide their sum and their difference, so we must have \(\mathfrak {p}| (1-\zeta _p)\) or \(\mathfrak {p}| y\). Similarly, \(\mathfrak {p}\) divides \(\zeta _p^j(x+y\zeta _p^i)-\zeta _p^i(x+y\zeta _p^j)\) so \(\mathfrak {p}\) divides \(x\) or \((1-\zeta _p)\). We can’t have \(\mathfrak {p}\) dividing \(x,y\) since they are coprime, therefore \(\mathfrak {p}|(1-\zeta _p)\). We know that since \((1-\zeta _p)\) has norm \(p\) it must be a prime ideal, so \(\mathfrak {p}=(1-\zeta _p)\). Now, note that \(x+y \equiv x+y\zeta _+p^i \equiv 0 \mod \mathfrak {p}\). But since \(x,y \in \mathbb {Z}\) this means we would have \(x+y \equiv 0 \pmod p\), which implies \(z^p \equiv 0 \pmod p\) which contradicts our assumptions. </p>
+  <p>Lemma <a href="sect0003.html#lemma:zeta_pow_sub_eq_unit_zeta_sub_one">3.8</a> gives that \(u\) is a unit. So all that needs to be proved is that the ideals are coprime. Assume not, then for some \(i \neq j\) we have some prime ideal \(\mathfrak {p}\) dividing by \((x+y\zeta _p^i)\) and \((x+y\zeta _p^j)\). It must then also divide their sum and their difference, so we must have \(\mathfrak {p}| (1-\zeta _p)\) or \(\mathfrak {p}| y\). Similarly, \(\mathfrak {p}\) divides \(\zeta _p^j(x+y\zeta _p^i)-\zeta _p^i(x+y\zeta _p^j)\) so \(\mathfrak {p}\) divides \(x\) or \((1-\zeta _p)\). We can’t have \(\mathfrak {p}\) dividing \(x,y\) since they are coprime, therefore \(\mathfrak {p}|(1-\zeta _p)\). We know that since \((1-\zeta _p)\) has norm \(p\) it must be a prime ideal, so \(\mathfrak {p}=(1-\zeta _p)\). Now, note that \(x+y \equiv x+y\zeta _+p^i \equiv 0 \mod \mathfrak {p}\). But since \(x,y \in \mathbb {Z}\) this means we would have \(x+y \equiv 0 \pmod p\), which implies \(z^p \equiv 0 \pmod p\) which contradicts our assumptions. </p>
 
   </div>
 </div>
@@ -128,6 +128,7 @@
     Lemma
     </span>
     <span class="lemma_thmlabel">4.2</span>
+    ✓
     <div class="thm_icons">
     <a class="icon proof" href="sect0004.html#lem:flt_fact_3">#</a>
     <a class="icon proof" href="sect0004.html#a0000000054"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
@@ -141,7 +142,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/flt-regular//blob/b0476c8e7a220a5fed7a696c4245fcd38471be16/src/number_theory/cyclotomic/cycl_rat.lean#L26">flt_fact_3</a></li>
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/71c509b064b5f4fd9bb59710d4f32304f05addd7/src/number_theory/cyclotomic/cycl_rat.lean#L63">exists_int_sub_pow_prime_dvd</a></li>
         </ul>
 
       </div>
@@ -193,7 +194,7 @@
   </div>
   </div>
   <div class="lemma_thmcontent">
-  <p>  Let \(p \geq 5\) be an prime number, \(\zeta _p\) a \(p\)-th root of unity and \( \alpha \in \mathbb {Z}[\zeta _p]\). If there is an integer \(n\) such that \(\alpha /n \in \mathbb {Z}[\zeta _p]\), then \(n\) divides each \(a_i\). </p>
+  <p>  Let \(p \geq 5\) be an prime number, \(\zeta _p\) a \(p\)-th root of unity and \( \alpha \in \mathbb {Z}[\zeta _p]\) with \(\alpha =\sum _i a_i \zeta _p^i\). If there is an integer \(n\) such that \(\alpha /n \in \mathbb {Z}[\zeta _p]\), then \(n\) divides each \(a_i\). </p>
 
   </div>
 </div> </p>
@@ -292,7 +293,7 @@
         </header>
                 <ul class="uses">
           <li><a href="sect0003.html#lemma:unit_lemma">Lemma 3.7</a></li>
-          <li><a href="sect0003.html#lemma:sum_pow_unit">Lemma 3.8</a></li>
+          <li><a href="sect0003.html#lemma:zeta_pow_sub_eq_unit_zeta_sub_one">Lemma 3.8</a></li>
           <li><a href="sect0003.html#lemma:ideals_mult_to_power">Lemma 3.9</a></li>
           <li><a href="sect0003.html#theorem:ring_of_ints_of_cyclo">Theorem 3.4</a></li>
         </ul>
@@ -346,7 +347,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/flt-regular//blob/b0476c8e7a220a5fed7a696c4245fcd38471be16/src/number_theory/regular_primes.lean#L32">is_regular_number</a></li>
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/71c509b064b5f4fd9bb59710d4f32304f05addd7/src/number_theory/regular_primes.lean#L32">is_regular_number</a></li>
         </ul>
 
       </div>
@@ -397,7 +398,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/flt-regular//blob/b0476c8e7a220a5fed7a696c4245fcd38471be16/src/flt_regular.lean#L39">flt_regular_case_one</a></li>
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/71c509b064b5f4fd9bb59710d4f32304f05addd7/src/flt_regular.lean#L39">flt_regular_case_one</a></li>
         </ul>
 
       </div>
@@ -481,7 +482,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/flt-regular//blob/b0476c8e7a220a5fed7a696c4245fcd38471be16/src/number_theory/kummers_lemma.lean#L12">eq_pow_prime_of_unit_of_congruent</a></li>
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/71c509b064b5f4fd9bb59710d4f32304f05addd7/src/number_theory/kummers_lemma.lean#L12">eq_pow_prime_of_unit_of_congruent</a></li>
         </ul>
 
       </div>
@@ -532,7 +533,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/flt-regular//blob/b0476c8e7a220a5fed7a696c4245fcd38471be16/src/flt_regular.lean#L58">flt_regular</a></li>
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/71c509b064b5f4fd9bb59710d4f32304f05addd7/src/flt_regular.lean#L58">flt_regular</a></li>
         </ul>
 
       </div>

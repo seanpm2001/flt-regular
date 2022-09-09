@@ -88,7 +88,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/flt-regular//blob/6e349767db98ec3d693b2867355271bba509574b/src/number_theory/cyclotomic/cycl_rat.lean#L138">flt_ideals_coprime</a></li>
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/49a64c4592727ceb96b7fe29b77cd76d55f2a7ab/src/number_theory/cyclotomic/cycl_rat.lean#L139">flt_ideals_coprime</a></li>
         </ul>
 
       </div>
@@ -142,7 +142,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/flt-regular//blob/6e349767db98ec3d693b2867355271bba509574b/src/number_theory/cyclotomic/cycl_rat.lean#L59">exists_int_sub_pow_prime_dvd</a></li>
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/49a64c4592727ceb96b7fe29b77cd76d55f2a7ab/src/number_theory/cyclotomic/cycl_rat.lean#L60">exists_int_sub_pow_prime_dvd</a></li>
         </ul>
 
       </div>
@@ -177,11 +177,25 @@
     <a class="icon proof" href="sect0004.html#lem:dvd_coeff_cycl_integer">#</a>
     <a class="icon proof" href="sect0004.html#a0000000055"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
 </a>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/49a64c4592727ceb96b7fe29b77cd76d55f2a7ab/src/number_theory/cyclotomic/cycl_rat.lean#L156">dvd_coeff_cycl_integer</a></li>
+        </ul>
+
+      </div>
+    </div>
 
   </div>
   </div>
   <div class="lemma_thmcontent">
-  <p> Let \(p \geq 5\) be an prime number, \(\zeta _p\) a \(p\)-th root of unity and \( \alpha \in \mathbb {Z}[\zeta _p]\) with \(\alpha =\sum _i a_i \zeta _p^i\). If there is an integer \(n\) such that \(\alpha /n \in \mathbb {Z}[\zeta _p]\), then \(n\) divides each \(a_i\). </p>
+  <p>  Let \(p \geq 5\) be an prime number, \(\zeta _p\) a \(p\)-th root of unity and \( \alpha \in \mathbb {Z}[\zeta _p]\) with \(\alpha =\sum _i a_i \zeta _p^i\). If there is an integer \(n\) such that \(\alpha /n \in \mathbb {Z}[\zeta _p]\), then \(n\) divides each \(a_i\). </p>
 
   </div>
 </div> </p>
@@ -207,27 +221,11 @@
     <a class="icon proof" href="sect0004.html#lem:exists_int_sum_eq_zero">#</a>
     <a class="icon proof" href="sect0004.html#a0000000056"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
 </a>
-    <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
-</button>
-    <div class="modal-container">
-      <div class="modal-content">
-        <header>
-          <h1>Uses</h1>
-          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
-</button>
-        </header>
-                <ul class="uses">
-          <li><a href="sect0004.html#lem:dvd_coeff_cycl_integer">Lemma 4.3</a></li>
-          <li><a href="sect0004.html#lem:exists_int_sub_pow_prime_dvd">Lemma 4.2</a></li>
-        </ul>
-
-      </div>
-    </div>
 
   </div>
   </div>
   <div class="lemma_thmcontent">
-  <p>  Let \(p \geq 5\) be an prime number, \(\zeta _p\) a \(p\)-th root of unity and \( \alpha \in \mathbb {Z}[\zeta _p]\). Suppose that \(x+y\zeta _p^i=u \alpha ^p\) with \(u \in \mathbb {Z}[\zeta _p]^\times \) and \(\alpha \in \mathbb {Z}[\zeta _p]\). Then there is an integer \(k\) such that </p>
+  <p> Let \(p \geq 5\) be an prime number, \(\zeta _p\) a \(p\)-th root of unity and \( \alpha \in \mathbb {Z}[\zeta _p]\). Suppose that \(x+y\zeta _p^i=u \alpha ^p\) with \(u \in \mathbb {Z}[\zeta _p]^\times \) and \(\alpha \in \mathbb {Z}[\zeta _p]\). Then there is an integer \(k\) such that </p>
 <div class="displaymath" id="a0000000057">
   \[ x+y\zeta _p^i-\zeta _p^{2k}x-\zeta _p^{2k-i}y \equiv 0 \pmod p. \]
 </div>
@@ -242,18 +240,18 @@
     <span class="expand-proof">▼</span>
   </div>
   <div class="proof_content">
-  <p>Using lemma <a href="sect0003.html#lemma:unit_lemma">3.7</a> we have \((x+y\zeta _p^i) =\beta \zeta _p^k \alpha ^p\) which is equivalent to \(\beta \zeta _p^k a \pmod p\) with \(a\) and integer <a href="sect0004.html#lem:exists_int_sub_pow_prime_dvd">4.2</a>. Now, if we consider the complex conjugate we have \(\overline{(x+y\zeta _p^i) }\equiv \beta \zeta _p^{-k}a \pmod p\). Looking at \((x+y\zeta _p^i)-\zeta _p^{2k}\overline{(x+y\zeta _p^i) }\) then gives the result. </p>
+  <p> Using lemma <a href="sect0003.html#lemma:unit_lemma">3.7</a> we have \((x+y\zeta _p^i) =\beta \zeta _p^k \alpha ^p\) which is equivalent to \(\beta \zeta _p^k a \pmod p\) with \(a\) and integer <a href="sect0004.html#lem:exists_int_sub_pow_prime_dvd">4.2</a>. Now, if we consider the complex conjugate we have \(\overline{(x+y\zeta _p^i) }\equiv \beta \zeta _p^{-k}a \pmod p\). Looking at \((x+y\zeta _p^i)-\zeta _p^{2k}\overline{(x+y\zeta _p^i) }\) then gives the result. </p>
 
   </div>
 </div>
-<p><div class="lemma_thmwrapper" id="lemma:may_assume">
+<p><div class="lemma_thmwrapper" id="lemma:may_assume_coprime">
   <div class="lemma_thmheading">
     <span class="lemma_thmcaption">
     Lemma
     </span>
     <span class="lemma_thmlabel">4.5</span>
     <div class="thm_icons">
-    <a class="icon proof" href="sect0004.html#lemma:may_assume">#</a>
+    <a class="icon proof" href="sect0004.html#lemma:may_assume_coprime">#</a>
     <a class="icon proof" href="sect0004.html#a0000000058"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
 </a>
     <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
@@ -321,7 +319,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/flt-regular//blob/6e349767db98ec3d693b2867355271bba509574b/src/number_theory/regular_primes.lean#L48">is_regular_number</a></li>
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/49a64c4592727ceb96b7fe29b77cd76d55f2a7ab/src/number_theory/regular_primes.lean#L48">is_regular_number</a></li>
         </ul>
 
       </div>
@@ -357,7 +355,7 @@
           <li><a href="sect0004.html#defn:is_regular_number">Definition 4.6</a></li>
           <li><a href="sect0004.html#lem:exists_int_sum_eq_zero">Lemma 4.4</a></li>
           <li><a href="sect0004.html#lem:dvd_coeff_cycl_integer">Lemma 4.3</a></li>
-          <li><a href="sect0004.html#lemma:may_assume">Lemma 4.5</a></li>
+          <li><a href="sect0004.html#lemma:may_assume_coprime">Lemma 4.5</a></li>
           <li><a href="sect0004.html#lem:flt_ideals_coprime">Lemma 4.1</a></li>
         </ul>
 
@@ -372,7 +370,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/flt-regular//blob/6e349767db98ec3d693b2867355271bba509574b/src/flt_regular.lean#L39">flt_regular_case_one</a></li>
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/49a64c4592727ceb96b7fe29b77cd76d55f2a7ab/src/flt_regular.lean#L39">flt_regular_case_one</a></li>
         </ul>
 
       </div>
@@ -440,7 +438,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="sect0004.html#lemma:may_assume">Lemma 4.5</a></li>
+          <li><a href="sect0004.html#lemma:may_assume_coprime">Lemma 4.5</a></li>
           <li><a href="sect0004.html#defn:is_regular_number">Definition 4.6</a></li>
           <li><a href="sect0004.html#thm:Kummers_lemma">Theorem 4.8</a></li>
         </ul>
@@ -456,7 +454,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/flt-regular//blob/6e349767db98ec3d693b2867355271bba509574b/src/number_theory/kummers_lemma.lean#L17">eq_pow_prime_of_unit_of_congruent</a></li>
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/49a64c4592727ceb96b7fe29b77cd76d55f2a7ab/src/number_theory/kummers_lemma.lean#L17">eq_pow_prime_of_unit_of_congruent</a></li>
         </ul>
 
       </div>
@@ -507,7 +505,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/flt-regular//blob/6e349767db98ec3d693b2867355271bba509574b/src/flt_regular.lean#L58">flt_regular</a></li>
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/49a64c4592727ceb96b7fe29b77cd76d55f2a7ab/src/flt_regular.lean#L58">flt_regular</a></li>
         </ul>
 
       </div>

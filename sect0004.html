@@ -89,7 +89,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/flt-regular//blob/35e697205729f261b6d24d8515f84b31e53f418b/src/number_theory/cyclotomic/cycl_rat.lean#L400">flt_ideals_coprime</a></li>
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/3711feba16ca4364c84d4d7b79904b67e1f8f9ea/src/number_theory/cyclotomic/cycl_rat.lean#L400">flt_ideals_coprime</a></li>
         </ul>
 
       </div>
@@ -143,7 +143,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/flt-regular//blob/35e697205729f261b6d24d8515f84b31e53f418b/src/number_theory/cyclotomic/cycl_rat.lean#L70">exists_int_sub_pow_prime_dvd</a></li>
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/3711feba16ca4364c84d4d7b79904b67e1f8f9ea/src/number_theory/cyclotomic/cycl_rat.lean#L70">exists_int_sub_pow_prime_dvd</a></li>
         </ul>
 
       </div>
@@ -188,7 +188,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/flt-regular//blob/35e697205729f261b6d24d8515f84b31e53f418b/src/number_theory/cyclotomic/cycl_rat.lean#L462">dvd_coeff_cycl_integer</a></li>
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/3711feba16ca4364c84d4d7b79904b67e1f8f9ea/src/number_theory/cyclotomic/cycl_rat.lean#L462">dvd_coeff_cycl_integer</a></li>
         </ul>
 
       </div>
@@ -298,7 +298,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/flt-regular//blob/35e697205729f261b6d24d8515f84b31e53f418b/src/caseI/statement.lean#L28">flt_regular.caseI.may_assume</a></li>
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/3711feba16ca4364c84d4d7b79904b67e1f8f9ea/src/caseI/statement.lean#L28">flt_regular.caseI.may_assume</a></li>
         </ul>
 
       </div>
@@ -355,7 +355,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/flt-regular//blob/35e697205729f261b6d24d8515f84b31e53f418b/src/number_theory/regular_primes.lean#L51">is_regular_number</a></li>
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/3711feba16ca4364c84d4d7b79904b67e1f8f9ea/src/number_theory/regular_primes.lean#L51">is_regular_number</a></li>
         </ul>
 
       </div>
@@ -407,7 +407,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/flt-regular//blob/35e697205729f261b6d24d8515f84b31e53f418b/src/caseI/statement.lean#L271">flt_regular.caseI</a></li>
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/3711feba16ca4364c84d4d7b79904b67e1f8f9ea/src/caseI/statement.lean#L271">flt_regular.caseI</a></li>
         </ul>
 
       </div>
@@ -459,7 +459,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/flt-regular//blob/35e697205729f261b6d24d8515f84b31e53f418b/src/number_theory/kummers_lemma.lean#L17">eq_pow_prime_of_unit_of_congruent</a></li>
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/3711feba16ca4364c84d4d7b79904b67e1f8f9ea/src/number_theory/kummers_lemma.lean#L17">eq_pow_prime_of_unit_of_congruent</a></li>
         </ul>
 
       </div>
@@ -472,19 +472,109 @@
 
   </div>
 </div> </p>
+<p>In these next few lemmas we are following <span class="cite">
+	[
+	<a href="sect0005.html#Borevich_Shafarevich" >BS66</a>
+	]
+</span>. </p>
+<p><div class="lemma_thmwrapper" id="lem:gen_dvd_by_frak_p">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">4.9</span>
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0004.html#lem:gen_dvd_by_frak_p">#</a>
+    <a class="icon proof" href="sect0004.html#a0000000063"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+
+  </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p> Let \(p\) be a regular odd prime, \(x,y,z,\epsilon \in \mathbb {Z}[\zeta _p]\), \(\epsilon \) a unit, and \(n \in \mathbb {Z}_{\geq 1}\). Assume \(x,y,z\) are coprime to \((1-\zeta _p)\) and that \(x^p+y^p+\epsilon (1-\zeta _p)^{pn}z^p=0\). Then each of \((x+\zeta _p^i y)\) is divisible by \((1-\zeta _p)\) and there is a unique \(i_0\) such that \((x+\zeta _p^{i_0})\) is divisible by \((1-\zeta _p)^2\). </p>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000063">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  <p>By our assumptions we have the following equality of ideals in \(\mathbb {Z}[\zeta _p]\): </p>
+<div class="displaymath" id="a0000000064">
+  \[  \prod _{k=0}^{p-1} (x+\zeta _p^ky) = \mathfrak {p}^{pm}\mathfrak {a}^p  \]
+</div>
+<p>, where \(\mathfrak {a}=(z)\), \(\mathfrak {p}=(1-\zeta _p)\) (which is prime) and \(m=n(p-1)\). Now as \(mp \geq p\) we must have that at least one of the terms on the lhs is divisible by \(\mathfrak {p}\). </p>
+<p>Note that since </p>
+<div class="displaymath" id="a0000000065">
+  \[ x+\zeta _p^iy= x+\zeta _p^ky - \zeta _p^k(1-\zeta _p^{i-k})y \]
+</div>
+<p> it follows every \(x+\zeta _p^k\) is divisible by \(\mathfrak {p}\) for \(0 \le k \le p-1\). This proves the first claim. </p>
+<p>For the second claim, we begin by observing that if \(x+\zeta _p^ky \equiv x + \zeta _p^i y \mod \mathfrak {p}^2\) (for \(0 \leq k {\lt} i \leq p-1\)) then \(\zeta _p^ky(1-\zeta _p^{i-k}) \equiv 0 \mod \mathfrak {p}^2\) which cannot happen as \(y\) is coprime to \(\mathfrak {p}\). Therefore since, for \(0 \leq k \leq p-1\), \(x+\zeta _p^ky\) are all distinct modulo \(\mathfrak {p}^2\) we must have that \(\frac{x+\zeta _p^k}{1-\zeta _p}\) are non-congruent modulo \(\mathfrak {p}\). The second claim now follows by noting that (since \(N(\mathfrak {p})=p\)), the numbers \(\frac{x+\zeta _p^k}{1-\zeta _p}\) form a complete set of residues modulo \(\mathfrak {p}\), so one must be divisible by \(\mathfrak {p}\). </p>
+
+  </div>
+</div>
+<p><div class="lemma_thmwrapper" id="lem:gen_ideal_coprimality">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">4.10</span>
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0004.html#lem:gen_ideal_coprimality">#</a>
+
+  </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p> Let \(p\) be a regular odd prime, \(x,y,z,\epsilon \in \mathbb {Z}[\zeta _p]\), \(\epsilon \) a unit, and \(n \in \mathbb {Z}_{\geq 1}\). Assume \(x,y,z\) are coprime to \((1-\zeta _p)\), \(x^p+y^p+\epsilon (1-\zeta _p)^{pn}z^p=0\) and \(x+y\) is divisible by \(\mathfrak {p}^2\) and \(x+ \zeta _p^ky\) is only divisible by \(\mathfrak {p}=(1-\zeta _p)\) (for \(0 {\lt} k \leq p-1\)). Let \(\mathfrak {m}= \mathrm{gcd}((x),(y))\). Then </p>
+<ol class="enumerate">
+  <li><p>We can write </p>
+<div class="displaymath" id="a0000000066">
+  \[ (x+y)=\mathfrak {p}^{p(m-1)+1}\mathfrak {m}\mathfrak {c}_0 \]
+</div>
+<p> and </p>
+<div class="displaymath" id="a0000000067">
+  \[  (x+\zeta _p^k y)=\mathfrak {p}\mathfrak {m}\mathfrak {c}_k  \]
+</div>
+<p> (for \(0 {\lt} k \leq p-1\)) where \(m=n(p-1)\) and with \(\mathfrak {c}_i\) pairwise coprime. </p>
+</li>
+  <li><p>Each \(\mathfrak {c}_k=\mathfrak {a}_k^p\) and \(\mathfrak {a}_k\mathfrak {a}_0^{-1}\) is principal (as a fractional ideal). </p>
+</li>
+</ol>
+
+  </div>
+</div> </p>
 <p><div class="theorem_thmwrapper" id="thm:gen_flt_eqn">
   <div class="theorem_thmheading">
     <span class="theorem_thmcaption">
     Theorem
     </span>
-    <span class="theorem_thmlabel">4.9</span>
+    <span class="theorem_thmlabel">4.11</span>
     <div class="thm_icons">
     <a class="icon proof" href="sect0004.html#thm:gen_flt_eqn">#</a>
+    <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
+</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Uses</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="sect0004.html#lem:gen_ideal_coprimality">Lemma 4.10</a></li>
+        </ul>
+
+      </div>
+    </div>
 
   </div>
   </div>
   <div class="theorem_thmcontent">
-  <p> Let \(p\) be a regular odd prime, \(\epsilon \in \mathbb {Z}[\zeta _p]\) and \(n \in \mathbb {Z}_{\geq 1}\). Then the equation \(x^p+y^p+\epsilon (1-\zeta _p)^{pn}z^p=0\) has no solutions with \(x,y,z \in \mathbb {Z}[\zeta _p]\), all non-zero and \(xyz\) coprime to \((1-\zeta _p)\). </p>
+  <p>  Let \(p\) be a regular odd prime, \(\epsilon \in \mathbb {Z}[\zeta _p]^\times \) and \(n \in \mathbb {Z}_{\geq 1}\). Then the equation \(x^p+y^p+\epsilon (1-\zeta _p)^{pn}z^p=0\) has no solutions with \(x,y,z \in \mathbb {Z}[\zeta _p]\), all non-zero and \(xyz\) coprime to \((1-\zeta _p)\). </p>
 
   </div>
 </div> </p>
@@ -493,7 +583,7 @@
     <span class="theorem_thmcaption">
     Theorem
     </span>
-    <span class="theorem_thmlabel">4.10</span>
+    <span class="theorem_thmlabel">4.12</span>
     ✓
     <div class="thm_icons">
     <a class="icon proof" href="sect0004.html#theorem:FLT_case_two">#</a>
@@ -508,7 +598,7 @@
         </header>
                 <ul class="uses">
           <li><a href="sect0004.html#thm:Kummers_lemma">Theorem 4.8</a></li>
-          <li><a href="sect0004.html#thm:gen_flt_eqn">Theorem 4.9</a></li>
+          <li><a href="sect0004.html#thm:gen_flt_eqn">Theorem 4.11</a></li>
         </ul>
 
       </div>
@@ -522,7 +612,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/flt-regular//blob/35e697205729f261b6d24d8515f84b31e53f418b/src/caseII/statement.lean#L11">flt_regular.caseII</a></li>
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/3711feba16ca4364c84d4d7b79904b67e1f8f9ea/src/caseII/statement.lean#L11">flt_regular.caseII</a></li>
         </ul>
 
       </div>
@@ -532,7 +622,7 @@
   </div>
   <div class="theorem_thmcontent">
   <p>   Let \(p\) be an odd regular prime. Then </p>
-<div class="displaymath" id="a0000000063">
+<div class="displaymath" id="a0000000068">
   \[ x^p+y^p=z^p \]
 </div>
 <p> has no solutions with \(x,y,z \in \mathbb {Z}\) and \(p | xyz\). </p>
@@ -544,7 +634,7 @@
     <span class="theorem_thmcaption">
     Theorem
     </span>
-    <span class="theorem_thmlabel">4.11</span>
+    <span class="theorem_thmlabel">4.13</span>
     ✓
     <div class="thm_icons">
     <a class="icon proof" href="sect0004.html#FLT_regular">#</a>
@@ -559,7 +649,7 @@
         </header>
                 <ul class="uses">
           <li><a href="sect0004.html#theorem:FLT_case_one">Theorem 4.7</a></li>
-          <li><a href="sect0004.html#theorem:FLT_case_two">Theorem 4.10</a></li>
+          <li><a href="sect0004.html#theorem:FLT_case_two">Theorem 4.12</a></li>
         </ul>
 
       </div>
@@ -573,7 +663,7 @@
 </button>
         </header>
                 <ul class="uses">
-          <li><a href="https://github.com/leanprover-community/flt-regular//blob/35e697205729f261b6d24d8515f84b31e53f418b/src/flt_regular.lean#L12">flt_regular</a></li>
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/3711feba16ca4364c84d4d7b79904b67e1f8f9ea/src/flt_regular.lean#L12">flt_regular</a></li>
         </ul>
 
       </div>
@@ -583,7 +673,7 @@
   </div>
   <div class="theorem_thmcontent">
   <p>   Let \(p\) be an odd regular prime. Then </p>
-<div class="displaymath" id="a0000000064">
+<div class="displaymath" id="a0000000069">
   \[ x^p+y^p=z^p \]
 </div>
 <p> has no solutions with \(x,y,z \in \mathbb {Z}\) and \(xyz \ne 0\). </p>

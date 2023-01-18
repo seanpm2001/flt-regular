@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+  MathJax = { 
+    tex: {
+		    inlineMath: [['$','$'], ['\\(','\\)']]
+	} }
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<meta name="generator" content="plasTeX" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fermat’s Last Theorem for regular primes: Cyclotomic fields</title>
+<link rel="next" href="sect0004.html" title="Fermat’s Last Theorem for regular primes" />
+<link rel="prev" href="sect0002.html" title="Discriminants of number fields" />
+<link rel="up" href="index.html" title="Fermat’s Last Theorem for regular primes" />
+<link rel="stylesheet" href="styles/theme-white.css" />
+<link rel="stylesheet" href="styles/amsthm.css" />
+</head>
+
+<body>
+<header>
+<svg  id="toc-toggle" class="icon icon-list-numbered "><use xlink:href="symbol-defs.svg#icon-list-numbered"></use></svg>
+<h1 id="doc_title"><a href="index.html">Fermat’s Last Theorem for regular primes</a></h1>
+</header>
+
+<div class="wrapper">
+<nav class="toc">
+<ul class="sub-toc-0">
+<li class="">
+  <a href="sect0001.html"><span class="toc_ref">1</span> <span class="toc_entry">Introduction</span></a>
+ </li>
+<li class="">
+  <a href="sect0002.html"><span class="toc_ref">2</span> <span class="toc_entry">Discriminants of number fields</span></a>
+ </li>
+<li class=" active current">
+  <a href="sect0003.html"><span class="toc_ref">3</span> <span class="toc_entry">Cyclotomic fields</span></a>
+ </li>
+<li class="">
+  <a href="sect0004.html"><span class="toc_ref">4</span> <span class="toc_entry">Fermat’s Last Theorem for regular primes</span></a>
+ </li>
+<li class="">
+  <a href="sect0005.html"><span class="toc_ref">5</span> <span class="toc_entry">Bibliography</span></a>
+ </li>
+<li ><a href="dep_graph_document.html">Dependency graph</a></li>
+</ul>
+</nav>
+
+<div class="content">
+<div class="content-wrapper">
+
+
+<div class="main-text">
+<h1 id="a0000000004">3 Cyclotomic fields</h1>
+<p><div class="lemma_thmwrapper" id="lemma:cyclo_poly_deg">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">3.1</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0003.html#lemma:cyclo_poly_deg">#</a>
+    <a class="icon proof" href="sect0003.html#a0000000034"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/ccad6d5093bd2f5c6ca621fc74674cce51355af6/src/ring_theory/polynomial/cyclotomic/basic.lean#L339">polynomial.degree_cyclotomic</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p>  For \(n\) any integer, \(\Phi _n\) (the \(n\)-th cyclotomic polynomial) is a polynomial of degree \(\varphi (n)\) (where \(\varphi \) is Euler’s Totient function). </p>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000034">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  <p>The proof is classical. </p>
+
+  </div>
+</div>
+<p><div class="lemma_thmwrapper" id="lemma:cyclo_poly_irr">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">3.2</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0003.html#lemma:cyclo_poly_irr">#</a>
+    <a class="icon proof" href="sect0003.html#a0000000035"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/ccad6d5093bd2f5c6ca621fc74674cce51355af6/src/ring_theory/polynomial/cyclotomic/basic.lean#L832">polynomial.cyclotomic.irreducible</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p>  For \(n\) any integer, \(\Phi _n\) (the \(n\)-th cyclotomic polynomial) is an irreducible polynomial . </p>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000035">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  <p>The proof is classical. </p>
+
+  </div>
+</div>
+<p><div class="lemma_thmwrapper" id="lem:discr_of_cyclo">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">3.3</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0003.html#lem:discr_of_cyclo">#</a>
+    <a class="icon proof" href="sect0003.html#a0000000036"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
+</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Uses</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="sect0002.html#lemma:num_field_disc_in_terms_of_norm">Lemma 2.9</a></li>
+          <li><a href="sect0003.html#lemma:cyclo_poly_irr">Lemma 3.2</a></li>
+          <li><a href="sect0003.html#lemma:cyclo_poly_deg">Lemma 3.1</a></li>
+        </ul>
+
+      </div>
+    </div>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/ccad6d5093bd2f5c6ca621fc74674cce51355af6/src/number_theory/cyclotomic/rat.lean#L56">is_cyclotomic_extension.rat.discr_prime_pow'</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p>   Let \(\zeta _p\) be a \(p\)-th root of unity for \(p\) an odd prime, let \(\lambda _p=1-\zeta _p\) and \(K=\mathbb {Q}(\zeta _p)\). Then </p>
+<div class="displaymath" id="a0000000037">
+  \[ \Delta (\{ 1,\zeta _p,\dots ,\zeta _p^{p-2}\} )=\Delta (\{ 1,\lambda _p,\dots ,\lambda _p^{p-2}\} )=(-1)^{\frac{(p-1)}{2}}p^{p-2}. \]
+</div>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000036">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  <p>First note \([K:\mathbb {Q}]=p-1\). </p>
+<p>Since \(\zeta _p=1-\lambda _p\) we at once get \(\mathbb {Z}[\zeta _p]=\mathbb {Z}[\lambda _p]\) (just do double inclusion). Next, let \(\alpha _i=\sigma _i(\zeta _p)\) denote the conjugates of \(\zeta _p\), which is the same as the image of \(\zeta _p\) under one of the embeddings \(\sigma _i: \mathbb {Q}(\zeta _p) \to \mathbb {C}\). Now by Proposition <a href="sect0002.html#lemma:disc_of_prim_elt_basis">2.7</a> we have </p>
+<div class="displaymath" id="a0000000038">
+  \begin{align*} \Delta (\{ 1,\zeta _p,\dots ,\zeta _p^{p-2}\} )=\prod _{i {\lt} j} (\alpha _i-\alpha _j)^2 & =\prod _{i {\lt} j} ((1-\alpha _i)-(1-\alpha _j))^2\\ & =\Delta (\{ 1,\lambda _p,\dots ,\lambda _p^{p-2}\} )\end{align*}
+</div>
+<p>Now, by Proposition <a href="sect0002.html#lemma:num_field_disc_in_terms_of_norm">2.9</a>, we have </p>
+<div class="displaymath" id="a0000000039">
+  \[ \Delta (\{ 1,\zeta _p,\cdots ,\zeta _p^{p-2}\} )=(-1)^{\frac{(p-1)(p-2)}{2}}N_{K/\mathbb {Q}}(\Phi _p'(\zeta _p) ) \]
+</div>
+<p> Since \(p\) is odd \((-1)^{\frac{(p-1)(p-2)}{2}}=(-1)^{\frac{(p-1)}{2}}\). Next, we see that </p>
+<div class="displaymath" id="a0000000040">
+  \[ \Phi _p'(x)=\frac{px^{p-1}(x-1)-(x^p-1)}{(x-1)^2} \]
+</div>
+<p> therefore </p>
+<div class="displaymath" id="a0000000041">
+  \[ \Phi _p'(\zeta _p)=-\frac{p\zeta _p^{p-1}}{\lambda _p}. \]
+</div>
+<p>Lastly, note that \(N_{K/\mathbb {Q}}(\zeta _p)=1\), since this is the constant term in its minimal polynomial. Similarly, we see \(N_{K/\mathbb {Q}}(\lambda _p)=p\). Putting this all together, we get </p>
+<div class="displaymath" id="a0000000042">
+  \[ N_{K/\mathbb {Q}}(\Phi _p'(\zeta _p) )=\frac{N_{K/\mathbb {Q}}(p)N_{K\mathbb {Q}}(\zeta _p)^{p-1}}{N_{K/\mathbb {Q}}(-\lambda _p)}=(-1)^{p-1}p^{p-2}=p^{p-2} \]
+</div>
+
+  </div>
+</div>
+<p><div class="theorem_thmwrapper" id="theorem:ring_of_ints_of_cyclo">
+  <div class="theorem_thmheading">
+    <span class="theorem_thmcaption">
+    Theorem
+    </span>
+    <span class="theorem_thmlabel">3.4</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0003.html#theorem:ring_of_ints_of_cyclo">#</a>
+    <a class="icon proof" href="sect0003.html#a0000000043"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
+</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Uses</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="sect0003.html#lem:discr_of_cyclo">Lemma 3.3</a></li>
+          <li><a href="sect0002.html#lemma:eis_crit_and_alg_ints">Lemma 2.14</a></li>
+          <li><a href="sect0002.html#lemma:disc_int_basis">Lemma 2.13</a></li>
+        </ul>
+
+      </div>
+    </div>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="theorem_thmcontent">
+  <p>   Let \(\zeta _p\) be a \(p\)-th root of unity for \(p\) an odd prime, let \(\lambda _p=1-\zeta _p\) and \(K=\mathbb {Q}(\zeta _p)\). Then \(\mathcal{O}_K=\mathbb {Z}[\zeta _p]=\mathbb {Z}[\lambda _p]\). </p>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000043">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  <p>We need to prove is that \(\mathcal{O}_K=\mathbb {Z}[\zeta _p]\). The inclusion \(\mathbb {Z}[\zeta _p] \subseteq \mathcal{O}_K\) is obvious. Let now \(x \in \mathcal{O}_K\). By Lemma <a href="sect0002.html#lemma:disc_int_basis">2.13</a> and Proposition <a href="sect0003.html#lem:discr_of_cyclo">3.3</a>, there is \(k \in \mathbb {N}\) such that \(p^k x \in \mathbb {Z}[\zeta _p]\). We conclude by Lemma <a href="sect0002.html#lemma:eis_crit_and_alg_ints">2.14</a>. </p>
+
+  </div>
+</div>
+<p><div class="lemma_thmwrapper" id="lemma:alg_int_abs_val_one">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">3.5</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0003.html#lemma:alg_int_abs_val_one">#</a>
+    <a class="icon proof" href="sect0003.html#a0000000044"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p>  Let \(\alpha \) be an algebraic integer all of whose conjugates have absolute value one. Then \(\alpha \) is a root of unity. </p>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000044">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  <p>Lemma 1.6 of <span class="cite">
+	[
+	<a href="sect0005.html#washington" >Was82</a>
+	]
+</span>. </p>
+
+  </div>
+</div>
+<p><div class="lemma_thmwrapper" id="lem:roots_of_unity_in_cyclo">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">3.6</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0003.html#lem:roots_of_unity_in_cyclo">#</a>
+    <a class="icon proof" href="sect0003.html#a0000000045"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/603b96ac8ae28c657f4c1847003c429e691bb835/src/number_theory/cyclotomic/Unit_lemmas.lean#L258">roots_of_unity_in_cyclo</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p>  Let \(p\) be a prime, \(K=\mathbb {Q}(\zeta _p)\) \(\alpha \in K\) such that there exists \(n \in \mathbb {N}\) such that \(\alpha ^n=1\), then \(\alpha =\pm \zeta _p^k\) for some \(k\). </p>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000045">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  <p>If \(n\) is different to \(p\) then \(K\) contains a \(2pn\)-th root of unity. Therefore \(\mathbb {Q}(\zeta _{2pn}) \subset K\), but this cannot happen as \([K : \mathbb {Q}]=p-1\) and \([\mathbb {Q}(\zeta _{2pn}): \mathbb {Q}] = \varphi (2np)\). </p>
+
+  </div>
+</div>
+<p><div class="lemma_thmwrapper" id="lemma:unit_lemma">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">3.7</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0003.html#lemma:unit_lemma">#</a>
+    <a class="icon proof" href="sect0003.html#a0000000046"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
+</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Uses</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="sect0003.html#lemma:alg_int_abs_val_one">Lemma 3.5</a></li>
+          <li><a href="sect0003.html#lem:roots_of_unity_in_cyclo">Lemma 3.6</a></li>
+        </ul>
+
+      </div>
+    </div>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/603b96ac8ae28c657f4c1847003c429e691bb835/src/number_theory/cyclotomic/Unit_lemmas.lean#L425">unit_lemma_gal_conj</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p>   Any unit \(u\) in \(\mathbb {Z}[\zeta _p]\) can be written in the form \(\beta \zeta _p^k \) with \(k\) an integer and \(\beta \in \mathbb {R}\). </p>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000046">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  <p>See the Lean proof. </p>
+
+  </div>
+</div>
+<p><div class="lemma_thmwrapper" id="lemma:zeta_pow_sub_eq_unit_zeta_sub_one">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">3.8</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0003.html#lemma:zeta_pow_sub_eq_unit_zeta_sub_one">#</a>
+    <a class="icon proof" href="sect0003.html#a0000000047"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p>  Let \(p\) be an odd prime, \(\zeta _p\) a primitive \(p\)-th root of unity and let \(K=\mathbb {Q}(\zeta _p)\). Then for any \(i,j \in {0,\dots ,p-1}\) with \(i \ne j\), there exists a unit \(u \in \mathcal{O}_K^\times \) such that \(\zeta _p^i-\zeta _p^j = u * (\zeta _p-1)\). </p>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000047">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  <p>This is Ex \(34\) in chapter 2 of <span class="cite">
+	[
+	<a href="sect0005.html#marcus" >Mar18</a>
+	]
+</span>. </p>
+
+  </div>
+</div>
+<p><div class="lemma_thmwrapper" id="lemma:ideals_mult_to_power">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">3.9</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0003.html#lemma:ideals_mult_to_power">#</a>
+    <a class="icon proof" href="sect0003.html#a0000000048"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p>  Let \(R\) be a Dedekind domain, \(p\) a prime and \(\mathfrak {a},\mathfrak {b},\mathfrak {c}\) ideals such that </p>
+<div class="displaymath" id="a0000000049">
+  \[ \mathfrak {a}\mathfrak {b}=\mathfrak {c}^p \]
+</div>
+<p> and suppose \(\mathfrak {a},\mathfrak {b}\) are coprime. Then there exist ideals \(\mathfrak {e},\mathfrak {d}\) such that </p>
+<div class="displaymath" id="a0000000050">
+  \[ \mathfrak {a}=\mathfrak {e}^p \qquad \mathfrak {b}=\mathfrak {d}^p \qquad \mathfrak {e}\mathfrak {d}=\mathfrak {c} \]
+</div>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000048">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  <p>It follows from the unique decomposition of ideals in a Dedekind domain. </p>
+
+  </div>
+</div>
+
+</div> <!--main-text -->
+</div> <!-- content-wrapper -->
+</div> <!-- content -->
+</div> <!-- wrapper -->
+
+<nav class="prev_up_next">
+  <a href="sect0002.html" title="Discriminants of number fields"><svg  class="icon icon-arrow-left "><use xlink:href="symbol-defs.svg#icon-arrow-left"></use></svg>
+</a>
+  <a href="index.html" title="Fermat’s Last Theorem for regular primes"><svg  class="icon icon-arrow-up "><use xlink:href="symbol-defs.svg#icon-arrow-up"></use></svg>
+</a>
+  <a href="sect0004.html" title="Fermat’s Last Theorem for regular primes"><svg  class="icon icon-arrow-right "><use xlink:href="symbol-defs.svg#icon-arrow-right"></use></svg>
+</a>
+</nav>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/plastex.js"></script>
+<script type="text/javascript" src="js/svgxuse.js"></script>
+</body>
+</html>

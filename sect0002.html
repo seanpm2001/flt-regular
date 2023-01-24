@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+  MathJax = { 
+    tex: {
+		    inlineMath: [['$','$'], ['\\(','\\)']]
+	} }
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<meta name="generator" content="plasTeX" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fermat’s Last Theorem for regular primes: Discriminants of number fields</title>
+<link rel="next" href="sect0003.html" title="Cyclotomic fields" />
+<link rel="prev" href="sect0001.html" title="Introduction" />
+<link rel="up" href="index.html" title="Fermat’s Last Theorem for regular primes" />
+<link rel="stylesheet" href="styles/theme-white.css" />
+<link rel="stylesheet" href="styles/amsthm.css" />
+</head>
+
+<body>
+<header>
+<svg  id="toc-toggle" class="icon icon-list-numbered "><use xlink:href="symbol-defs.svg#icon-list-numbered"></use></svg>
+<h1 id="doc_title"><a href="index.html">Fermat’s Last Theorem for regular primes</a></h1>
+</header>
+
+<div class="wrapper">
+<nav class="toc">
+<ul class="sub-toc-0">
+<li class="">
+  <a href="sect0001.html"><span class="toc_ref">1</span> <span class="toc_entry">Introduction</span></a>
+ </li>
+<li class=" active current">
+  <a href="sect0002.html"><span class="toc_ref">2</span> <span class="toc_entry">Discriminants of number fields</span></a>
+ </li>
+<li class="">
+  <a href="sect0003.html"><span class="toc_ref">3</span> <span class="toc_entry">Cyclotomic fields</span></a>
+ </li>
+<li class="">
+  <a href="sect0004.html"><span class="toc_ref">4</span> <span class="toc_entry">Fermat’s Last Theorem for regular primes</span></a>
+ </li>
+<li class="">
+  <a href="sect0005.html"><span class="toc_ref">5</span> <span class="toc_entry">Bibliography</span></a>
+ </li>
+<li ><a href="dep_graph_document.html">Dependency graph</a></li>
+</ul>
+</nav>
+
+<div class="content">
+<div class="content-wrapper">
+
+
+<div class="main-text">
+<h1 id="a0000000003">2 Discriminants of number fields</h1>
+<p> We recall basic facts about the discriminant. </p>
+<p><div class="lemma_thmwrapper" id="lemma:alt_definition_of_norm">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">2.1</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0002.html#lemma:alt_definition_of_norm">#</a>
+    <a class="icon proof" href="sect0002.html#a0000000007"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/ccad6d5093bd2f5c6ca621fc74674cce51355af6/src/ring_theory/norm.lean#L279">algebra.norm_eq_prod_embeddings</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p>  Let \(K\) be a number field, \(\alpha \in K\) and let \(\sigma _i\) be the embeddings of \(K\) into \(\mathbb {C}\). Then </p>
+<div class="displaymath" id="a0000000008">
+  \[ N_{K/\mathbb {Q}}(\alpha )=\prod _i \sigma _i(\alpha )  \]
+</div>
+<p>. </p>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000007">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  <p>The proof is standard. </p>
+
+  </div>
+</div>
+<p><div class="lemma_thmwrapper" id="lemma:alt_definition_of_trace">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">2.2</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0002.html#lemma:alt_definition_of_trace">#</a>
+    <a class="icon proof" href="sect0002.html#a0000000009"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/ccad6d5093bd2f5c6ca621fc74674cce51355af6/src/ring_theory/trace.lean#L349">trace_eq_sum_embeddings</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p>  Let \(K\) be a number field, \(\alpha \in K\) and let \(\sigma _i\) be the embeddings of \(K\) into \(\mathbb {C}\). Then </p>
+<div class="displaymath" id="a0000000010">
+  \[ \operatorname {Tr}_{K/\mathbb {Q}}(\alpha ) =\sum _i \sigma _i(\alpha ).  \]
+</div>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000009">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  <p>The proof is standard. </p>
+
+  </div>
+</div>
+<p><div class="definition_thmwrapper" id="defn_of_disc">
+  <div class="definition_thmheading">
+    <span class="definition_thmcaption">
+    Definition
+    </span>
+    <span class="definition_thmlabel">2.3</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0002.html#defn_of_disc">#</a>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/ccad6d5093bd2f5c6ca621fc74674cce51355af6/src/ring_theory/discriminant.lean#L65">algebra.discr</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="definition_thmcontent">
+  <p>  Let \(A,K\) be commutative rings with \(K\) and \(A\)-algebra. let \(B=\{ b_1,\dots ,b_n\} \) be a set of elements in \(K\). The discriminant of \(B\) is defined as </p>
+<div class="displaymath" id="a0000000011">
+  \[ \Delta (B)= \det \left(\begin{matrix}  \operatorname {Tr}_{K/A}(b_1b_1) 
+
+& \cdots 
+
+&  \operatorname {Tr}_{K/A}(b_1b_n)
+
+\\ \vdots 
+
+& &  \vdots 
+
+\\ \operatorname {Tr}_{K/A}(b_nb_1) 
+
+& \cdots 
+
+&  \operatorname {Tr}_{K/A}(b_nb_n) 
+
+\end{matrix} \right). \]
+</div>
+
+  </div>
+</div> </p>
+<p><div class="lemma_thmwrapper" id="lem:lin_indep_iff_disc_ne_zero">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">2.4</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0002.html#lem:lin_indep_iff_disc_ne_zero">#</a>
+    <a class="icon proof" href="sect0002.html#a0000000012"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
+</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Uses</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="sect0002.html#defn_of_disc">Definition 2.3</a></li>
+          <li><a href="sect0002.html#lemma:alt_definition_of_norm">Lemma 2.1</a></li>
+        </ul>
+
+      </div>
+    </div>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/ccad6d5093bd2f5c6ca621fc74674cce51355af6/src/ring_theory/discriminant.lean#L124">algebra.discr_not_zero_of_basis</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p>   Let \(L/K\) be an extension of fields and let \(B=\{ b_1,\dots ,b_n\} \) be a \(K\)-basis of \(L\). Then \(\Delta (B) \neq 0\). </p>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000012">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  <p>The proof is standard. </p>
+
+  </div>
+</div>
+<p><div class="lemma_thmwrapper" id="lem:disc_change_of_basis">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">2.5</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0002.html#lem:disc_change_of_basis">#</a>
+    <a class="icon proof" href="sect0002.html#a0000000013"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
+</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Uses</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="sect0002.html#defn_of_disc">Definition 2.3</a></li>
+        </ul>
+
+      </div>
+    </div>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/ccad6d5093bd2f5c6ca621fc74674cce51355af6/src/ring_theory/discriminant.lean#L110">algebra.discr_of_matrix_mul_vec</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p>   Let \(K\) be a number field and \(B,B'\) bases for \(K/\mathbb {Q}\). If \(P\) denotes the change of basis matrix, then </p>
+<div class="displaymath" id="a0000000014">
+  \[ \Delta (B)=\det (P)^2 \Delta (B'). \]
+</div>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000013">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  <p>The proof is standard. </p>
+
+  </div>
+</div>
+<p><div class="lemma_thmwrapper" id="lemma:disc_via_embs">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">2.6</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0002.html#lemma:disc_via_embs">#</a>
+    <a class="icon proof" href="sect0002.html#a0000000015"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
+</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Uses</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="sect0002.html#defn_of_disc">Definition 2.3</a></li>
+          <li><a href="sect0002.html#lemma:alt_definition_of_trace">Lemma 2.2</a></li>
+        </ul>
+
+      </div>
+    </div>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/ccad6d5093bd2f5c6ca621fc74674cce51355af6/src/ring_theory/discriminant.lean#L146">algebra.discr_eq_det_embeddings_matrix_reindex_pow_two</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p>   Let \(K\) be a number field with basis \(B=\{ b_1,\dots ,b_n\} \) and let \(\sigma _1,\dots ,\sigma _n\) be the embeddings of \(K\) into \(\mathbb {C}\). Now let \(M\) be the matrix </p>
+<div class="displaymath" id="a0000000016">
+  \[ \left(\begin{matrix}  \sigma _1(b_1) 
+
+& \cdots 
+
+&  \sigma _1(b_n)
+
+\\ \vdots 
+
+& &  \vdots 
+
+\\ \sigma _n(b_1) 
+
+& \cdots 
+
+&  \sigma _n(b_n) 
+
+\end{matrix} \right). \]
+</div>
+<p> Then </p>
+<div class="displaymath" id="a0000000017">
+  \[ \Delta (B)=\det (M)^2. \]
+</div>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000015">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  <p>By Lemma <a href="sect0002.html#lemma:alt_definition_of_trace">2.2</a> we know that \(\operatorname {Tr}_{K/\mathbb {Q}}(b_i b_j)= \sum _k \sigma _k(b_i)\sigma _k(b_j)\) which is the same as the \((i,j)\) entry of \(M^t M\). Therefore </p>
+<div class="displaymath" id="a0000000018">
+  \[ \det (T_B)=\det (M^t M)=\det (M)^2. \]
+</div>
+
+  </div>
+</div>
+<p><div class="lemma_thmwrapper" id="lemma:disc_of_prim_elt_basis">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">2.7</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0002.html#lemma:disc_of_prim_elt_basis">#</a>
+    <a class="icon proof" href="sect0002.html#a0000000019"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
+</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Uses</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="sect0002.html#defn_of_disc">Definition 2.3</a></li>
+          <li><a href="sect0002.html#lemma:disc_via_embs">Lemma 2.6</a></li>
+        </ul>
+
+      </div>
+    </div>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/ccad6d5093bd2f5c6ca621fc74674cce51355af6/src/ring_theory/discriminant.lean#L153">algebra.discr_power_basis_eq_prod</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p>   Let \(K\) be a number field and \(B=\{ 1,\alpha ,\alpha ^2,\dots ,\alpha ^{n-1}\} \) for some \(\alpha \in K\). Then </p>
+<div class="displaymath" id="a0000000020">
+  \[ \Delta (B)=\prod _{i {\lt} j} (\sigma _i(\alpha )-\sigma _j(\alpha ))^2 \]
+</div>
+<p> where \(\sigma _i\) are the embeddings of \(K \) into \(\mathbb {C}\). Here \(\Delta (B)\) denotes the discriminant. </p>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000019">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  <p>First we recall a classical linear algebra result relating to the Vandermonde matrix, which states that </p>
+<div class="displaymath" id="a0000000021">
+  \[ \det \left(\begin{matrix}  1 
+
+&  x_1
+
+&  x_1^2
+
+& \cdots 
+
+& x_1^{n-1} 
+
+\\ \vdots 
+
+& & &  \vdots 
+
+\\ 1 
+
+&  x_n
+
+&  x_n^2
+
+& \cdots 
+
+& x_n^{n-1} 
+
+\end{matrix} \right) =\prod _{i{\lt}j} (x_i-x_j). \]
+</div>
+<p> Combining this with Lemma <a href="sect0002.html#lemma:disc_via_embs">2.6</a> gives the result. </p>
+
+  </div>
+</div>
+<p><div class="lemma_thmwrapper" id="lemma:diff_of_irr_pol">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">2.8</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0002.html#lemma:diff_of_irr_pol">#</a>
+    <a class="icon proof" href="sect0002.html#a0000000022"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/ccad6d5093bd2f5c6ca621fc74674cce51355af6/src/data/polynomial/splits.lean#L375">polynomial.aeval_root_derivative_of_splits</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p>  Let \(f\) be a monic irreducible polynomial over a number field \(K\) and let \(\alpha \) be one of its roots in \(\mathbb {C}\). Then </p>
+<div class="displaymath" id="a0000000023">
+  \[ f'(\alpha )=\prod _{\beta \neq \alpha } (\alpha -\beta ),  \]
+</div>
+<p> where the product is over the roots of \(f\) different from \(\alpha \). </p>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000022">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  <p>We first write \(f(x)=(x-\alpha )g(x)\) which we can do (over \(\mathbb {C}\)) as \(\alpha \) is a root of \(f\), where now \(g(x)=\prod _{\beta \neq \alpha } (x-\beta )\). Differentiating we get </p>
+<div class="displaymath" id="a0000000024">
+  \[ f'(x)=g(x)+(x-\alpha )g'(x). \]
+</div>
+<p> If we now evaluate at \(\alpha \) we get the result. </p>
+
+  </div>
+</div>
+<p><div class="lemma_thmwrapper" id="lemma:num_field_disc_in_terms_of_norm">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">2.9</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0002.html#lemma:num_field_disc_in_terms_of_norm">#</a>
+    <a class="icon proof" href="sect0002.html#a0000000025"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
+</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Uses</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="sect0002.html#lemma:disc_of_prim_elt_basis">Lemma 2.7</a></li>
+          <li><a href="sect0002.html#lemma:alt_definition_of_norm">Lemma 2.1</a></li>
+          <li><a href="sect0002.html#lemma:diff_of_irr_pol">Lemma 2.8</a></li>
+        </ul>
+
+      </div>
+    </div>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/ccad6d5093bd2f5c6ca621fc74674cce51355af6/src/ring_theory/discriminant.lean#L207">algebra.discr_power_basis_eq_norm</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p>   Let \(K=\mathbb {Q}(\alpha )\) be a number field with \(n=[K:\mathbb {Q}]\) and let \(B=\{ 1,\alpha ,\alpha ^2,\dots ,\alpha ^{n-1}\} \). Then </p>
+<div class="displaymath" id="a0000000026">
+  \[ \Delta (B)=(-1)^{\frac{n(n-1)}{2}}N_{K/\mathbb {Q}}(m_\alpha '(\alpha )) \]
+</div>
+<p> where \(m_\alpha '\) is the derivative of \(m_\alpha (x)\) (which we recall denotes the minimal polynomial of \(\alpha \)). </p>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000025">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  <p>By Lemma <a href="sect0002.html#lemma:disc_of_prim_elt_basis">2.7</a> we have \(\Delta (B)=\prod _{i {\lt} j}(\alpha _i-\alpha _j)^2\) where \(\alpha _k:=\sigma _k(\alpha )\). Next, we note that the number of terms in this product is \(1+2+\cdots +(n-1)=\frac{n(n-1)}{2}\). So if we write each term as \((\alpha _i-\alpha _j)^2=-(\alpha _i-\alpha _j)(\alpha _j-\alpha _i)\) we get </p>
+<div class="displaymath" id="a0000000027">
+  \[ \Delta (B)=(-1)^{\frac{n(n-1)}{2}}\prod _{i=1}^n \prod _{i \neq j} (\alpha _i-\alpha _j).  \]
+</div>
+<p>Now, by lemmas <a href="sect0002.html#lemma:diff_of_irr_pol">2.8</a> and <a href="sect0002.html#lemma:alt_definition_of_norm">2.1</a> we see that </p>
+<div class="displaymath" id="a0000000028">
+  \[ N_{K/\mathbb {Q}}(m_\alpha '(\alpha ))=\prod _{i=1}^n m_\alpha '(\alpha _i)=\prod _{i=1}^n \prod _{i \neq j} (\alpha _i-\alpha _j), \]
+</div>
+<p> which gives the result. </p>
+
+  </div>
+</div>
+<p><div class="lemma_thmwrapper" id="lemma:norm_of_alg_int_is_int">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">2.10</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0002.html#lemma:norm_of_alg_int_is_int">#</a>
+    <a class="icon proof" href="sect0002.html#a0000000029"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/ccad6d5093bd2f5c6ca621fc74674cce51355af6/src/ring_theory/norm.lean#L304">algebra.is_integral_norm</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p>  If \(K\) is a number field and \(\alpha \in \mathcal{O}_K\) then \(N_{K/\mathbb {Q}}(\alpha )\) is in \(\mathbb {Z}\). </p>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000029">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  <p>The proof is standard. </p>
+
+  </div>
+</div>
+<p><div class="lemma_thmwrapper" id="lemma:trace_of_alg_int_is_int">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">2.11</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0002.html#lemma:trace_of_alg_int_is_int">#</a>
+    <a class="icon proof" href="sect0002.html#a0000000030"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/ccad6d5093bd2f5c6ca621fc74674cce51355af6/src/ring_theory/trace.lean#L286">algebra.is_integral_trace</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p>  If \(K\) is a number field and \(\alpha \in \mathcal{O}_K\) then \(\operatorname {Tr}_{K/\mathbb {Q}}(\alpha )\) is in \(\mathbb {Z}\). </p>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000030">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  <p>The proof is standard. </p>
+
+  </div>
+</div>
+<p><div class="lemma_thmwrapper" id="lemma:int_basis_int_disc">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">2.12</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0002.html#lemma:int_basis_int_disc">#</a>
+    <a class="icon proof" href="sect0002.html#a0000000031"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
+</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Uses</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="sect0002.html#defn_of_disc">Definition 2.3</a></li>
+          <li><a href="sect0002.html#lemma:trace_of_alg_int_is_int">Lemma 2.11</a></li>
+        </ul>
+
+      </div>
+    </div>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/ccad6d5093bd2f5c6ca621fc74674cce51355af6/src/ring_theory/discriminant.lean#L267">algebra.discr_is_integral</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p>   Let \(K\) be a number field and \(B=\{ b_1,\dots ,b_n\} \) be elements in \(\mathcal{O}_K\), then \(\Delta (B) \in \mathbb {Z}\). </p>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000031">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  <p>Immediate by <a href="sect0002.html#lemma:trace_of_alg_int_is_int">2.11</a>. </p>
+
+  </div>
+</div>
+<p><div class="lemma_thmwrapper" id="lemma:disc_int_basis">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">2.13</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0002.html#lemma:disc_int_basis">#</a>
+    <a class="icon proof" href="sect0002.html#a0000000032"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
+</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Uses</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="sect0002.html#lem:disc_change_of_basis">Lemma 2.5</a></li>
+          <li><a href="sect0002.html#lemma:int_basis_int_disc">Lemma 2.12</a></li>
+        </ul>
+
+      </div>
+    </div>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/ccad6d5093bd2f5c6ca621fc74674cce51355af6/src/ring_theory/discriminant.lean#L313">algebra.discr_mul_is_integral_mem_adjoin</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p>   Let \(K = \mathbb {Q}(\alpha )\) be a number field, where \(\alpha \) is an algebraic integer. Let \(B = \{ 1, \alpha , \ldots , \alpha ^{[K : \mathbb {Q}] - 1} \} \) be the basis given by \(\alpha \) and let \(x \in \mathcal{O}_K\). Then \(\Delta (B)x \in \mathbb {Z}[\alpha ]\). </p>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000032">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  <p>See the Lean proof. </p>
+
+  </div>
+</div>
+<p><div class="lemma_thmwrapper" id="lemma:eis_crit_and_alg_ints">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">2.14</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0002.html#lemma:eis_crit_and_alg_ints">#</a>
+    <a class="icon proof" href="sect0002.html#a0000000033"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
+</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Uses</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="sect0002.html#lemma:norm_of_alg_int_is_int">Lemma 2.10</a></li>
+          <li><a href="sect0002.html#lemma:trace_of_alg_int_is_int">Lemma 2.11</a></li>
+        </ul>
+
+      </div>
+    </div>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="https://github.com/leanprover-community/mathlib/blob/ccad6d5093bd2f5c6ca621fc74674cce51355af6/src/ring_theory/polynomial/eisenstein.lean#L584">mem_adjoin_of_smul_prime_pow_smul_of_minpoly_is_eiseinstein_at</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p>   Let \(K = \mathbb {Q}(\alpha )\) be a number field, where \(\alpha \) is an algebraic integer with minimal polynomial that is Eisenstein at \(p\). Let \(x \in \mathcal{O}_K\) such that \(p^n x \in \mathbb {Z}[\alpha ]\) for some \(n\). Then \(x \in \mathbb {Z}[\alpha ]\). </p>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000033">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  <p>See the Lean proof. </p>
+
+  </div>
+</div>
+
+</div> <!--main-text -->
+</div> <!-- content-wrapper -->
+</div> <!-- content -->
+</div> <!-- wrapper -->
+
+<nav class="prev_up_next">
+  <a href="sect0001.html" title="Introduction"><svg  class="icon icon-arrow-left "><use xlink:href="symbol-defs.svg#icon-arrow-left"></use></svg>
+</a>
+  <a href="index.html" title="Fermat’s Last Theorem for regular primes"><svg  class="icon icon-arrow-up "><use xlink:href="symbol-defs.svg#icon-arrow-up"></use></svg>
+</a>
+  <a href="sect0003.html" title="Cyclotomic fields"><svg  class="icon icon-arrow-right "><use xlink:href="symbol-defs.svg#icon-arrow-right"></use></svg>
+</a>
+</nav>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/plastex.js"></script>
+<script type="text/javascript" src="js/svgxuse.js"></script>
+</body>
+</html>

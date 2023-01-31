@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+  MathJax = { 
+    tex: {
+		    inlineMath: [['$','$'], ['\\(','\\)']]
+	} }
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<meta name="generator" content="plasTeX" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fermat’s Last Theorem for regular primes: Fermat’s Last Theorem for regular primes</title>
+<link rel="next" href="sect0005.html" title="Bibliography" />
+<link rel="prev" href="sect0003.html" title="Cyclotomic fields" />
+<link rel="up" href="index.html" title="Fermat’s Last Theorem for regular primes" />
+<link rel="stylesheet" href="styles/theme-white.css" />
+<link rel="stylesheet" href="styles/amsthm.css" />
+</head>
+
+<body>
+<header>
+<svg  id="toc-toggle" class="icon icon-list-numbered "><use xlink:href="symbol-defs.svg#icon-list-numbered"></use></svg>
+<h1 id="doc_title"><a href="index.html">Fermat’s Last Theorem for regular primes</a></h1>
+</header>
+
+<div class="wrapper">
+<nav class="toc">
+<ul class="sub-toc-0">
+<li class="">
+  <a href="sect0001.html"><span class="toc_ref">1</span> <span class="toc_entry">Introduction</span></a>
+ </li>
+<li class="">
+  <a href="sect0002.html"><span class="toc_ref">2</span> <span class="toc_entry">Discriminants of number fields</span></a>
+ </li>
+<li class="">
+  <a href="sect0003.html"><span class="toc_ref">3</span> <span class="toc_entry">Cyclotomic fields</span></a>
+ </li>
+<li class=" active current">
+  <a href="sect0004.html"><span class="toc_ref">4</span> <span class="toc_entry">Fermat’s Last Theorem for regular primes</span></a>
+ </li>
+<li class="">
+  <a href="sect0005.html"><span class="toc_ref">5</span> <span class="toc_entry">Bibliography</span></a>
+ </li>
+<li ><a href="dep_graph_document.html">Dependency graph</a></li>
+</ul>
+</nav>
+
+<div class="content">
+<div class="content-wrapper">
+
+
+<div class="main-text">
+<h1 id="a0000000005">4 Fermat’s Last Theorem for regular primes</h1>
+<p><div class="lemma_thmwrapper" id="lem:flt_ideals_coprime">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">4.1</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0004.html#lem:flt_ideals_coprime">#</a>
+    <a class="icon proof" href="sect0004.html#a0000000051"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
+</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Uses</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="sect0003.html#lemma:zeta_pow_sub_eq_unit_zeta_sub_one">Lemma 3.8</a></li>
+        </ul>
+
+      </div>
+    </div>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/603b96ac8ae28c657f4c1847003c429e691bb835/src/number_theory/cyclotomic/cycl_rat.lean#L387">flt_ideals_coprime</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p>   Let \(p \geq 5\) be an prime number, \(\zeta _p\) a \(p\)-th root of unity and \(x, y \in \mathbb {Z}\) coprime. </p>
+<p>For \(i \neq j\) with \(i,j \in {0,\dots ,p-1}\) we can write </p>
+<div class="displaymath" id="a0000000052">
+  \[ (\zeta _p^i-\zeta _p^j)=u(1-\zeta _p) \]
+</div>
+<p> with \(u\) a unit in \(\mathbb {Z}[\zeta _p]\). From this it follows that the ideals </p>
+<div class="displaymath" id="a0000000053">
+  \[ (x+y),(x+\zeta _py),(x+\zeta _p^2y),\dots ,(x+\zeta _p^{p-1}y) \]
+</div>
+<p> are pairwise coprime. </p>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000051">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  <p>Lemma <a href="sect0003.html#lemma:zeta_pow_sub_eq_unit_zeta_sub_one">3.8</a> gives that \(u\) is a unit. So all that needs to be proved is that the ideals are coprime. Assume not, then for some \(i \neq j\) we have some prime ideal \(\mathfrak {p}\) dividing by \((x+y\zeta _p^i)\) and \((x+y\zeta _p^j)\). It must then also divide their sum and their difference, so we must have \(\mathfrak {p}| (1-\zeta _p)\) or \(\mathfrak {p}| y\). Similarly, \(\mathfrak {p}\) divides \(\zeta _p^j(x+y\zeta _p^i)-\zeta _p^i(x+y\zeta _p^j)\) so \(\mathfrak {p}\) divides \(x\) or \((1-\zeta _p)\). We can’t have \(\mathfrak {p}\) dividing \(x,y\) since they are coprime, therefore \(\mathfrak {p}|(1-\zeta _p)\). We know that since \((1-\zeta _p)\) has norm \(p\) it must be a prime ideal, so \(\mathfrak {p}=(1-\zeta _p)\). Now, note that \(x+y \equiv x+y\zeta _p^i \equiv 0 \mod \mathfrak {p}\). But since \(x,y \in \mathbb {Z}\) this means we would have \(x+y \equiv 0 \pmod p\), which implies \(z^p \equiv 0 \pmod p\) which contradicts our assumptions. </p>
+
+  </div>
+</div>
+<p><div class="lemma_thmwrapper" id="lem:exists_int_sub_pow_prime_dvd">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">4.2</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0004.html#lem:exists_int_sub_pow_prime_dvd">#</a>
+    <a class="icon proof" href="sect0004.html#a0000000054"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/603b96ac8ae28c657f4c1847003c429e691bb835/src/number_theory/cyclotomic/cycl_rat.lean#L27">exists_int_sub_pow_prime_dvd</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p>  Let \(p\) be an prime number, \(\zeta _p\) a \(p\)-th root of unity and \(\alpha \in \mathbb {Z}[\zeta _p]\). Then \(\alpha ^p\) is congruent to an integer modulo \(p\). </p>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000054">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  <p>Just use \((x+y)^p \equiv x^p + y^p \pmod p\) and that \(\zeta _p\) is a \(p\)-th root of unity. </p>
+
+  </div>
+</div>
+<p><div class="lemma_thmwrapper" id="lem:dvd_coeff_cycl_integer">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">4.3</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0004.html#lem:dvd_coeff_cycl_integer">#</a>
+    <a class="icon proof" href="sect0004.html#a0000000055"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/603b96ac8ae28c657f4c1847003c429e691bb835/src/number_theory/cyclotomic/cycl_rat.lean#L449">dvd_coeff_cycl_integer</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p>  Let \(p\) be an prime number, \(\zeta _p\) a \(p\)-th root of unity and \( \alpha \in \mathbb {Z}[\zeta _p]\) with \(\alpha =\sum _i a_i \zeta _p^i\). Let us suppose that there is \(i\) such that \(a_i = 0\). If \(n\) is an integer that divides \(\alpha \) in \(\mathbb {Z}[\zeta _p]\), then \(n\) divides each \(a_i\). </p>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000055">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  <p>Looking at \(\alpha =a_0+a_1\zeta _p+\cdots +a_{p-1}\zeta _p^{p-1}\), if one of the \(a_i\)’s is zero and \(\alpha /n \in \mathbb {Z}[\zeta _p]\), then \(\alpha /n=\sum _i a_i/n \zeta _p^i\). Now, as \(\alpha /n \in \mathbb {Z}[\zeta _p]\), pick the basis of \(\mathbb {Z}[\zeta _p]\) which does not contain \(\zeta _p\) (which is possible as any subset of \(\{ 1,\zeta _p,\dots ,\zeta _p^{p-1}\} \) with \(p-1\) elements forms a basis of \(\mathbb {Z}[\zeta _p]\).). Then \(\alpha =\sum _i b_i \zeta _p^i\) where \(b_i \in \mathbb {Z}\). Therefore comparing coefficients, we get the result. </p>
+
+  </div>
+</div>
+<p><div class="lemma_thmwrapper" id="lem:exists_int_sum_eq_zero">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">4.4</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0004.html#lem:exists_int_sum_eq_zero">#</a>
+    <a class="icon proof" href="sect0004.html#a0000000056"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p>  Let \(p \geq 3\) be an prime number, \(\zeta _p\) a \(p\)-th root of unity and \( \alpha \in \mathbb {Z}[\zeta _p]\). Let \(x\) and \(y\) be integers such that \(x+y\zeta _p^i=u \alpha ^p\) with \(u \in \mathbb {Z}[\zeta _p]^\times \) and \(\alpha \in \mathbb {Z}[\zeta _p]\). Then there is an integer \(k\) such that </p>
+<div class="displaymath" id="a0000000057">
+  \[ x+y\zeta _p^i-\zeta _p^{2k}x-\zeta _p^{2k-i}y \equiv 0 \pmod p. \]
+</div>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000056">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  <p> Using lemma <a href="sect0003.html#lemma:unit_lemma">3.7</a> we have \((x+y\zeta _p^i) =\beta \zeta _p^k \alpha ^p\) which is congruent modulo \(p\) to \(\beta \zeta _p^k a \pmod p\) for some integer \(a\) by <a href="sect0004.html#lem:exists_int_sub_pow_prime_dvd">4.2</a>. Now, if we consider the complex conjugate we have \(\overline{(x+y\zeta _p^i) }\equiv \beta \zeta _p^{-k}a \pmod p\). Looking at \((x+y\zeta _p^i)-\zeta _p^{2k}\overline{(x+y\zeta _p^i) }\) then gives the result. </p>
+
+  </div>
+</div>
+<p><div class="lemma_thmwrapper" id="lemma:may_assume_coprime">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">4.5</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0004.html#lemma:may_assume_coprime">#</a>
+    <a class="icon proof" href="sect0004.html#a0000000058"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
+</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Uses</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="sect0003.html#lemma:unit_lemma">Lemma 3.7</a></li>
+          <li><a href="sect0003.html#lemma:zeta_pow_sub_eq_unit_zeta_sub_one">Lemma 3.8</a></li>
+          <li><a href="sect0003.html#lemma:ideals_mult_to_power">Lemma 3.9</a></li>
+          <li><a href="sect0003.html#theorem:ring_of_ints_of_cyclo">Theorem 3.4</a></li>
+        </ul>
+
+      </div>
+    </div>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/603b96ac8ae28c657f4c1847003c429e691bb835/src/caseI/statement.lean#L28">flt_regular.caseI.may_assume</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="lemma_thmcontent">
+  
+<p>Let \(p \geq 3\) be an prime number, \(\zeta _p\) a \(p\)-th root of unity and \(K=\mathbb {Q}(\zeta _p)\). Assume that we have \(x,y,z \in \mathbb {Z}\) with \(\gcd (xyz,p)=1\) and such that </p>
+<div class="displaymath" id="a0000000059">
+  \[ x^p+y^p=z^p. \]
+</div>
+<p>This is the so called "case I". To prove Fermat’s last theorem, we may assume that: </p>
+<ul class="itemize">
+  <li><p>\(p \geq 5\); </p>
+</li>
+  <li><p>\(x,y,z\) are pairwise coprime; </p>
+</li>
+  <li><p>\(x \not\equiv y \mod p\). </p>
+</li>
+</ul>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000058">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  <p>The first part is easy. </p>
+<p>Reducing modulo \(p\), using Fermat’s little theorem, you get that if \(x \equiv y \equiv -z \pmod p\) then \(3z \equiv 0 \pmod p\). But since \(p {\gt}3\) this means \(p |z\) but this contradicts \(\gcd (xyz,p)=1\). Now, if \(x \equiv y \pmod p\) then \(x \not\equiv -z \pmod p\) we can relabel \(y,z\) so that wlog \(x \not\equiv y\) (this uses that \(p\) is odd). </p>
+
+  </div>
+</div>
+<p><div class="definition_thmwrapper" id="defn:is_regular_number">
+  <div class="definition_thmheading">
+    <span class="definition_thmcaption">
+    Definition
+    </span>
+    <span class="definition_thmlabel">4.6</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0004.html#defn:is_regular_number">#</a>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/603b96ac8ae28c657f4c1847003c429e691bb835/src/number_theory/regular_primes.lean#L51">is_regular_number</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="definition_thmcontent">
+  <p>  A prime number \(p\) is called regular if it does not divide the class number of \(\mathbb {Q}(\zeta _p)\). </p>
+
+  </div>
+</div> </p>
+<p><div class="theorem_thmwrapper" id="theorem:FLT_case_one">
+  <div class="theorem_thmheading">
+    <span class="theorem_thmcaption">
+    Theorem
+    </span>
+    <span class="theorem_thmlabel">4.7</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0004.html#theorem:FLT_case_one">#</a>
+    <a class="icon proof" href="sect0004.html#a0000000060"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+    <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
+</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Uses</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="sect0004.html#defn:is_regular_number">Definition 4.6</a></li>
+          <li><a href="sect0004.html#lem:exists_int_sum_eq_zero">Lemma 4.4</a></li>
+          <li><a href="sect0004.html#lem:dvd_coeff_cycl_integer">Lemma 4.3</a></li>
+          <li><a href="sect0004.html#lemma:may_assume_coprime">Lemma 4.5</a></li>
+          <li><a href="sect0004.html#lem:flt_ideals_coprime">Lemma 4.1</a></li>
+        </ul>
+
+      </div>
+    </div>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/603b96ac8ae28c657f4c1847003c429e691bb835/src/caseI/statement.lean#L271">flt_regular.caseI</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="theorem_thmcontent">
+  <p>   Let \(p\) be an odd regular prime. Then </p>
+<div class="displaymath" id="a0000000061">
+  \[ x^p+y^p=z^p \]
+</div>
+<p> has no solutions with \(x,y,z \in \mathbb {Z}\) and \(\gcd (xyz,p)=1\). </p>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000060">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  <p>For \(p=3\) use the standard elementary arguments, so assume \(p \geq 5\). </p>
+<p>First thing is to note that if \(x^p+y^p=z^p\) then </p>
+<div class="displaymath" id="a0000000062">
+  \[ z^p=(x+y)(x+\zeta _py)\cdots (x+y\zeta _p^{p-1}) \]
+</div>
+<p> as ideals. Then since by <a href="sect0004.html#lem:flt_ideals_coprime">4.1</a> we know the ideals are coprime, then by lemma <a href="sect0003.html#lemma:ideals_mult_to_power">3.9</a> we have that each \((x+y\zeta _p^i)=\mathfrak {a}^p\), for \(\mathfrak {a}\) some ideal. Note that, \([\mathfrak {a}^p]=1\) in the class group. Now, since \(p\) does not divide the size of the class group we have that \([\mathfrak {a}]=1\) in the class group, so its principal. So we have \(x+y\zeta _p^i=u_i\alpha _i^p\) with \(u_i\) a unit. So by <a href="sect0004.html#lem:exists_int_sum_eq_zero">4.4</a> we have some \(k\) such that \(x+y\zeta _p-\zeta _p^{2k}x-\zeta _p^{2k-1}y \equiv 0 \pmod p\). If \(1,\zeta _p,\zeta _p^{2k},\zeta _p^{2k-1}\) are distinct, then <a href="sect0004.html#lem:dvd_coeff_cycl_integer">4.3</a> says that (since \(p \geq 5\)) \(p\) divides \(x,y\), contrary to our assumption. So they cannot be distinct, but checking each case leads to a contradiction, therefore there cannot be any such solutions. </p>
+
+  </div>
+</div>
+<p><div class="theorem_thmwrapper" id="thm:Kummers_lemma">
+  <div class="theorem_thmheading">
+    <span class="theorem_thmcaption">
+    Theorem
+    </span>
+    <span class="theorem_thmlabel">4.8</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0004.html#thm:Kummers_lemma">#</a>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/603b96ac8ae28c657f4c1847003c429e691bb835/src/number_theory/kummers_lemma.lean#L17">eq_pow_prime_of_unit_of_congruent</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="theorem_thmcontent">
+  <p>  Let \(p\) be a regular prime and let \(u \in \mathbb {Z}[\zeta _p]^\times \). If \(u \equiv a \mod p\) for some \(a \in \mathbb {Z}\), then there exists \(v \in \mathbb {Z}[\zeta _p]^\times \) such that \(u=v^p\). </p>
+
+  </div>
+</div> </p>
+<p>In these next few lemmas we are following <span class="cite">
+	[
+	<a href="sect0005.html#Borevich_Shafarevich" >BS66</a>
+	]
+</span>. </p>
+<p><div class="lemma_thmwrapper" id="lem:gen_dvd_by_frak_p">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">4.9</span>
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0004.html#lem:gen_dvd_by_frak_p">#</a>
+    <a class="icon proof" href="sect0004.html#a0000000063"><svg  class="icon icon-cogs "><use xlink:href="symbol-defs.svg#icon-cogs"></use></svg>
+</a>
+
+  </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p> Let \(p\) be a regular odd prime, \(x,y,z,\epsilon \in \mathbb {Z}[\zeta _p]\), \(\epsilon \) a unit, and \(n \in \mathbb {Z}_{\geq 1}\). Assume \(x,y,z\) are coprime to \((1-\zeta _p)\) and that \(x^p+y^p+\epsilon (1-\zeta _p)^{pn}z^p=0\). Then each of \((x+\zeta _p^i y)\) is divisible by \((1-\zeta _p)\) and there is a unique \(i_0\) such that \((x+\zeta _p^{i_0})\) is divisible by \((1-\zeta _p)^2\). </p>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000063">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">▼</span>
+  </div>
+  <div class="proof_content">
+  <p>By our assumptions we have the following equality of ideals in \(\mathbb {Z}[\zeta _p]\): </p>
+<div class="displaymath" id="a0000000064">
+  \[  \prod _{k=0}^{p-1} (x+\zeta _p^ky) = \mathfrak {p}^{pm}\mathfrak {a}^p,  \]
+</div>
+<p> where \(\mathfrak {a}=(z)\), \(\mathfrak {p}=(1-\zeta _p)\) (which is prime) and \(m=n(p-1)\). Now as \(mp \geq p\) we must have that at least one of the terms on the lhs is divisible by \(\mathfrak {p}\). </p>
+<p>Note that since </p>
+<div class="displaymath" id="a0000000065">
+  \[ x+\zeta _p^iy= x+\zeta _p^ky - \zeta _p^k(1-\zeta _p^{i-k})y \]
+</div>
+<p> it follows every \(x+\zeta _p^k\) is divisible by \(\mathfrak {p}\) for \(0 \le k \le p-1\). This proves the first claim. </p>
+<p>For the second claim, we begin by observing that if \(x+\zeta _p^ky \equiv x + \zeta _p^i y \mod \mathfrak {p}^2\) (for \(0 \leq k {\lt} i \leq p-1\)) then \(\zeta _p^ky(1-\zeta _p^{i-k}) \equiv 0 \mod \mathfrak {p}^2\) which cannot happen as \(y\) is coprime to \(\mathfrak {p}\). Therefore since, for \(0 \leq k \leq p-1\), \(x+\zeta _p^ky\) are all distinct modulo \(\mathfrak {p}^2\) we must have that \(\frac{x+\zeta _p^k}{1-\zeta _p}\) are non-congruent modulo \(\mathfrak {p}\). The second claim now follows by noting that (since \(N(\mathfrak {p})=p\)), the numbers \(\frac{x+\zeta _p^k}{1-\zeta _p}\) form a complete set of residues modulo \(\mathfrak {p}\), so one must be divisible by \(\mathfrak {p}\). </p>
+
+  </div>
+</div>
+<p><div class="lemma_thmwrapper" id="lem:gen_ideal_coprimality">
+  <div class="lemma_thmheading">
+    <span class="lemma_thmcaption">
+    Lemma
+    </span>
+    <span class="lemma_thmlabel">4.10</span>
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0004.html#lem:gen_ideal_coprimality">#</a>
+
+  </div>
+  </div>
+  <div class="lemma_thmcontent">
+  <p> Let \(p\) be a regular odd prime, \(x,y,z,\epsilon \in \mathbb {Z}[\zeta _p]\), \(\epsilon \) a unit, and \(n \in \mathbb {Z}_{\geq 1}\). Assume \(x,y,z\) are coprime to \((1-\zeta _p)\), \(x^p+y^p+\epsilon (1-\zeta _p)^{pn}z^p=0\) and \(x+y\) is divisible by \(\mathfrak {p}^2\) and \(x+ \zeta _p^ky\) is only divisible by \(\mathfrak {p}=(1-\zeta _p)\) (for \(0 {\lt} k \leq p-1\)). Let \(\mathfrak {m}= \mathrm{gcd}((x),(y))\). Then: </p>
+<ol class="enumerate">
+  <li><p>We can write </p>
+<div class="displaymath" id="a0000000066">
+  \[ (x+y)=\mathfrak {p}^{p(m-1)+1}\mathfrak {m}\mathfrak {c}_0 \]
+</div>
+<p> and </p>
+<div class="displaymath" id="a0000000067">
+  \[  (x+\zeta _p^k y)=\mathfrak {p}\mathfrak {m}\mathfrak {c}_k  \]
+</div>
+<p> (for \(0 {\lt} k \leq p-1\)) where \(m=n(p-1)\) and with \(\mathfrak {c}_i\) pairwise coprime. </p>
+</li>
+  <li><p>Each \(\mathfrak {c}_k=\mathfrak {a}_k^p\) and \(\mathfrak {a}_k\mathfrak {a}_0^{-1}\) is principal (as a fractional ideal). </p>
+</li>
+</ol>
+
+  </div>
+</div> </p>
+<p><div class="theorem_thmwrapper" id="thm:gen_flt_eqn">
+  <div class="theorem_thmheading">
+    <span class="theorem_thmcaption">
+    Theorem
+    </span>
+    <span class="theorem_thmlabel">4.11</span>
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0004.html#thm:gen_flt_eqn">#</a>
+    <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
+</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Uses</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="sect0004.html#lem:gen_dvd_by_frak_p">Lemma 4.9</a></li>
+          <li><a href="sect0004.html#lem:gen_ideal_coprimality">Lemma 4.10</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="theorem_thmcontent">
+  <p>  Let \(p\) be a regular odd prime, \(\epsilon \in \mathbb {Z}[\zeta _p]^\times \) and \(n \in \mathbb {Z}_{\geq 1}\). Then the equation \(x^p+y^p+\epsilon (1-\zeta _p)^{pn}z^p=0\) has no solutions with \(x,y,z \in \mathbb {Z}[\zeta _p]\), all non-zero and \(xyz\) coprime to \((1-\zeta _p)\). </p>
+
+  </div>
+</div> </p>
+<p><div class="theorem_thmwrapper" id="theorem:FLT_case_two">
+  <div class="theorem_thmheading">
+    <span class="theorem_thmcaption">
+    Theorem
+    </span>
+    <span class="theorem_thmlabel">4.12</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0004.html#theorem:FLT_case_two">#</a>
+    <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
+</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Uses</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="sect0004.html#thm:Kummers_lemma">Theorem 4.8</a></li>
+          <li><a href="sect0004.html#thm:gen_flt_eqn">Theorem 4.11</a></li>
+        </ul>
+
+      </div>
+    </div>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/603b96ac8ae28c657f4c1847003c429e691bb835/src/caseII/statement.lean#L11">flt_regular.caseII</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="theorem_thmcontent">
+  <p>   Let \(p\) be an odd regular prime. Then </p>
+<div class="displaymath" id="a0000000068">
+  \[ x^p+y^p=z^p \]
+</div>
+<p> has no solutions with \(x,y,z \in \mathbb {Z}\) and \(p | xyz\). </p>
+
+  </div>
+</div> </p>
+<p><div class="theorem_thmwrapper" id="FLT_regular">
+  <div class="theorem_thmheading">
+    <span class="theorem_thmcaption">
+    Theorem
+    </span>
+    <span class="theorem_thmlabel">4.13</span>
+    ✓
+    <div class="thm_icons">
+    <a class="icon proof" href="sect0004.html#FLT_regular">#</a>
+    <button class="modal"><svg  class="icon icon-mindmap "><use xlink:href="symbol-defs.svg#icon-mindmap"></use></svg>
+</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Uses</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="sect0004.html#theorem:FLT_case_one">Theorem 4.7</a></li>
+          <li><a href="sect0004.html#theorem:FLT_case_two">Theorem 4.12</a></li>
+        </ul>
+
+      </div>
+    </div>
+    <button class="modal lean">L∃∀N</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <header>
+          <h1>Lean declarations</h1>
+          <button class="closebtn"><svg  class="icon icon-cross "><use xlink:href="symbol-defs.svg#icon-cross"></use></svg>
+</button>
+        </header>
+                <ul class="uses">
+          <li><a href="https://github.com/leanprover-community/flt-regular//blob/603b96ac8ae28c657f4c1847003c429e691bb835/src/flt_regular.lean#L12">flt_regular</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="theorem_thmcontent">
+  <p>   Let \(p\) be an odd regular prime. Then </p>
+<div class="displaymath" id="a0000000069">
+  \[ x^p+y^p=z^p \]
+</div>
+<p> has no solutions with \(x,y,z \in \mathbb {Z}\) and \(xyz \ne 0\). </p>
+
+  </div>
+</div>  </p>
+
+
+</div> <!--main-text -->
+</div> <!-- content-wrapper -->
+</div> <!-- content -->
+</div> <!-- wrapper -->
+
+<nav class="prev_up_next">
+  <a href="sect0003.html" title="Cyclotomic fields"><svg  class="icon icon-arrow-left "><use xlink:href="symbol-defs.svg#icon-arrow-left"></use></svg>
+</a>
+  <a href="index.html" title="Fermat’s Last Theorem for regular primes"><svg  class="icon icon-arrow-up "><use xlink:href="symbol-defs.svg#icon-arrow-up"></use></svg>
+</a>
+  <a href="sect0005.html" title="Bibliography"><svg  class="icon icon-arrow-right "><use xlink:href="symbol-defs.svg#icon-arrow-right"></use></svg>
+</a>
+</nav>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/plastex.js"></script>
+<script type="text/javascript" src="js/svgxuse.js"></script>
+</body>
+</html>
